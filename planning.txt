@@ -1,0 +1,86 @@
+Create A Portfolio Website For Me - Kharaj Chakraborty
+
+Technologies, Design Tools, Libraries & Frameworks :
+
+    1. Google Stitch
+    2. HTML
+    3. CSS
+    4. JavaScript
+    5. Next.js (Must Use Next.js)
+    6. React
+    7. Vanila CSS (No Tailwind CSS, Using Vanila CSS Is Strictly Required)
+    8. Framer Motion
+    9. GSAP
+    10. Three.js
+    10. React Three Fiber
+    11. React Router
+    11. React Icons
+    12. React Scroll
+    13. React Tilt
+    14. React Parallax
+    15. React Spring
+    16. React Flip Toolkit
+
+Professional Details :
+
+    Name: Kharaj Chakraborty
+    Bio : Hi there! I'm Kharaj Chakraborty, a passionate Full Stack Developer and a Computer Science student at APC Roy Government College.
+          I love building scalable web applications and exploring the depths of Computer Science.
+    Profession: Computer Science Student & Fullstack Web Developer
+    Skills : @README.md
+    Contact : 
+            1. Address:
+                Mathabhanga, Coochbehar, West Bengal, India, PIN-736146
+            2. @README.md
+
+Features : 
+
+    1. The Website Will Be A Modern Website With Smooth Animations And Transitions.
+    2. Theme Color Will Be Black And White With A Hint Of Red.
+    3. Hero Section  Will Be Modern And Eye Catching. It Will Also Include My Photo @assets/images/kharaj.jpg
+    4.Title Of The Website Will Be "Kharaj Chakraborty | Fullstack Web Developer"
+    5.Favicon Will Be Photo @assets/images/favicon.ico
+
+Sections :
+
+    1. Navigation Bar
+    2. Home
+    3. About
+    4. Skills
+    5. Projects - 
+        {
+        name: "Kharaj Chakraborty---Portfolio",
+        lang: ["NextJS", "EmailJS", "AnimistaCSS"],
+        repo: `https://github.com/kharajch/Kharaj-Chakraborty---Portfolio`,
+        img: "@assets/images/projects/Portfolio.png",
+        details: `Kharaj Chakraborty---Portfolio is a modern, responsive personal portfolio website built to showcase web development skills and projects. Built with cutting-edge technologies including Next.js, React, and MongoDB.`,
+
+        },
+        {
+        name: "kharajch--SongFindX",
+        lang: ["NextJS"],
+        repo: `https://github.com/kharajch/kharajch---SongFindX`,
+        img: "@assets/images/projects/SongFindX.png",
+        details: `kharajch---SongFindX is a modern, full-featured music discovery web application built with Next.js and React. Browse, search, play, download songs with advanced filtering capabilities by language, genre, and artist.`,
+
+        },
+        {
+        name: "kharajch--MindMatters",
+        lang: ["HTML", "CSS", "JS", "Haiku 4.5"],
+        repo: `https://github.com/kharajch/kharajch---MindMatters`,
+        img: "@assets/images/projects/MindMatters.png",
+        details: `Mind Matters provides a comprehensive mental health assessment tool that helps users understand their emotional and psychological well-being. The application guides users through a series of detailed questions and generates personalized results based on their responses.`,
+
+        }
+
+    6. Contact
+
+
+    Important Notes :
+    
+        1. Use `git init` 
+        2. Create A `.gitignore` file and add `node_modules` and `.next` to it.
+        3. Create A Remote Repository On GitHub With Name `Kharaj Chakraborty---Portfolio (2.0)`
+        4. Iniate a commit for every major changes with a proper commit message.
+
+    
