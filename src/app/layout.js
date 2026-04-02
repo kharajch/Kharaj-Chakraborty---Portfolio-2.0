@@ -6,6 +6,11 @@ export const metadata = {
     "Hi there! I'm Kharaj Chakraborty, a passionate Full Stack Developer and a Computer Science student at APC Roy Government College. I love building scalable web applications and exploring the depths of Computer Science.",
   keywords: [
     "Kharaj Chakraborty",
+    "kharajch",
+    "@kharajch",
+    "Kharaj Chakraborty (@kharajch)",
+    "Kharaj Chakraborty---Portfolio",
+    "Kharaj Chakraborty (@kharajch)---Portfolio",
     "Full Stack Developer",
     "Web Developer",
     "Portfolio",
