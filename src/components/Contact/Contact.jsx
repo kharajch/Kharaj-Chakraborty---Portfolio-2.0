@@ -29,14 +29,13 @@ export default function Contact() {
     e.preventDefault();
     setStatus("sending");
 
-    // EmailJS Integration - Replace with your actual keys
+    // EmailJS Integration — keys loaded from .env.local
     try {
-      // Import emailjs dynamically
       const emailjs = (await import("@emailjs/browser")).default;
 
       await emailjs.send(
-        "YOUR_SERVICE_ID", // Replace with your EmailJS service ID
-        "YOUR_TEMPLATE_ID", // Replace with your EmailJS template ID
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
         {
           from_name: formData.name,
           from_email: formData.email,
@@ -44,7 +43,7 @@ export default function Contact() {
           message: formData.message,
           to_email: "kharajchakraborty@gmail.com",
         },
-        "YOUR_PUBLIC_KEY" // Replace with your EmailJS public key
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
       );
 
       setStatus("success");
