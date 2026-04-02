@@ -7,6 +7,7 @@ import * as THREE from "three";
 function Particles({ count = 200 }) {
   const mesh = useRef();
   const light = useRef();
+  const elapsed = useRef(0);
 
   const particles = useMemo(() => {
     const positions = new Float32Array(count * 3);
@@ -35,8 +36,9 @@ function Particles({ count = 200 }) {
     return { positions, colors, sizes };
   }, [count]);
 
-  useFrame((state) => {
-    const time = state.clock.getElapsedTime();
+  useFrame((state, delta) => {
+    elapsed.current += delta;
+    const time = elapsed.current;
     if (mesh.current) {
       mesh.current.rotation.y = time * 0.03;
       mesh.current.rotation.x = Math.sin(time * 0.02) * 0.1;
@@ -74,9 +76,11 @@ function Particles({ count = 200 }) {
 
 function FloatingGeometry() {
   const groupRef = useRef();
+  const elapsed = useRef(0);
 
-  useFrame((state) => {
-    const time = state.clock.getElapsedTime();
+  useFrame((state, delta) => {
+    elapsed.current += delta;
+    const time = elapsed.current;
     if (groupRef.current) {
       groupRef.current.rotation.y = time * 0.08;
       groupRef.current.rotation.z = Math.sin(time * 0.05) * 0.15;
