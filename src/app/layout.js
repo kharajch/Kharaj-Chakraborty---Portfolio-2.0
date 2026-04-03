@@ -29,6 +29,9 @@ export const metadata = {
       "Passionate Full Stack Developer & Computer Science student building scalable web applications.",
     type: "website",
   },
+  verification: {
+    google: "elgBJkKEI-iszJssdFl0eE8MSlOQaYO0rFVswe5DULM",
+  },
 };
 
 export default function RootLayout({ children }) {
