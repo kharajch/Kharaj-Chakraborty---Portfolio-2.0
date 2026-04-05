@@ -82,6 +82,18 @@ export const skillsData = [
       { name: "Claude", icon: "SiAnthropic" },
       { name: "Kimi", icon: "SiKimi" },
       { name: "Qwen", icon: "SiQwen" },
+      { name: "Nemotron", icon: "SiNvidia" },
+      { name: "Gemma", icon: "SiGoogle" },
+    ],
+  },
+  {
+    category: "AI Tools",
+    icon: "wrench",
+    skills: [
+      { name: "Ollama", icon: "SiOllama" },
+      { name: "LM Studio", icon: "SiLmstudio" },
+      { name: "n8n", icon: "SiN8N" },
+      { name: "Hugging Face", icon: "SiHuggingface" },
     ],
   },
   {

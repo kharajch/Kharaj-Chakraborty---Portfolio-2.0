@@ -24,5 +24,8 @@ Recent history mixes plain imperative commits (`Implement root layout metadata`)
 - screenshots or short recordings for visual updates,
 - notes about environment variables such as EmailJS keys in `.env.local`.
 
+## Data Files & Skills
+Static content lives in `src/data/`. The canonical list of skills and badges is maintained in `skills.md` at the repository root. `src/data/skills.js` mirrors those categories (Programming Languages, Frontend Development & Design, Frameworks & Libraries, Databases, Hosting & Deployment, IDEs, Tools, AI Assistants, AI Tools, and Agentic AI Tools). When adding or removing a skill, update both `skills.md` and `src/data/skills.js` to keep them in sync.
+
 ## Configuration & Security Tips
 Keep secrets in `.env.local` only. The contact form depends on EmailJS variables such as `NEXT_PUBLIC_EMAILJS_SERVICE_ID`; never hardcode credentials into components or data files.
