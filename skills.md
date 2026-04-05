@@ -47,7 +47,7 @@ I love building scalable web applications and exploring the depths of Computer S
 
 ### 🧰 AI Tools
 
-[![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white)](https://ollama.com/) [![LM Studio](https://img.shields.io/badge/LM%20Studio-6C47FF?style=for-the-badge&logo=lmstudio&logoColor=white)](https://lmstudio.ai/) [![n8n](https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white)](https://n8n.io/) [![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/)
+[![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white)](https://ollama.com/) [![LM Studio](https://img.shields.io/badge/LM%20Studio-6C47FF?style=for-the-badge&logo=lmstudio&logoColor=white)](https://lmstudio.ai/) [![n8n](https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white)](https://n8n.io/) [![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/) [![Openclaw](https://img.shields.io/badge/Openclaw-FF6B35?style=for-the-badge&logo=robot&logoColor=white)](https://openclaw.ai/)
 
 ### 🪄 Agentic AI Tools
 

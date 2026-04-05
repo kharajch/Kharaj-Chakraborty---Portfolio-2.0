@@ -94,6 +94,7 @@ export const skillsData = [
       { name: "LM Studio", icon: "SiLmstudio" },
       { name: "n8n", icon: "SiN8N" },
       { name: "Hugging Face", icon: "SiHuggingface" },
+      { name: "Openclaw", icon: "SiRobot" },
     ],
   },
   {
