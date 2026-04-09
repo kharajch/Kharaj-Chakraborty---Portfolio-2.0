@@ -27,18 +27,17 @@ export default function About() {
     if (typeof window === "undefined") return;
 
     const ctx = gsap.context(() => {
-      gsap.fromTo(
-        ".about__stat-number",
-        { innerText: 0 },
-        {
-          duration: 2,
-          ease: "power2.out",
-          scrollTrigger: {
-            trigger: ".about__stats",
-            start: "top 80%",
-          },
-        }
-      );
+      gsap.from(".about__stat-card", {
+        opacity: 0,
+        y: 30,
+        duration: 0.8,
+        stagger: 0.15,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".about__stats",
+          start: "top 80%",
+        },
+      });
     }, sectionRef);
 
     return () => ctx.revert();
