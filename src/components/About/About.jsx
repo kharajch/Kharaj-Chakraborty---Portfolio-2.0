@@ -1,16 +1,10 @@
 "use client";
 
-import { useRef, useEffect } from "react";
+import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Parallax } from "react-parallax";
 import { FaCode, FaGraduationCap, FaRocket, FaLaptopCode } from "react-icons/fa6";
 import "./About.css";
 
-if (typeof window !== "undefined") {
-  gsap.registerPlugin(ScrollTrigger);
-}
 
 const highlights = [
   { icon: FaCode, label: "10+", desc: "Projects Built", color: "#e63946" },
@@ -23,25 +17,9 @@ export default function About() {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
 
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-
-    const ctx = gsap.context(() => {
-      gsap.from(".about__stat-card", {
-        opacity: 0,
-        y: 30,
-        duration: 0.8,
-        stagger: 0.15,
-        ease: "power2.out",
-        scrollTrigger: {
-          trigger: ".about__stats",
-          start: "top 80%",
-        },
-      });
-    }, sectionRef);
-
-    return () => ctx.revert();
-  }, []);
+  // Note: GSAP animation on .about__stat-card was removed to fix a conflict
+  // with Framer Motion. Both were setting opacity: 0, causing cards to vanish.
+  // Framer Motion's itemVariants now handles the stat card animations alone.
 
   const containerVariants = {
     hidden: {},
