@@ -2,7 +2,7 @@ export const projectsData = [
   {
     name: "Kharaj Chakraborty--Portfolio 1.0 (Legacy)",
     lang: ["NextJS", "EmailJS", "AnimistaCSS"],
-    repo: "https://github.com/kharajch/Kharaj-Chakraborty---Portfolio",
+    repo: "https://github.com/kharajch/Kharaj-Chakraborty---Portfolio-1.0",
     img: "/images/projects/Portfolio.png",
     details:
       "Kharaj Chakraborty---Portfolio is a modern, responsive personal portfolio website built to showcase web development skills and projects. Built with cutting-edge technologies including Next.js, React, and MongoDB.",
