@@ -1,6 +1,6 @@
 export const projectsData = [
   {
-    name: "Kharaj Chakraborty---Portfolio",
+    name: "Kharaj Chakraborty--Portfolio 1.0 (Legacy)",
     lang: ["NextJS", "EmailJS", "AnimistaCSS"],
     repo: "https://github.com/kharajch/Kharaj-Chakraborty---Portfolio",
     img: "/images/projects/Portfolio.png",
