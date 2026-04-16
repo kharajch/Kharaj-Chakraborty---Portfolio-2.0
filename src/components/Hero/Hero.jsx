@@ -104,12 +104,12 @@ export default function Hero() {
 
             <p className="hero__tagline">
               Computer Science Student &amp;{" "}
-              <span className="accent-text">Fullstack Web Developer</span>
+              <span className="accent-text">Full Stack AI Application Engineer</span>
             </p>
 
             <p className="hero__bio">
               Building scalable web applications and exploring the depths of
-              Computer Science at APC Roy Government College.
+              Computer Science &amp; Artificial Intelligence at APC Roy Government College.
             </p>
 
             <motion.div

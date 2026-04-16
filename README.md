@@ -8,7 +8,7 @@ Welcome to the repository for my personal portfolio! This is a modern, highly in
 
 ## 📌 Introduction
 
-Hi there! I'm **Kharaj Chakraborty**, a passionate Full Stack Developer and a Computer Science student at APC Roy Government College. I love building scalable web applications and exploring the depths of Computer Science. This portfolio is designed to be a digital representation of my skills, featuring immersive 3D experiences, smooth animations, and clean code.
+Hi there! I'm **Kharaj Chakraborty**, a passionate Full Stack AI Application Engineer and a Computer Science student at APC Roy Government College. I love building scalable web applications and exploring the depths of Computer Science & Artificial Intelligence. This portfolio is designed to be a digital representation of my skills, featuring immersive 3D experiences, smooth animations, and clean code.
 
 ## 🚀 Key Features
 

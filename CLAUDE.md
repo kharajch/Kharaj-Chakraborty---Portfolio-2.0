@@ -47,7 +47,7 @@ Components are modular and located in `src/components/`:
 #### Data Management
 Static data is separated in `src/data/`:
 - `projects.js` - Array of project objects (title, description, tech stack, image, demo link)
-- `skills.js` - Array of skill categories and icons (Programming Languages, Frontend Development & Design, Frameworks & Libraries, Databases, Hosting & Deployment, IDEs, Tools, AI Assistants, AI Tools, Agentic AI Tools). Keep in sync with `skills.md` at the repo root.
+- `skills.js` - Array of skill categories and icons (Programming Languages, Frontend Development & Design, Frameworks & Libraries, Backend & AI Frameworks, Databases, Hosting & Deployment, IDEs, Tools, AI Assistants, AI Tools, Agentic AI Tools). Keep in sync with `skills.md` at the repo root.
 - `socials.js` - Social media links and icons
 
 #### Environment Setup
