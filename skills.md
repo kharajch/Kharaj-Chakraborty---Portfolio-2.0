@@ -1,8 +1,8 @@
 # 💫 About Me
 
-Hi there! I'm Kharaj Chakraborty, a passionate Full Stack Developer and a Computer Science student at APC Roy Government College.
+Hi there! I'm Kharaj Chakraborty, a passionate Full Stack AI Application Engineer and a Computer Science student at APC Roy Government College.
 
-I love building scalable web applications and exploring the depths of Computer Science.
+I love building scalable web applications and exploring the depths of Computer Science & Artificial Intelligence.
 
 ### Visit My Portfolio - [https://kharajch.vercel.app](https://kharajch.vercel.app "Kharaj Chakraborty---Portfolio")
 
@@ -25,7 +25,11 @@ I love building scalable web applications and exploring the depths of Computer S
 
 [![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/) [![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/) [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/) [![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
-### 🗄️ Databases
+### � Backend & AI Frameworks
+
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/) [![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)](https://www.langchain.com/)
+
+### �🗄️ Databases
 
 [![MongoDB](https://img.shields.io/badge/MongoDB-%2347A248.svg?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/) [![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
 
@@ -39,7 +43,7 @@ I love building scalable web applications and exploring the depths of Computer S
 
 ### 🛠️ Tools
 
-[![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/) [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/) [![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)](https://www.postman.com/) [![MongoDB Compass](https://img.shields.io/badge/MongoDB%20Compass-47A248?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/products/compass) [![EmailJS](https://img.shields.io/badge/EmailJS-F3AA92?style=for-the-badge&logo=mail-dot-ru&logoColor=white)](https://www.emailjs.com/)
+[![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/) [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/) [![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)](https://www.postman.com/) [![MongoDB Compass](https://img.shields.io/badge/MongoDB%20Compass-47A248?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/products/compass) [![EmailJS](https://img.shields.io/badge/EmailJS-F3AA92?style=for-the-badge&logo=mail-dot-ru&logoColor=white)](https://www.emailjs.com/) [![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
 
 ### 🤖 AI Assistants
 

@@ -11,11 +11,18 @@ import {
   SiJavascript,
   SiFigma,
   SiGoogle,
+  SiFastapi,
+  SiLangchain,
+  SiDocker,
   SiNodedotjs,
   SiExpress,
   SiReact,
   SiNextdotjs,
   SiTailwindcss,
+  SiOllama,
+  SiN8N,
+  SiHuggingface,
+  SiNvidia,
   SiMongodb,
   SiMysql,
   SiVercel,
@@ -33,7 +40,7 @@ import {
   SiAnthropic,
   SiGithubcopilot,
 } from "react-icons/si";
-import { FaJava, FaCode, FaPalette, FaLayerGroup, FaDatabase, FaCloud, FaTerminal, FaWrench, FaRobot, FaWandMagicSparkles } from "react-icons/fa6";
+import { FaJava, FaCode, FaPalette, FaLayerGroup, FaDatabase, FaCloud, FaTerminal, FaWrench, FaRobot, FaWandMagicSparkles, FaServer } from "react-icons/fa6";
 import { skillsData } from "@/data/skills";
 import "./Skills.css";
 
@@ -51,6 +58,8 @@ const iconMap = {
   SiReact: SiReact,
   SiNextdotjs: SiNextdotjs,
   SiTailwindcss: SiTailwindcss,
+  SiFastapi: SiFastapi,
+  SiLangchain: SiLangchain,
   SiMongodb: SiMongodb,
   SiMysql: SiMysql,
   SiVercel: SiVercel,
@@ -63,6 +72,7 @@ const iconMap = {
   SiGit: SiGit,
   SiGithub: SiGithub,
   SiPostman: SiPostman,
+  SiDocker: SiDocker,
   SiMaildotru: SiGoogle,
   SiOpenai: SiOpenai,
   SiGithubcopilot: SiGithubcopilot,
@@ -73,12 +83,19 @@ const iconMap = {
   SiAnthropic: SiAnthropic,
   SiKimi: FaRobot,
   SiQwen: FaRobot,
+  SiOllama: SiOllama,
+  SiN8N: SiN8N,
+  SiHuggingface: SiHuggingface,
+  SiLmstudio: FaRobot,
+  SiRobot: FaRobot,
+  SiNvidia: SiNvidia,
 };
 
 const categoryIcons = {
   "Programming Languages": FaCode,
   "Frontend Development & Design": FaPalette,
   "Frameworks & Libraries": FaLayerGroup,
+  "Backend & AI Frameworks": FaServer,
   "Databases": FaDatabase,
   "Hosting & Deployment": FaCloud,
   "IDEs": FaTerminal,

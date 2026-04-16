@@ -31,6 +31,14 @@ export const skillsData = [
     ],
   },
   {
+    category: "Backend & AI Frameworks",
+    icon: "server",
+    skills: [
+      { name: "FastAPI", icon: "SiFastapi" },
+      { name: "LangChain", icon: "SiLangchain" },
+    ],
+  },
+  {
     category: "Databases",
     icon: "database",
     skills: [
@@ -67,6 +75,7 @@ export const skillsData = [
       { name: "Postman", icon: "SiPostman" },
       { name: "MongoDB Compass", icon: "SiMongodb" },
       { name: "EmailJS", icon: "SiMaildotru" },
+      { name: "Docker", icon: "SiDocker" },
     ],
   },
   {
