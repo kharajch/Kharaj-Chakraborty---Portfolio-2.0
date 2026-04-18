@@ -21,50 +21,61 @@ export default function Hero() {
   const taglineRef = useRef(null);
 
   useEffect(() => {
-    const ctx = gsap.context(() => {
-      // Name reveal animation
-      gsap.fromTo(
-        ".hero__name-char",
-        { opacity: 0, y: 80, rotateX: -90 },
-        {
-          opacity: 1,
-          y: 0,
-          rotateX: 0,
-          duration: 0.8,
-          ease: "back.out(1.7)",
-          stagger: 0.04,
-          delay: 0.3,
-        }
-      );
+    // Ensure DOM is fully painted before running animations
+    const raf = requestAnimationFrame(() => {
+      const ctx = gsap.context(() => {
+        // Name reveal animation
+        gsap.fromTo(
+          ".hero__name-char",
+          { opacity: 0, y: 80, rotateX: -90 },
+          {
+            opacity: 1,
+            y: 0,
+            rotateX: 0,
+            duration: 0.8,
+            ease: "back.out(1.7)",
+            stagger: 0.04,
+            delay: 0.3,
+          }
+        );
 
-      // Tagline reveal
-      gsap.fromTo(
-        ".hero__tagline",
-        { opacity: 0, y: 30 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.8,
-          ease: "power3.out",
-          delay: 1.2,
-        }
-      );
+        // Tagline reveal
+        gsap.fromTo(
+          ".hero__tagline",
+          { opacity: 0, y: 30 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 0.8,
+            ease: "power3.out",
+            delay: 1.2,
+          }
+        );
 
-      // Bio reveal
-      gsap.fromTo(
-        ".hero__bio",
-        { opacity: 0, y: 20 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.6,
-          ease: "power3.out",
-          delay: 1.5,
-        }
-      );
-    }, heroRef);
+        // Bio reveal
+        gsap.fromTo(
+          ".hero__bio",
+          { opacity: 0, y: 20 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 0.6,
+            ease: "power3.out",
+            delay: 1.5,
+          }
+        );
+      }, heroRef);
 
-    return () => ctx.revert();
+      // Store ctx for cleanup
+      heroRef._gsapCtx = ctx;
+    });
+
+    return () => {
+      cancelAnimationFrame(raf);
+      if (heroRef._gsapCtx) {
+        heroRef._gsapCtx.revert();
+      }
+    };
   }, []);
 
   const nameChars = "Kharaj Chakraborty".split("");

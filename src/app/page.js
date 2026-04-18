@@ -11,12 +11,10 @@ import Projects from "@/components/Projects/Projects";
 import Contact from "@/components/Contact/Contact";
 import Footer from "@/components/Footer/Footer";
 
-if (typeof window !== "undefined") {
-  gsap.registerPlugin(ScrollTrigger);
-}
-
 export default function Home() {
   useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
     // Smooth reveal for all sections
     const sections = document.querySelectorAll(".section");
     sections.forEach((section) => {
