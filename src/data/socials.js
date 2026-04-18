@@ -58,7 +58,7 @@ export const socialsData = [
   },
   {
     name: "Facebook",
-    url: "https://www.facebook.com/app_scoped_user_id//122167234586803652",
+    url: "https://www.facebook.com/profile.php?id=61574109584889",
     icon: FaFacebook,
     color: "#1877F2",
   },
