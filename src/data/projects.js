@@ -13,7 +13,7 @@ export const projectsData = [
     repo: "https://github.com/kharajch/Kharaj-Chakraborty---Portfolio-2.0",
     img: "/images/projects/Portfolio.png",
     details:
-      "Kharaj Chakraborty---Portfolio 2.0 This is a modern, highly interactive, and responsive portfolio built to showcase my web development skills, projects, and professional background.",
+      "Kharaj Chakraborty---Portfolio 2.0 is a modern, highly interactive, and responsive portfolio built to showcase my web development skills, projects, and professional background.",
   },
   {
     name: "Kharaj Chakraborty--Portfolio 1.0 (Legacy)",
