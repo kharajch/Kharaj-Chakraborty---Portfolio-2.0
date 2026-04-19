@@ -1,7 +1,7 @@
 export const projectsData = [
   {
     name: "kharajch--ChatX",
-    lang: ["Stitch", "NextJS", "CSS", "JavaScript", "Framer Motion", "GSAP", "Three.js", "Opus 4.6", "Gemini 3.1 Pro", "Ollama"],
+    lang: ["Stitch", "NextJS", "CSS", "LangChain", "FastAPI", "JavaScript", "Framer Motion", "GSAP", "Three.js", "Opus 4.6", "Gemini 3.1 Pro", "Ollama"],
     repo: "https://github.com/kharajch/kharajch---ChatX",
     img: "/images/projects/ChatX.png",
     details:
@@ -9,7 +9,7 @@ export const projectsData = [
   },
   {
     name: "kharajch--WebXResearch",
-    lang: ["Stitch", "NextJS", "CSS", "JavaScript", "Framer Motion", "GSAP", "Three.js", "Opus 4.6", "Ollama"],
+    lang: ["Stitch", "NextJS", "CSS", "LangChain", "FastAPI", "JavaScript", "Framer Motion", "GSAP", "Three.js", "Opus 4.6", "Gemini 3.1 Pro", "Ollama"],
     repo: "https://github.com/kharajch/kharajch---WebXResearch",
     img: "/images/projects/WebXResearch.png",
     details:
@@ -25,7 +25,7 @@ export const projectsData = [
   },
   {
     name: "Kharaj Chakraborty--Portfolio 1.0 (Legacy)",
-    lang: ["NextJS", "CSS", "JS", "EmailJS", "AnimistaCSS"],
+    lang: ["NextJS", "CSS", "JavaScript", "EmailJS", "AnimistaCSS"],
     repo: "https://github.com/kharajch/Kharaj-Chakraborty---Portfolio-1.0",
     img: "/images/projects/Portfolio.png",
     details:
