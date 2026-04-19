@@ -1,7 +1,7 @@
 export const projectsData = [
   {
     name: "kharajch--ChatX",
-    lang: ["Stitch", "NextJS", "CSS", "LangChain", "FastAPI", "JavaScript", "Framer Motion", "GSAP", "Three.js", "Opus 4.6", "Gemini 3.1 Pro", "Ollama"],
+    lang: ["Stitch", "Antigravity", "NextJS", "CSS", "LangChain", "FastAPI", "JavaScript", "Framer Motion", "GSAP", "Three.js", "Opus 4.6", "Gemini 3.1 Pro", "Ollama"],
     repo: "https://github.com/kharajch/kharajch---ChatX",
     img: "/images/projects/ChatX.png",
     details:
@@ -9,7 +9,7 @@ export const projectsData = [
   },
   {
     name: "kharajch--WebXResearch",
-    lang: ["Stitch", "NextJS", "CSS", "LangChain", "FastAPI", "JavaScript", "Framer Motion", "GSAP", "Three.js", "Opus 4.6", "Gemini 3.1 Pro", "Ollama"],
+    lang: ["Stitch", "Antigravity", "NextJS", "CSS", "LangChain", "FastAPI", "JavaScript", "Framer Motion", "GSAP", "Three.js", "Opus 4.6", "Gemini 3.1 Pro", "Ollama"],
     repo: "https://github.com/kharajch/kharajch---WebXResearch",
     img: "/images/projects/WebXResearch.png",
     details:
@@ -17,7 +17,7 @@ export const projectsData = [
   },
   {
     name: "Kharaj Chakraborty--Portfolio 2.0 (Current)",
-    lang: ["Stitch", "NextJS", "CSS", "JavaScript", "Framer Motion", "GSAP", "Three.js", "EmailJS", "Opus 4.6", "Gemini 3.1 Pro"],
+    lang: ["Stitch", "Antigravity", "NextJS", "CSS", "JavaScript", "Framer Motion", "GSAP", "Three.js", "EmailJS", "Opus 4.6", "Gemini 3.1 Pro"],
     repo: "https://github.com/kharajch/Kharaj-Chakraborty---Portfolio-2.0",
     img: "/images/projects/Portfolio.png",
     details:
