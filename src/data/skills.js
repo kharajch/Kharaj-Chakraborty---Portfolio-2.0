@@ -36,6 +36,7 @@ export const skillsData = [
     skills: [
       { name: "FastAPI", icon: "SiFastapi" },
       { name: "LangChain", icon: "SiLangchain" },
+      { name: "LangGraph", icon: "SiLangchain" },
     ],
   },
   {
