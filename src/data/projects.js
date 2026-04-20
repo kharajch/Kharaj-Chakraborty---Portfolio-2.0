@@ -27,7 +27,7 @@ export const projectsData = [
     name: "Kharaj Chakraborty--Portfolio 2.0 (Current)",
     lang: ["Stitch", "Antigravity", "NextJS", "CSS", "JavaScript", "Framer Motion", "GSAP", "Three.js", "EmailJS", "Opus 4.6", "Gemini 3.1 Pro"],
     repo: "https://github.com/kharajch/Kharaj-Chakraborty---Portfolio-2.0",
-    img: "/images/projects/Portfolio.png",
+    img: "/images/projects/Portfolio2.png",
     details:
       "Kharaj Chakraborty---Portfolio 2.0 is a modern, highly interactive, and responsive portfolio built to showcase my web development skills, projects, and professional background.",
   },
@@ -35,7 +35,7 @@ export const projectsData = [
     name: "Kharaj Chakraborty--Portfolio 1.0 (Legacy)",
     lang: ["NextJS", "CSS", "JavaScript", "EmailJS", "AnimistaCSS"],
     repo: "https://github.com/kharajch/Kharaj-Chakraborty---Portfolio-1.0",
-    img: "/images/projects/Portfolio.png",
+    img: "/images/projects/Portfolio1.png",
     details:
       "Kharaj Chakraborty---Portfolio 1.0 is a modern, responsive personal portfolio website built to showcase web development skills and projects. Built with cutting-edge technologies including Next.js, React, and MongoDB.",
   }
