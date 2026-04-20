@@ -1,5 +1,13 @@
 export const projectsData = [
   {
+    name: "kharajch--IdeaXCoder",
+    lang: ["Stitch", "Antigravity", "NextJS", "CSS", "LangChain", "Langgraph", "FastAPI", "JavaScript", "Framer Motion", "GSAP", "Three.js", "Opus 4.6", "Gemini 3.1 Pro", "Gemini 3 Flash", "Ollama"],
+    repo: "https://github.com/kharajch/kharajch---IdeaXCoder",
+    img: "/images/projects/IdeaXCoder.png",
+    details:
+      "kharajch---IdeaXCoder is a sophisticated agentic AI coding interface designed to transform abstract project ideas into structured technical specifications. Built with a modern Next.js frontend and a powerful FastAPI/LangGraph backend, it orchestrates complex workflows involving research, architectural planning, and human-in-the-loop refinement.",
+  },
+  {
     name: "kharajch--ChatX",
     lang: ["Stitch", "Antigravity", "NextJS", "CSS", "LangChain", "FastAPI", "JavaScript", "Framer Motion", "GSAP", "Three.js", "Opus 4.6", "Gemini 3.1 Pro", "Ollama"],
     repo: "https://github.com/kharajch/kharajch---ChatX",
