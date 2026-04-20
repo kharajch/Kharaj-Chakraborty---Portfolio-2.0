@@ -3,7 +3,6 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   overflow: hidden;
   background: var(--color-bg);
 }
@@ -89,6 +88,7 @@
   letter-spacing: -0.03em;
   display: flex;
   flex-wrap: wrap;
+  min-height: 1.2em; /* Ensure height even when empty/invisible */
 }
 
 .hero__name-char {
