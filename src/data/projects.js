@@ -9,7 +9,7 @@ export const projectsData = [
   },
   {
     name: "kharajch--ChatX",
-    lang: ["Stitch", "Antigravity", "NextJS", "CSS", "LangChain", "FastAPI", "JavaScript", "Framer Motion", "GSAP", "Three.js", "Opus 4.6", "Gemini 3.1 Pro", "Nvidia NIM"],
+    lang: ["Stitch", "Antigravity", "NextJS", "CSS", "LangChain", "FastAPI", "JavaScript", "Framer Motion", "GSAP", "Three.js", "Opus 4.6", "Gemini 3.1 Pro", "Gemini 3 Flash", "Nvidia NIM"],
     repo: "https://github.com/kharajch/kharajch---ChatX",
     img: "/images/projects/ChatX.png",
     details:
@@ -17,7 +17,7 @@ export const projectsData = [
   },
   {
     name: "kharajch--WebXResearch",
-    lang: ["Stitch", "Antigravity", "NextJS", "CSS", "LangChain", "FastAPI", "JavaScript", "Framer Motion", "GSAP", "Three.js", "Opus 4.6", "Gemini 3.1 Pro", "Nvidia NIM"],
+    lang: ["Stitch", "Antigravity", "NextJS", "CSS", "LangChain", "FastAPI", "JavaScript", "Framer Motion", "GSAP", "Three.js", "Opus 4.6", "Gemini 3.1 Pro", "Gemini 3 Flash", "Nvidia NIM"],
     repo: "https://github.com/kharajch/kharajch---WebXResearch",
     img: "/images/projects/WebXResearch.png",
     details:
