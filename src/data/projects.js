@@ -1,7 +1,7 @@
 export const projectsData = [
   {
     name: "kharajch--IdeaXCoder",
-    lang: ["Stitch", "Antigravity", "NextJS", "CSS", "LangChain", "Langgraph", "FastAPI", "JavaScript", "Framer Motion", "GSAP", "Three.js", "Opus 4.6", "Gemini 3.1 Pro", "Gemini 3 Flash", "Ollama"],
+    lang: ["Stitch", "Antigravity", "NextJS", "CSS", "LangChain", "Langgraph", "FastAPI", "JavaScript", "Framer Motion", "GSAP", "Three.js", "Opus 4.6", "Gemini 3.1 Pro", "Gemini 3 Flash", "Nvidia NIM"],
     repo: "https://github.com/kharajch/kharajch---IdeaXCoder",
     img: "/images/projects/IdeaXCoder.png",
     details:
@@ -9,7 +9,7 @@ export const projectsData = [
   },
   {
     name: "kharajch--ChatX",
-    lang: ["Stitch", "Antigravity", "NextJS", "CSS", "LangChain", "FastAPI", "JavaScript", "Framer Motion", "GSAP", "Three.js", "Opus 4.6", "Gemini 3.1 Pro", "Ollama"],
+    lang: ["Stitch", "Antigravity", "NextJS", "CSS", "LangChain", "FastAPI", "JavaScript", "Framer Motion", "GSAP", "Three.js", "Opus 4.6", "Gemini 3.1 Pro", "Nvidia NIM"],
     repo: "https://github.com/kharajch/kharajch---ChatX",
     img: "/images/projects/ChatX.png",
     details:
@@ -17,7 +17,7 @@ export const projectsData = [
   },
   {
     name: "kharajch--WebXResearch",
-    lang: ["Stitch", "Antigravity", "NextJS", "CSS", "LangChain", "FastAPI", "JavaScript", "Framer Motion", "GSAP", "Three.js", "Opus 4.6", "Gemini 3.1 Pro", "Ollama"],
+    lang: ["Stitch", "Antigravity", "NextJS", "CSS", "LangChain", "FastAPI", "JavaScript", "Framer Motion", "GSAP", "Three.js", "Opus 4.6", "Gemini 3.1 Pro", "Nvidia NIM"],
     repo: "https://github.com/kharajch/kharajch---WebXResearch",
     img: "/images/projects/WebXResearch.png",
     details:
