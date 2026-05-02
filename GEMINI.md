@@ -8,6 +8,8 @@ This file provides guidance to Gemini-based agents (Antigravity, Gemini Code Ass
 - `npm run build` - Build the application for production
 - `npm start` - Start the production server
 
+There is currently no dedicated `test` or `lint` script in `package.json`. For UI changes, verify locally with `npm run dev` and do a production sanity check with `npm run build`.
+
 ## Project Architecture
 
 This is a Next.js 16 portfolio application built with React 19 and featuring immersive 3D graphics.
@@ -22,8 +24,11 @@ This is a Next.js 16 portfolio application built with React 19 and featuring imm
 ### Key Architecture Patterns
 
 #### App Router Structure
-- `src/app/layout.js` - Root layout with site metadata (SEO, OpenGraph)
+- `src/app/layout.js` - Root layout with site metadata (SEO, OpenGraph, Google Search Console verification)
 - `src/app/page.js` - Main page component that orchestrates all sections
+- `src/app/not-found.js` - Custom 404 page with GSAP/Framer Motion animations
+- `src/app/robots.js` - Dynamic robots.txt generation using `NEXT_PUBLIC_BASE_URL`
+- `src/app/sitemap.js` - Dynamic sitemap generation using `NEXT_PUBLIC_BASE_URL`
 
 #### Component Organization
 Components are modular and located in `src/components/`:
@@ -44,15 +49,22 @@ Components are modular and located in `src/components/`:
 
 #### Data Management
 Static data is separated in `src/data/`:
-- `projects.js` - Array of project objects (title, description, tech stack, image, demo link)
-- `skills.js` - Array of skill categories and icons (Programming Languages, Frontend Development & Design, Frameworks & Libraries, Backend & AI Frameworks, Databases, Hosting & Deployment, IDEs, Tools, AI Assistants, AI Tools, Agentic AI Tools). Keep in sync with `skills.md` at the repo root.
+- `projects.js` - Array of project objects (title, description, tech stack, image, demo/live link, repo link)
+- `skills.js` - Array of skill categories and icons (Programming Languages, Frontend Development & Design, Frameworks & Libraries, Backend & AI Frameworks, Databases, Hosting & Deployment, IDEs, Tools, AI Assistants, AI Tools, Agentic AI Tools). Keep in sync with `planning/skills.md`.
 - `socials.js` - Social media links and icons
 
+#### Planning & Documentation
+The `planning/` directory contains project planning documents:
+- `skills.md` - Canonical list of skills and badges (source of truth for `src/data/skills.js`)
+- `prompt.txt` - AI prompt references
+- `task.md` - Task tracking
+
 #### Environment Setup
-Contact form requires EmailJS credentials in `.env.local`:
-- NEXT_PUBLIC_EMAILJS_SERVICE_ID
-- NEXT_PUBLIC_EMAILJS_TEMPLATE_ID
-- NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+Required environment variables in `.env.local`:
+- `NEXT_PUBLIC_EMAILJS_SERVICE_ID` - EmailJS service ID for the contact form
+- `NEXT_PUBLIC_EMAILJS_TEMPLATE_ID` - EmailJS template ID
+- `NEXT_PUBLIC_EMAILJS_PUBLIC_KEY` - EmailJS public key
+- `NEXT_PUBLIC_BASE_URL` - Base URL for SEO (robots.txt, sitemap, metadata)
 
 #### 3D Integration
 The ThreeScene component provides:

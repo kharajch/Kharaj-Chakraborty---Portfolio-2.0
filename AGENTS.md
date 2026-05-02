@@ -1,7 +1,7 @@
 # Repository Guidelines
 
 ## Project Structure & Module Organization
-This repository is a Next.js App Router portfolio site. Application entrypoints live in `src/app/`, with `layout.js`, `page.js`, and global styles in `globals.css` and `page.module.css`. Reusable UI is organized by feature in `src/components/<Feature>/`, where each component typically sits beside its CSS file, for example `src/components/Hero/Hero.jsx` and `Hero.css`. Static content for projects, skills, and social links lives in `src/data/`. Runtime-served assets belong in `public/`; `assets/` contains source copies and should not replace `public/` paths without need.
+This repository is a Next.js App Router portfolio site. Application entrypoints live in `src/app/`, with `layout.js`, `page.js`, and global styles in `globals.css` and `page.module.css`. Reusable UI is organized by feature in `src/components/<Feature>/`, where each component typically sits beside its CSS file, for example `src/components/Hero/Hero.jsx` and `Hero.css`. Static content for projects, skills, and social links lives in `src/data/`. Planning documents and the canonical skills list live in `planning/`. Runtime-served assets belong in `public/`; `assets/` contains source copies and should not replace `public/` paths without need.
 
 ## Build, Test, and Development Commands
 - `npm install` installs dependencies.
@@ -22,10 +22,24 @@ Recent history mixes plain imperative commits (`Implement root layout metadata`)
 - a brief summary of user-facing changes,
 - linked issue or task reference when applicable,
 - screenshots or short recordings for visual updates,
-- notes about environment variables such as EmailJS keys in `.env.local`.
+- notes about environment variables such as EmailJS keys and `NEXT_PUBLIC_BASE_URL` in `.env.local`.
+
+## SEO & Metadata
+The site includes comprehensive SEO setup:
+- `src/app/layout.js` — Root metadata with OpenGraph, keywords, and Google Search Console verification.
+- `src/app/robots.js` — Dynamic robots.txt generation using `NEXT_PUBLIC_BASE_URL`.
+- `src/app/sitemap.js` — Dynamic sitemap generation using `NEXT_PUBLIC_BASE_URL`.
+- `src/app/not-found.js` — Custom 404 page with GSAP/Framer Motion animations.
+- `public/googlefa51c644e0f5dc14.html` — Google Search Console verification file.
 
 ## Data Files & Skills
-Static content lives in `src/data/`. The canonical list of skills and badges is maintained in `skills.md` at the repository root. `src/data/skills.js` mirrors those categories (Programming Languages, Frontend Development & Design, Frameworks & Libraries, Backend & AI Frameworks, Databases, Hosting & Deployment, IDEs, Tools, AI Assistants, AI Tools, and Agentic AI Tools). When adding or removing a skill, update both `skills.md` and `src/data/skills.js` to keep them in sync.
+Static content lives in `src/data/`. The canonical list of skills and badges is maintained in `planning/skills.md`. `src/data/skills.js` mirrors those categories (Programming Languages, Frontend Development & Design, Frameworks & Libraries, Backend & AI Frameworks, Databases, Hosting & Deployment, IDEs, Tools, AI Assistants, AI Tools, and Agentic AI Tools). When adding or removing a skill, update both `planning/skills.md` and `src/data/skills.js` to keep them in sync.
+
+## Planning Documents
+The `planning/` directory contains project planning and reference documents:
+- `skills.md` — Canonical skills and badges list (source of truth for `src/data/skills.js`).
+- `prompt.txt` — AI prompt references.
+- `task.md` — Task tracking.
 
 ## Configuration & Security Tips
-Keep secrets in `.env.local` only. The contact form depends on EmailJS variables such as `NEXT_PUBLIC_EMAILJS_SERVICE_ID`; never hardcode credentials into components or data files.
+Keep secrets in `.env.local` only. The contact form depends on EmailJS variables such as `NEXT_PUBLIC_EMAILJS_SERVICE_ID`; the SEO system depends on `NEXT_PUBLIC_BASE_URL`. Never hardcode credentials into components or data files.

@@ -17,11 +17,13 @@ Hi there! I'm **Kharaj Chakraborty**, a passionate Full Stack AI Application Eng
 - **Modular Architecture**: Built with scalable components inside Next.js 16 App Router.
 - **Responsive Design**: Looks great and functions flawlessly on desktop, tablet, and mobile devices.
 - **Contact Form Integration**: Fully functional contact form using `@emailjs/browser`.
+- **SEO Optimized**: Dynamic `robots.txt`, `sitemap.xml`, OpenGraph metadata, and Google Search Console verification.
+- **Custom 404 Page**: Animated not-found page with GSAP and Framer Motion effects.
 
 ## 🛠️ Tech Stack
 
-**Frontend Framework:** Next.js (React)  
-**Styling:** CSS Modules / Global CSS  
+**Frontend Framework:** Next.js 16 (React 19)
+**Styling:** CSS Modules / Global CSS
 **3D Graphics & Animations:**
 
 - `three`
@@ -65,15 +67,19 @@ npm install
 yarn install
 ```
 
-### 4. Set Up Environment Variables (Optional but Recommended)
+### 4. Set Up Environment Variables
 
-To enable the functioning of the `Contact` form, you need an EmailJS account. Create a `.env.local` file in the root directory and add your credentials:
+Create a `.env.local` file in the root directory and add the following variables:
 
 ```env
 NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_emailjs_service_id
 NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_emailjs_template_id
 NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_emailjs_public_key
+NEXT_PUBLIC_BASE_URL=https://your-domain.com
 ```
+
+- The **EmailJS** variables are required for the contact form to work.
+- The **Base URL** is used by `robots.js`, `sitemap.js`, and `layout.js` for SEO metadata.
 
 ### 5. Run the Local Development Server
 
@@ -90,13 +96,25 @@ Navigate to `http://localhost:3000` in your web browser. The app will automatica
 ## 📂 Project Structure Walkthrough
 
 ```text
-Kharaj-Chakraborty---Portfolio/
-├── public/                 # Static assets (images, icons, models)
+Kharaj-Chakraborty---Portfolio-2.0/
+├── public/                 # Static assets (images, icons, verification files)
+│   ├── images/             # Project screenshots, favicons
+│   └── googlefa51c644e0f5dc14.html  # Google Search Console verification
+├── planning/               # Project planning & reference documents
+│   ├── skills.md           # Canonical skills & badges list
+│   ├── prompt.txt          # AI prompt references
+│   └── task.md             # Task tracking
 ├── src/
-│   ├── app/                # Next.js 14+ App Router configuration
+│   ├── app/                # Next.js 16 App Router configuration
 │   │   ├── globals.css     # Global stylesheets
-│   │   ├── layout.js       # Root layout and site metadata
-│   │   └── page.js         # Main entry UI page
+│   │   ├── layout.js       # Root layout and site metadata (SEO, OpenGraph)
+│   │   ├── page.js         # Main entry UI page
+│   │   ├── page.module.css # Page-level CSS module
+│   │   ├── not-found.js    # Custom 404 page with animations
+│   │   ├── not-found.css   # 404 page styles
+│   │   ├── robots.js       # Dynamic robots.txt generation
+│   │   ├── sitemap.js      # Dynamic sitemap generation
+│   │   └── favicon.ico     # Site favicon
 │   ├── components/         # Reusable React components
 │   │   ├── About/          # Provides timeline & biography
 │   │   ├── Contact/        # Form logic utilizing EmailJS
@@ -111,7 +129,8 @@ Kharaj-Chakraborty---Portfolio/
 │       ├── skills.js       # Array storing icons and skill names
 │       └── socials.js      # Social media links output
 ├── .env.local              # Environment variables (Ignored by Git)
-├── next.config.mjs         # Internal routing, domain, framework config
+├── next.config.mjs         # Image formats, strict mode config
+├── jsconfig.json           # Path alias (@/*) configuration
 └── package.json            # Node module dependencies and lifecycle scripts
 ```
 
