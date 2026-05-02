@@ -68,6 +68,17 @@ function ProjectCard({ project, index }) {
               <FaGithub />
               <span>View Code</span>
             </a>
+            {project.live && (
+              <a
+                href={project.live}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-card__overlay-link project-card__overlay-link--live"
+              >
+                <FaArrowUpRightFromSquare />
+                <span>Live Site</span>
+              </a>
+            )}
           </div>
         </div>
 
@@ -93,6 +104,17 @@ function ProjectCard({ project, index }) {
               <FaGithub />
               <span>GitHub</span>
             </a>
+            {project.live && (
+              <a
+                href={project.live}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-card__link project-card__link--live"
+              >
+                <FaArrowUpRightFromSquare />
+                <span>Live Site</span>
+              </a>
+            )}
           </div>
         </div>
       </animated.div>
