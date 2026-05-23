@@ -2,9 +2,9 @@ import "./globals.css";
 
 export const metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL),
-  title: "Kharaj Chakraborty | Full Stack AI Application Engineer",
+  title: "Kharaj Chakraborty | AI Powered Full Stack Enthusiast",
   description:
-    "Hi there! I'm Kharaj Chakraborty, a passionate Full Stack AI Application Engineer and a Computer Science student at APC Roy Government College. I love building scalable web applications and exploring the depths of Computer Science & Artificial Intelligence.",
+    "Hi there! I'm Kharaj Chakraborty, a passionate AI Powered Full Stack Enthusiast and a Computer Science student at APC Roy Government College. I love building scalable web applications and exploring the depths of Computer Science & Artificial Intelligence.",
   keywords: [
     "Kharaj Chakraborty",
     "kharajch",
@@ -12,9 +12,11 @@ export const metadata = {
     "Kharaj Chakraborty (@kharajch)",
     "Kharaj Chakraborty---Portfolio",
     "Kharaj Chakraborty (@kharajch)---Portfolio",
-    "Full Stack AI Application Engineer",
-    "Full Stack Developer",
+    "AI Powered Full Stack Enthusiast",
+    "AI Powered Full Stack Developer",
+    "AI Powered Full Stack Engineer",
     "Web Developer",
+    "AI Developer",
     "Portfolio",
     "Next.js",
     "React",

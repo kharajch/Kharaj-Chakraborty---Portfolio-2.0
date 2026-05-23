@@ -60,7 +60,7 @@ export default function About() {
             <motion.div variants={itemVariants} className="about__text-block">
               <p className="about__description">
                 Hi there! I&apos;m <strong>Kharaj Chakraborty</strong>, a passionate
-                Full Stack AI Application Engineer and a Computer Science student at{" "}
+                AI Powered Full Stack Enthusiast and a Computer Science student at
                 <span className="accent-text">APC Roy Government College</span>.
               </p>
               <p className="about__description">
