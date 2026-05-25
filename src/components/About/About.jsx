@@ -61,7 +61,7 @@ export default function About() {
               <p className="about__description">
                 Hi there! I&apos;m <strong>Kharaj Chakraborty</strong>, a passionate
                 AI Powered Full Stack Enthusiast and a Computer Science student at
-                <span className="accent-text">APC Roy Government College</span>.
+                <span className="accent-text"> APC Roy Government College</span>.
               </p>
               <p className="about__description">
                 I love building scalable web applications and exploring the
