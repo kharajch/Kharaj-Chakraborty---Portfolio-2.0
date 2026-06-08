@@ -7,8 +7,7 @@ This file provides guidance to Gemini-based agents (Antigravity, Gemini Code Ass
 - `npm run dev` - Start the development server on localhost:3000
 - `npm run build` - Build the application for production
 - `npm start` - Start the production server
-
-There is currently no dedicated `test` or `lint` script in `package.json`. For UI changes, verify locally with `npm run dev` and do a production sanity check with `npm run build`.
+- `npm test` - Run Playwright E2E tests
 
 ## Project Architecture
 
@@ -18,13 +17,14 @@ This is a Next.js 16 portfolio application built with React 19 and featuring imm
 - **Framework**: Next.js 16 with App Router
 - **3D Graphics**: Three.js with @react-three/fiber and @react-three/drei
 - **Animations**: Framer Motion, GSAP with ScrollTrigger, react-spring
+- **Testing**: Playwright
 - **Contact Form**: EmailJS integration
 - **Icons**: react-icons
 
 ### Key Architecture Patterns
 
 #### App Router Structure
-- `src/app/layout.js` - Root layout with site metadata (SEO, OpenGraph, Google Search Console verification)
+- `src/app/layout.js` - Root layout with site metadata (SEO, OpenGraph, Google Search Console verification). Uses `next/font` for optimized typography.
 - `src/app/page.js` - Main page component that orchestrates all sections
 - `src/app/not-found.js` - Custom 404 page with GSAP/Framer Motion animations
 - `src/app/robots.js` - Dynamic robots.txt generation using `NEXT_PUBLIC_BASE_URL`
@@ -36,6 +36,7 @@ Components are modular and located in `src/components/`:
 - **Hero**: Top section with title and 3D overlay effects
 - **About**: Timeline and biography section
 - **Skills**: Animated skill cards with react-tilt hover effects
+- **Certifications**: Professional credentials showcase with 3D tilt effects
 - **Projects**: Data-driven project grid mapping from `src/data/projects.js`
 - **Contact**: EmailJS-integrated contact form
 - **Navbar**: Responsive navigation with mobile menu
@@ -44,13 +45,14 @@ Components are modular and located in `src/components/`:
 #### Animation System
 - GSAP with ScrollTrigger for scroll-based animations
 - Framer Motion for element transitions
-- React-spring for physics-based animations
+- React-spring for physics-based animations (used in Project and Certification cards)
 - All sections have `.section` class for consistent fade-in effects
 
 #### Data Management
 Static data is separated in `src/data/`:
-- `projects.js` - Array of project objects (title, description, tech stack, image, demo/live link, repo link)
-- `skills.js` - Array of skill categories and icons (Programming Languages, Frontend Development & Design, Frameworks & Libraries, Backend & AI Frameworks, Databases, Hosting & Deployment, IDEs, Tools, AI Assistants, AI Tools, Agentic AI Tools). Keep in sync with `planning/skills.md`.
+- `projects.js` - Array of project objects
+- `certifications.js` - Array of professional certification objects. Supports PDF paths from `public/certificates/` and branding assets like `google skills.png`.
+- `skills.js` - Array of skill categories and icons. Keep in sync with `planning/skills.md`.
 - `socials.js` - Social media links and icons
 
 #### Planning & Documentation

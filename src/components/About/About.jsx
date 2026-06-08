@@ -107,7 +107,7 @@ export default function About() {
                     <span className="code-variable">developer</span> = {`{`}
                     {"\n"}
                     {"  "}name: <span className="code-string">&quot;Kharaj Chakraborty&quot;</span>,{"\n"}
-                    {"  "}role: <span className="code-string">&quot;Full Stack AI Application Engineer&quot;</span>,{"\n"}
+                    {"  "}role: <span className="code-string">&quot;AI Powered Full Stack Enthusiast&quot;</span>,{"\n"}
                     {"  "}college: <span className="code-string">&quot;APC Roy Govt. College&quot;</span>,{"\n"}
                     {"  "}skills: [<span className="code-string">&quot;React&quot;</span>, <span className="code-string">&quot;Next.js&quot;</span>, <span className="code-string">&quot;Node.js&quot;</span>],{"\n"}
                     {"  "}passion: <span className="code-string">&quot;Building the web&quot;</span>,{"\n"}
