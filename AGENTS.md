@@ -27,7 +27,7 @@ The application includes a robust WebGL integration in `src/components/ThreeScen
 
 ## SEO & Metadata
 The site includes comprehensive SEO setup:
-- `src/app/layout.js` — Root metadata with OpenGraph, keywords, and Google Search Console verification. Uses `next/font` for performance.
+- `src/app/layout.js` — Root metadata with OpenGraph, keywords, and Google Search Console verification. Uses `next/font` for performance and integrates `@vercel/analytics` for performance monitoring.
 - `src/app/robots.js` — Dynamic robots.txt generation using `NEXT_PUBLIC_BASE_URL`.
 - `src/app/sitemap.js` — Dynamic sitemap generation using `NEXT_PUBLIC_BASE_URL`.
 - `src/app/not-found.js` — Custom 404 page with GSAP/Framer Motion animations.

@@ -17,6 +17,7 @@ This is a Next.js 16 portfolio application built with React 19 and featuring imm
 - **Framework**: Next.js 16 with App Router
 - **3D Graphics**: Three.js with @react-three/fiber and @react-three/drei
 - **Animations**: Framer Motion, GSAP with ScrollTrigger, react-spring
+- **Analytics**: Vercel Analytics integration
 - **Testing**: Playwright
 - **Contact Form**: EmailJS integration
 - **Icons**: react-icons
@@ -24,7 +25,7 @@ This is a Next.js 16 portfolio application built with React 19 and featuring imm
 ### Key Architecture Patterns
 
 #### App Router Structure
-- `src/app/layout.js` - Root layout with site metadata (SEO, OpenGraph, Google Search Console verification). Uses `next/font` for optimized typography.
+- `src/app/layout.js` - Root layout with site metadata (SEO, OpenGraph, Google Search Console verification). Uses `next/font` for optimized typography. Integrates `@vercel/analytics` for performance monitoring.
 - `src/app/page.js` - Main page component that orchestrates all sections
 - `src/app/not-found.js` - Custom 404 page with GSAP/Framer Motion animations
 - `src/app/robots.js` - Dynamic robots.txt generation using `NEXT_PUBLIC_BASE_URL`

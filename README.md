@@ -5,6 +5,7 @@ Welcome to the repository for my personal portfolio! This is a modern, highly in
 ![Next.js](https://img.shields.io/badge/Next.js-16.2.2-black?style=for-the-badge&logo=next.js)
 ![React](https://img.shields.io/badge/React-19.2.4-blue?style=for-the-badge&logo=react)
 ![Three.js](https://img.shields.io/badge/Three.js-0.182.0-black?style=for-the-badge&logo=threedotjs)
+![Vercel Analytics](https://img.shields.io/badge/Vercel_Analytics-Performance-black?style=for-the-badge&logo=vercel)
 ![Playwright](https://img.shields.io/badge/Playwright-E2E_Testing-green?style=for-the-badge&logo=playwright)
 
 ## 📌 Introduction
@@ -21,6 +22,7 @@ Hi there! I'm **Kharaj Chakraborty**, a passionate Full Stack AI Application Eng
 - **Modular Architecture**: Built with scalable components inside Next.js 16 App Router.
 - **Responsive Design**: Looks great and functions flawlessly on desktop, tablet, and mobile devices.
 - **Contact Form Integration**: Fully functional contact form using `@emailjs/browser`.
+- **Analytics & Monitoring**: Integrated **Vercel Analytics** for real-time performance monitoring and user insights.
 - **SEO Optimized**: Dynamic `robots.txt`, `sitemap.xml`, OpenGraph metadata, and Google Search Console verification.
 
 ## 🛠️ Tech Stack
