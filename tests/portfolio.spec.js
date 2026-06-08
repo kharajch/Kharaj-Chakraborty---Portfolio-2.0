@@ -41,10 +41,10 @@ test.describe('Portfolio Site E2E Tests', () => {
     await loadMoreBtn.click();
     await expect(certCards).toHaveCount(18);
 
-    // Verify at least one PDF certificate path is linked in the overlay
-    const pdfLink = page.locator('.certification-card__overlay-link[href*=".pdf"]').first();
-    await expect(pdfLink).toBeAttached();
-    await expect(pdfLink).toContainText('View Certificate');
+    // Verify at least one credential link is present in the overlay
+    const certLink = page.locator('.certification-card__overlay-link').first();
+    await expect(certLink).toBeAttached();
+    await expect(certLink).toContainText('Verify Credential');
 
     // Verify the Google Skills image is rendered (as a placeholder for PDFs or as a standalone badge)
     // We use a simpler selector that targets the img tag directly within the card image container

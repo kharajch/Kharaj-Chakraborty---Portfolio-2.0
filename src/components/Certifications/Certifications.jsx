@@ -83,13 +83,13 @@ function CertificationCard({ cert, index }) {
           )}
           <div className="certification-card__image-overlay">
             <a
-              href={isPDF ? cert.img : cert.credentialLink}
+              href={cert.credentialLink}
               target="_blank"
               rel="noopener noreferrer"
               className="certification-card__overlay-link"
             >
               <FaArrowUpRightFromSquare />
-              <span>{isPDF ? "View Certificate" : "Verify Credential"}</span>
+              <span>Verify Credential</span>
             </a>
           </div>
         </div>

@@ -33,7 +33,7 @@ The site includes comprehensive SEO setup:
 - `src/app/not-found.js` — Custom 404 page with GSAP/Framer Motion animations.
 
 ## Data Files & Skills
-Static content lives in `src/data/`. The canonical list of skills and badges is maintained in `planning/skills.md`. `src/data/skills.js` mirrors those categories. `src/data/certifications.js` stores professional credentials, supporting direct PDF certificate paths from `public/certificates/` and organizational branding like `google skills.png`. When adding or removing a skill, update both `planning/skills.md` and `src/data/skills.js` to keep them in sync.
+Static content lives in `src/data/`. The canonical list of skills and badges is maintained in `planning/skills.md`. `src/data/skills.js` mirrors those categories. `src/data/certifications.js` stores professional credentials, using PDF paths for previews and `credentialLink` for verification redirects. It also supports branding assets like `google skills.png`. When adding or removing a skill, update both `planning/skills.md` and `src/data/skills.js` to keep them in sync.
 
 ## Planning Documents
 The `planning/` directory contains project planning and reference documents:

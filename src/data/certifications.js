@@ -48,7 +48,7 @@ export const certificationsData = [
     "name": "Introduction to Generative AI",
     "issuer": "Simplilearn",
     "date": "May 2026",
-    "credentialId": "N/A",
+    "credentialId": "10264026",
     "credentialLink": "https://simpli-web.app.link/e/ikQ3f8ZXo3b",
     "img": "/certificates/AI/Generative AI/Introduction to Generative AI --- By Google Cloud.pdf",
     "skills": ["Generative AI"]

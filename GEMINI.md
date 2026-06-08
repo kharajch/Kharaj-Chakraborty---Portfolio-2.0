@@ -52,7 +52,7 @@ Components are modular and located in `src/components/`:
 #### Data Management
 Static data is separated in `src/data/`:
 - `projects.js` - Array of project objects
-- `certifications.js` - Array of professional certification objects. Supports PDF paths from `public/certificates/` and branding assets like `google skills.png`.
+- `certifications.js` - Array of professional certification objects. Uses PDF paths for previews and `credentialLink` for verification redirects. Supports branding assets like `google skills.png`.
 - `skills.js` - Array of skill categories and icons. Keep in sync with `planning/skills.md`.
 - `socials.js` - Social media links and icons
 

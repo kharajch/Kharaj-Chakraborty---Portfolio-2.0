@@ -18,7 +18,7 @@ Hi there! I'm **Kharaj Chakraborty**, a passionate Full Stack AI Application Eng
 - **Smooth Animations**: Powered by `framer-motion` and `gsap` for silky-smooth page transitions and element reveals.
 - **End-to-End Testing**: Integrated **Playwright** suite for verifying site stability and responsiveness.
 - **Performance Optimized**: Leverages `next/font` for zero layout shift and optimized image scaling with the `sizes` attribute.
-- **Professional Certifications**: Dedicated section for showcasing verified credentials with interactive 3D cards. Supports both image-based badges and direct PDF certificate previews.
+Professional Certifications: Dedicated section for showcasing verified credentials with interactive 3D cards. Supports both image-based badges and PDF certificate previews, with links redirecting to official verification pages.
 - **Modular Architecture**: Built with scalable components inside Next.js 16 App Router.
 - **Responsive Design**: Looks great and functions flawlessly on desktop, tablet, and mobile devices.
 - **Contact Form Integration**: Fully functional contact form using `@emailjs/browser`.
