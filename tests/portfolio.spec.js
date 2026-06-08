@@ -37,13 +37,18 @@ test.describe('Portfolio Site E2E Tests', () => {
     // Verify the count increases to 12
     await expect(certCards).toHaveCount(12);
 
+    // Click Load More again to see index 17 (the first non-PDF Google badge)
+    await loadMoreBtn.click();
+    await expect(certCards).toHaveCount(18);
+
     // Verify at least one PDF certificate path is linked in the overlay
     const pdfLink = page.locator('.certification-card__overlay-link[href*=".pdf"]').first();
     await expect(pdfLink).toBeAttached();
     await expect(pdfLink).toContainText('View Certificate');
 
     // Verify the Google Skills image is rendered (as a placeholder for PDFs or as a standalone badge)
-    const googleSkillsImg = page.locator('.certification-card__image[src*="google%20skills.png"]').first();
+    // We use a simpler selector that targets the img tag directly within the card image container
+    const googleSkillsImg = page.locator('.certification-card__image-wrapper img[src*="google"][src*="skills"]').first();
     await expect(googleSkillsImg).toBeAttached();
   });
 

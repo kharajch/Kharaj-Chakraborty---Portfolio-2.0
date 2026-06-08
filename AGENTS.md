@@ -17,11 +17,13 @@ Use modern React function components and keep component files in JSX. Follow the
 The project uses **Playwright** for End-to-End (E2E) testing. Tests are located in the `tests/` directory (e.g., `portfolio.spec.js`). Before running tests, ensure browsers are installed via `npx playwright install chromium`. The test suite covers page loading, section navigation, contact form visibility, and mobile responsiveness.
 
 ## Commit & Pull Request Guidelines
-Recent history mixes plain imperative commits with conventional prefixes (`feat:`). Prefer short, imperative commit subjects and keep them scoped to one change. For pull requests, include:
-- a brief summary of user-facing changes,
-- linked issue or task reference when applicable,
-- screenshots or short recordings for visual updates,
-- notes about environment variables in `.env.local`.
+Recent history mixes plain imperative commits with conventional prefixes (`feat:`). Prefer short, imperative commit subjects and keep them scoped to one change.
+
+## 3D Resilience & Graphics
+The application includes a robust WebGL integration in `src/components/ThreeScene/`.
+- **Fallback**: Proactive WebGL support checks hide 3D elements on unsupported devices.
+- **Error Handling**: `WebGLErrorBoundary` prevents initialization crashes from breaking the UI.
+- **Performance**: Optimized GL attributes for reduced resource consumption.
 
 ## SEO & Metadata
 The site includes comprehensive SEO setup:

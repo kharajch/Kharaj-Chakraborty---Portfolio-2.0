@@ -1,18 +1,45 @@
 "use client";
 
-import { useRef, useMemo } from "react";
+import React, { useRef, useMemo, useState, useEffect, Component } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 
+// Simple Error Boundary for WebGL failures
+class WebGLErrorBoundary extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false };
+  }
+
+  static getDerivedStateFromError(error) {
+    return { hasError: true };
+  }
+
+  componentDidCatch(error, errorInfo) {
+    console.error("WebGL Error caught by boundary:", error, errorInfo);
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return this.props.fallback || null;
+    }
+    return (
+      <React.Suspense fallback={this.props.fallback || null}>
+        {this.props.children}
+      </React.Suspense>
+    );
+  }
+}
+
+
+
 function Particles({ count = 200 }) {
   const mesh = useRef();
-  const light = useRef();
   const elapsed = useRef(0);
 
   const particles = useMemo(() => {
     const positions = new Float32Array(count * 3);
     const colors = new Float32Array(count * 3);
-    const sizes = new Float32Array(count);
 
     for (let i = 0; i < count; i++) {
       positions[i * 3] = (Math.random() - 0.5) * 20;
@@ -29,11 +56,9 @@ function Particles({ count = 200 }) {
         colors[i * 3 + 1] = 0.85;
         colors[i * 3 + 2] = 0.8;
       }
-
-      sizes[i] = Math.random() * 0.03 + 0.005;
     }
 
-    return { positions, colors, sizes };
+    return { positions, colors };
   }, [count]);
 
   useFrame((state, delta) => {
@@ -148,6 +173,39 @@ function GridPlane() {
 }
 
 export default function ThreeScene() {
+  const [webGLAvailable, setWebGLAvailable] = useState(true);
+
+  useEffect(() => {
+    const checkWebGL = () => {
+      try {
+        const canvas = document.createElement("canvas");
+        const options = { failIfMajorPerformanceCaveat: true };
+        const gl = canvas.getContext("webgl", options) || canvas.getContext("experimental-webgl", options);
+        
+        if (!gl) {
+          setWebGLAvailable(false);
+          return;
+        }
+
+        // Check if context is lost immediately
+        if (gl.isContextLost()) {
+          setWebGLAvailable(false);
+          return;
+        }
+
+        setWebGLAvailable(true);
+      } catch (e) {
+        setWebGLAvailable(false);
+      }
+    };
+
+    checkWebGL();
+  }, []);
+
+  if (!webGLAvailable) {
+    return null;
+  }
+
   return (
     <div
       style={{
@@ -160,17 +218,28 @@ export default function ThreeScene() {
         pointerEvents: "none",
       }}
     >
-      <Canvas
-        camera={{ position: [0, 0, 8], fov: 60 }}
-        dpr={[1, 1.5]}
-        style={{ background: "transparent" }}
-      >
-        <ambientLight intensity={0.2} />
-        <pointLight position={[5, 5, 5]} intensity={0.3} color="#e63946" />
-        <Particles count={150} />
-        <FloatingGeometry />
-        <GridPlane />
-      </Canvas>
+      <WebGLErrorBoundary>
+        <Canvas
+          camera={{ position: [0, 0, 8], fov: 60 }}
+          dpr={[1, 1.5]}
+          style={{ background: "transparent" }}
+          gl={{ 
+            antialias: false, 
+            powerPreference: "low-power",
+            failIfMajorPerformanceCaveat: true
+          }}
+          onCreated={({ gl }) => {
+            gl.setClearColor(0x000000, 0);
+          }}
+        >
+          <ambientLight intensity={0.2} />
+          <pointLight position={[5, 5, 5]} intensity={0.3} color="#e63946" />
+          <Particles count={150} />
+          <FloatingGeometry />
+          <GridPlane />
+        </Canvas>
+      </WebGLErrorBoundary>
     </div>
   );
 }
+

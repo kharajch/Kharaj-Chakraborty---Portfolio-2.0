@@ -71,6 +71,8 @@ Required environment variables in `.env.local`:
 #### 3D Integration
 The ThreeScene component provides:
 - Interactive 3D background using @react-three/fiber
+- **Resilience**: Proactive WebGL support check and `WebGLErrorBoundary` for graceful fallback on legacy hardware or resource-constrained environments.
+- **Optimization**: Optimized rendering settings (`low-power`, disabled antialiasing) to minimize GPU load.
 - Custom geometries and materials
 - Responsive canvas that adapts to screen size
 

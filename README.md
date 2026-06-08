@@ -13,7 +13,7 @@ Hi there! I'm **Kharaj Chakraborty**, a passionate Full Stack AI Application Eng
 
 ## 🚀 Key Features
 
-- **Immersive 3D Graphics**: Utilizing `three.js`, `@react-three/fiber`, and `@react-three/drei` for engaging backgrounds and interactive elements.
+- **Immersive 3D Graphics**: Utilizing `three.js`, `@react-three/fiber`, and `@react-three/drei` for engaging backgrounds and interactive elements. Includes a **graceful fallback mechanism** that hides 3D elements on devices with limited WebGL support or performance issues, ensuring the site remains functional.
 - **Smooth Animations**: Powered by `framer-motion` and `gsap` for silky-smooth page transitions and element reveals.
 - **End-to-End Testing**: Integrated **Playwright** suite for verifying site stability and responsiveness.
 - **Performance Optimized**: Leverages `next/font` for zero layout shift and optimized image scaling with the `sizes` attribute.
