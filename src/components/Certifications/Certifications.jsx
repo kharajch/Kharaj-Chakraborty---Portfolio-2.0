@@ -1,11 +1,12 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import { useSpring, animated } from "@react-spring/web";
 import { FaArrowUpRightFromSquare, FaCertificate } from "react-icons/fa6";
 import Image from "next/image";
 import { certificationsData } from "@/data/certifications";
+import PDFThumbnail from "./PDFThumbnail";
 import "./Certifications.css";
 
 function CertificationCard({ cert, index }) {
@@ -16,7 +17,16 @@ function CertificationCard({ cert, index }) {
   }));
 
   const isPDF = cert.img.toLowerCase().endsWith(".pdf");
-  const displayImg = isPDF ? "/images/google skills.png" : cert.img; // Use Google Skills as placeholder for PDFs for now, or we could use a dedicated icon
+
+  const getFallbackImage = (issuerName) => {
+    const name = issuerName?.toLowerCase() || "";
+    if (name.includes("google")) return "/images/google skills.png";
+    if (name.includes("microsoft")) return "/images/microsoft learn.png";
+    if (name.includes("simplilearn")) return "/images/simplilearn.png";
+    return "/images/google skills.png"; // Default fallback
+  };
+
+  const displayImg = isPDF ? null : cert.img;
 
   const handleMouseMove = (e) => {
     const rect = e.currentTarget.getBoundingClientRect();
@@ -54,14 +64,23 @@ function CertificationCard({ cert, index }) {
         onMouseLeave={handleMouseLeave}
       >
         <div className="certification-card__image-wrapper">
-          <Image
-            src={displayImg}
-            alt={cert.name}
-            width={600}
-            height={340}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            className="certification-card__image"
-          />
+          {isPDF ? (
+            <PDFThumbnail
+              fileUrl={cert.img}
+              alt={cert.name}
+              className="certification-card__image"
+              issuer={cert.issuer}
+            />
+          ) : (
+            <Image
+              src={cert.img === "/images/google skills.png" ? getFallbackImage(cert.issuer) : cert.img}
+              alt={cert.name}
+              width={600}
+              height={340}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              className="certification-card__image"
+            />
+          )}
           <div className="certification-card__image-overlay">
             <a
               href={isPDF ? cert.img : cert.credentialLink}
@@ -104,6 +123,12 @@ export default function Certifications() {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
 
+  const [visibleCount, setVisibleCount] = useState(6);
+
+  const handleLoadMore = () => {
+    setVisibleCount((prev) => prev + 6);
+  };
+
   return (
     <section className="certifications section" id="certifications" ref={sectionRef}>
       <div className="container">
@@ -122,10 +147,18 @@ export default function Certifications() {
         </motion.div>
 
         <div className="certifications__grid">
-          {certificationsData.map((cert, index) => (
+          {certificationsData.slice(0, visibleCount).map((cert, index) => (
             <CertificationCard key={cert.name} cert={cert} index={index} />
           ))}
         </div>
+
+        {visibleCount < certificationsData.length && (
+          <div className="certifications__load-more-container">
+            <button className="certifications__load-more-btn" onClick={handleLoadMore}>
+              Load More
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );

@@ -26,9 +26,16 @@ test.describe('Portfolio Site E2E Tests', () => {
     const certsSection = page.locator('#certifications');
     await expect(certsSection).toBeInViewport();
 
-    // Check if certification cards are present
+    // Check if certification cards are present (initially 6)
     const certCards = page.locator('.certification-card');
-    await expect(certCards).toHaveCount(38); // We have 38 certifications in the data
+    await expect(certCards).toHaveCount(6);
+
+    // Find and click the Load More button
+    const loadMoreBtn = page.locator('.certifications__load-more-btn');
+    await loadMoreBtn.click();
+
+    // Verify the count increases to 12
+    await expect(certCards).toHaveCount(12);
 
     // Verify at least one PDF certificate path is linked in the overlay
     const pdfLink = page.locator('.certification-card__overlay-link[href*=".pdf"]').first();
