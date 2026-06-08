@@ -9,6 +9,15 @@ export const certificationsData = [
     "skills": ["Prompt Engineering", "Generative AI"]
   },
   {
+    "name": "Google AI Essentials Specialization",
+    "issuer": "Google",
+    "date": "Jun 2026",
+    "credentialId": "W5759QXSBCX9",
+    "credentialLink": "https://www.coursera.org/account/accomplishments/specialization/W5759QXSBCX9",
+    "img": "/certificates/AI/Professional Certifications/Google AI Essentials --- By Google (Coursera).pdf",
+    "skills": ["Artificial Intelligence (AI)", "Generative AI"]
+  },
+  {
     "name": "Start Writing Prompts like a Pro",
     "issuer": "Google",
     "date": "Jun 2026",
@@ -32,7 +41,7 @@ export const certificationsData = [
     "date": "Jun 2026",
     "credentialId": "4ZQ0SZMB4SDI",
     "credentialLink": "https://www.coursera.org/account/accomplishments/records/4ZQ0SZMB4SDI",
-    "img": "/images/google skills.png",
+    "img": "/certificates/AI/Generative AI/Speed Up Data Analysis and Presentation Building --- By Google (Coursera).pdf",
     "skills": ["Generative AI"]
   },
   {
@@ -43,15 +52,6 @@ export const certificationsData = [
     "credentialLink": "https://www.coursera.org/account/accomplishments/records/7UBAZGTA0MJW",
     "img": "/certificates/AI/Generative AI/Use AI as a Creative or Expert Partner --- By Google (Coursera).pdf",
     "skills": ["Generative AI"]
-  },
-  {
-    "name": "Google AI Essentials Specialization",
-    "issuer": "Google",
-    "date": "Jun 2026",
-    "credentialId": "W5759QXSBCX9",
-    "credentialLink": "https://www.coursera.org/account/accomplishments/specialization/W5759QXSBCX9",
-    "img": "/certificates/AI/Professional Certifications/Google AI Essentials --- By Google (Coursera).pdf",
-    "skills": ["Artificial Intelligence (AI)", "Generative AI"]
   },
   {
     "name": "Maximize Productivity With AI Tools",
