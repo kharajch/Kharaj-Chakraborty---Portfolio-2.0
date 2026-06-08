@@ -45,6 +45,8 @@ export const skillsData = [
     skills: [
       { name: "MongoDB", icon: "SiMongodb" },
       { name: "MySQL", icon: "SiMysql" },
+      { name: "PostgreSQL", icon: "SiPostgresql" },
+      { name: "Supabase", icon: "SiSupabase" },
     ],
   },
   {
@@ -77,6 +79,7 @@ export const skillsData = [
       { name: "MongoDB Compass", icon: "SiMongodb" },
       { name: "EmailJS", icon: "SiMaildotru" },
       { name: "Docker", icon: "SiDocker" },
+      { name: "Lighthouse", icon: "SiLighthouse" },
     ],
   },
   {
@@ -115,6 +118,7 @@ export const skillsData = [
       { name: "OpenAI Codex", icon: "SiOpenai" },
       { name: "Gemini Code Assist", icon: "SiGooglegemini" },
       { name: "GitHub Copilot", icon: "SiGithubcopilot" },
+      { name: "Antigravity CLI", icon: "FaTerminal" },
     ],
   },
 ];

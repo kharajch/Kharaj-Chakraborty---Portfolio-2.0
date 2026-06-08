@@ -39,6 +39,9 @@ import {
   SiPerplexity,
   SiAnthropic,
   SiGithubcopilot,
+  SiPostgresql,
+  SiLighthouse,
+  SiSupabase,
 } from "react-icons/si";
 import { FaJava, FaCode, FaPalette, FaLayerGroup, FaDatabase, FaCloud, FaTerminal, FaWrench, FaRobot, FaWandMagicSparkles, FaServer } from "react-icons/fa6";
 import { skillsData } from "@/data/skills";
@@ -89,6 +92,10 @@ const iconMap = {
   SiLmstudio: FaRobot,
   SiRobot: FaRobot,
   SiNvidia: SiNvidia,
+  SiPostgresql: SiPostgresql,
+  SiLighthouse: SiLighthouse,
+  SiSupabase: SiSupabase,
+  FaTerminal: FaTerminal,
 };
 
 const categoryIcons = {
