@@ -17,6 +17,60 @@ export const certificationsData = [
     "img": "/certificates/AI/Professional Certifications/Google AI Essentials --- By Google (Coursera).pdf",
     "skills": ["Artificial Intelligence (AI)", "Generative AI"]
   },
+    {
+    "name": "GenAI for Code Migration & Optimization in JavaScript",
+    "issuer": "Simplilearn",
+    "date": "May 2026",
+    "credentialId": "10291073",
+    "credentialLink": "https://simpli-web.app.link/e/1CH5vnwEA3b",
+    "img": "/certificates/Code Migration And Optimization/GenAI for Code Migration & Optimization in JavaScript --- By Simplilearn.pdf",
+    "skills": ["Code Refactoring", "Generative AI"]
+  },
+  {
+    "name": "GitHub Copilot for Software Testing in JavaScript",
+    "issuer": "Simplilearn",
+    "date": "May 2026",
+    "credentialId": "10290324",
+    "credentialLink": "https://simpli-web.app.link/e/UCNP0TVoA3b",
+    "img": "/certificates/Software Testing/GitHub Copilot for Software Testing in JavaScript --- By Simplilearn.pdf",
+    "skills": ["Testing", "Test Automation"]
+  },
+  {
+    "name": "Introduction to Artificial Intelligence",
+    "issuer": "Simplilearn",
+    "date": "May 2026",
+    "credentialId": "10289036",
+    "credentialLink": "https://simpli-web.app.link/e/nKCNB6LNz3b",
+    "img": "/certificates/AI/AI Basics/Introduction to Artificial Intelligence --- By Simplilearn.pdf",
+    "skills": ["Artificial Intelligence (AI)", "Machine Learning"]
+  },
+  {
+    "name": "Introduction to Generative AI",
+    "issuer": "Simplilearn",
+    "date": "May 2026",
+    "credentialId": "N/A",
+    "credentialLink": "https://simpli-web.app.link/e/ikQ3f8ZXo3b",
+    "img": "/certificates/AI/Generative AI/Introduction to Generative AI --- By Google Cloud.pdf",
+    "skills": ["Generative AI"]
+  },
+  {
+    "name": "Introduction to Prompt Engineering with GitHub Copilot",
+    "issuer": "Simplilearn",
+    "date": "May 2026",
+    "credentialId": "10263896",
+    "credentialLink": "https://simpli-web.app.link/e/90Hs62PVo3b",
+    "img": "/certificates/Prompt Engineering/Introduction to Prompt Engineering with GitHub Copilot --- By Microsoft.pdf",
+    "skills": ["GitHub Copilot", "Prompt Engineering"]
+  },
+  {
+    "name": "Introduction to Prompt Engineering",
+    "issuer": "Simplilearn",
+    "date": "May 2026",
+    "credentialId": "10263487",
+    "credentialLink": "https://simpli-web.app.link/e/2viKy5MNo3b",
+    "img": "/certificates/Prompt Engineering/Introduction To Prompt Engineering --- By Simplilearn.pdf",
+    "skills": ["Prompt Engineering"]
+  },
   {
     "name": "Start Writing Prompts like a Pro",
     "issuer": "Google",
@@ -196,60 +250,6 @@ export const certificationsData = [
     "credentialLink": "https://www.skills.google/public_profiles/432db7ff-d8ec-4ad3-98a3-addc0f940c54/badges/24403712",
     "img": "/images/google skills.png",
     "skills": ["Image Generation", "Generative AI"]
-  },
-  {
-    "name": "GenAI for Code Migration & Optimization in JavaScript",
-    "issuer": "Simplilearn",
-    "date": "May 2026",
-    "credentialId": "10291073",
-    "credentialLink": "https://simpli-web.app.link/e/1CH5vnwEA3b",
-    "img": "/certificates/Code Migration And Optimization/GenAI for Code Migration & Optimization in JavaScript --- By Simplilearn.pdf",
-    "skills": ["Code Refactoring", "Generative AI"]
-  },
-  {
-    "name": "GitHub Copilot for Software Testing in JavaScript",
-    "issuer": "Simplilearn",
-    "date": "May 2026",
-    "credentialId": "10290324",
-    "credentialLink": "https://simpli-web.app.link/e/UCNP0TVoA3b",
-    "img": "/certificates/Software Testing/GitHub Copilot for Software Testing in JavaScript --- By Simplilearn.pdf",
-    "skills": ["Testing", "Test Automation"]
-  },
-  {
-    "name": "Introduction to Artificial Intelligence",
-    "issuer": "Simplilearn",
-    "date": "May 2026",
-    "credentialId": "10289036",
-    "credentialLink": "https://simpli-web.app.link/e/nKCNB6LNz3b",
-    "img": "/certificates/AI/AI Basics/Introduction to Artificial Intelligence --- By Simplilearn.pdf",
-    "skills": ["Artificial Intelligence (AI)", "Machine Learning"]
-  },
-  {
-    "name": "Introduction to Generative AI",
-    "issuer": "Simplilearn",
-    "date": "May 2026",
-    "credentialId": "N/A",
-    "credentialLink": "https://simpli-web.app.link/e/ikQ3f8ZXo3b",
-    "img": "/certificates/AI/Generative AI/Introduction to Generative AI --- By Google Cloud.pdf",
-    "skills": ["Generative AI"]
-  },
-  {
-    "name": "Introduction to Prompt Engineering with GitHub Copilot",
-    "issuer": "Simplilearn",
-    "date": "May 2026",
-    "credentialId": "10263896",
-    "credentialLink": "https://simpli-web.app.link/e/90Hs62PVo3b",
-    "img": "/certificates/Prompt Engineering/Introduction to Prompt Engineering with GitHub Copilot --- By Microsoft.pdf",
-    "skills": ["GitHub Copilot", "Prompt Engineering"]
-  },
-  {
-    "name": "Introduction to Prompt Engineering",
-    "issuer": "Simplilearn",
-    "date": "May 2026",
-    "credentialId": "10263487",
-    "credentialLink": "https://simpli-web.app.link/e/2viKy5MNo3b",
-    "img": "/certificates/Prompt Engineering/Introduction To Prompt Engineering --- By Simplilearn.pdf",
-    "skills": ["Prompt Engineering"]
   },
   {
     "name": "Develop a speech-capable generative AI application",
