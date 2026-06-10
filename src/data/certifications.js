@@ -17,7 +17,7 @@ export const certificationsData = [
     "img": "/certificates/AI/Professional Certifications/Google AI Essentials --- By Google (Coursera).pdf",
     "skills": ["Artificial Intelligence (AI)", "Generative AI"]
   },
-    {
+  {
     "name": "GenAI for Code Migration & Optimization in JavaScript",
     "issuer": "Simplilearn",
     "date": "May 2026",
@@ -70,6 +70,87 @@ export const certificationsData = [
     "credentialLink": "https://simpli-web.app.link/e/2viKy5MNo3b",
     "img": "/certificates/Prompt Engineering/Introduction To Prompt Engineering --- By Simplilearn.pdf",
     "skills": ["Prompt Engineering"]
+  },
+  {
+    "name": "Work smarter with AI",
+    "issuer": "Microsoft",
+    "date": "Jun 2026",
+    "credentialId": "QLJZK6QE",
+    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/QLJZK6QE?sharingId=924A01665F331AE9",
+    "img": "/certificates/AI/AI Basics/Work smarter with AI --- By Microsoft.pdf",
+    "skills": ["Generative AI", "AI Productivity"]
+  },
+  {
+    "name": "GitHub responsible AI",
+    "issuer": "Microsoft",
+    "date": "Jun 2026",
+    "credentialId": "H2RCXJV8",
+    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/H2RCXJV8?sharingId=924A01665F331AE9",
+    "img": "/certificates/AI/Responsible AI/GitHub responsible AI --- By Microsoft.pdf",
+    "skills": ["Responsible AI"]
+  },
+  {
+    "name": "Design a dream destination with AI",
+    "issuer": "Microsoft",
+    "date": "Jun 2026",
+    "credentialId": "VSBAKTKM",
+    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/VSBAKTKM?sharingId=924A01665F331AE9",
+    "img": "/certificates/AI/AI Basics/Design a dream destination with AI --- By Microsoft.pdf",
+    "skills": ["Generative AI", "AI Productivity"]
+  },
+  {
+    "name": "Work smarter with AI using Microsoft Copilot",
+    "issuer": "Microsoft",
+    "date": "Jun 2026",
+    "credentialId": "NQZ3R4XF",
+    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/NQZ3R4XF?sharingId=924A01665F331AE9",
+    "img": "/certificates/AI/AI Basics/Work smarter with AI using Microsoft Copilot --- By Microsoft.pdf",
+    "skills": ["Microsoft Copilot", "Generative AI"]
+  },
+  {
+    "name": "Embrace responsible AI principles and practices",
+    "issuer": "Microsoft",
+    "date": "Jun 2026",
+    "credentialId": "BUGE5AUD",
+    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/BUGE5AUD?sharingId=924A01665F331AE9",
+    "img": "/certificates/AI/Responsible AI/Embrace responsible AI principles and practices --- By Microsoft.pdf",
+    "skills": ["Responsible AI"]
+  },
+  {
+    "name": "Design a dream destination using Microsoft Copilot",
+    "issuer": "Microsoft",
+    "date": "Jun 2026",
+    "credentialId": "K9LQ5CLB",
+    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/K9LQ5CLB?sharingId=924A01665F331AE9",
+    "img": "/certificates/AI/AI Basics/Design a dream destination using Microsoft Copilot --- By Microsoft.pdf",
+    "skills": ["Microsoft Copilot", "Generative AI"]
+  },
+  {
+    "name": "Prompt Design in Agent Platform",
+    "issuer": "Google",
+    "date": "Jun 2026",
+    "credentialId": "24774513",
+    "credentialLink": "https://www.skills.google/public_profiles/432db7ff-d8ec-4ad3-98a3-addc0f940c54/badges/24774513?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share",
+    "img": "/images/google skills.png",
+    "skills": ["Vertex AI", "Prompt Engineering"]
+  },
+  {
+    "name": "Introduction to Google Workspace with Gemini",
+    "issuer": "Google",
+    "date": "Jun 2026",
+    "credentialId": "24781152",
+    "credentialLink": "https://www.skills.google/public_profiles/432db7ff-d8ec-4ad3-98a3-addc0f940c54/badges/24781152?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share",
+    "img": "/images/google skills.png",
+    "skills": ["Generative AI", "Google Gemini"]
+  },
+  {
+    "name": "Unlock Insights with NotebookLM",
+    "issuer": "Google",
+    "date": "Jun 2026",
+    "credentialId": "24798114",
+    "credentialLink": "https://www.skills.google/public_profiles/432db7ff-d8ec-4ad3-98a3-addc0f940c54/badges/24798114?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share",
+    "img": "/images/google skills.png",
+    "skills": ["NotebookLM"]
   },
   {
     "name": "Start Writing Prompts like a Pro",
