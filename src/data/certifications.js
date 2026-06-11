@@ -72,6 +72,42 @@ export const certificationsData = [
     "skills": ["Prompt Engineering"]
   },
   {
+    "name": "Enterprise Agents and Use Cases",
+    "issuer": "Google",
+    "date": "Jun 2026",
+    "credentialId": "24851587",
+    "credentialLink": "https://www.skills.google/public_profiles/432db7ff-d8ec-4ad3-98a3-addc0f940c54/badges/24851587",
+    "img": "/images/google skills.png",
+    "skills": ["AI Agents"]
+  },
+  {
+    "name": "Create Your First Gemini Enterprise Application",
+    "issuer": "Google",
+    "date": "Jun 2026",
+    "credentialId": "24851813",
+    "credentialLink": "https://www.skills.google/public_profiles/432db7ff-d8ec-4ad3-98a3-addc0f940c54/badges/24851813",
+    "img": "/images/google skills.png",
+    "skills": ["AI Agents"]
+  },
+  {
+    "name": "Agent Fundamentals",
+    "issuer": "Google",
+    "date": "Jun 2026",
+    "credentialId": "24850916",
+    "credentialLink": "https://www.skills.google/public_profiles/432db7ff-d8ec-4ad3-98a3-addc0f940c54/badges/24850916",
+    "img": "/images/google skills.png",
+    "skills": ["AI Agents"]
+  },
+  {
+    "name": "Introduction to AI Agents",
+    "issuer": "Google",
+    "date": "Jun 2026",
+    "credentialId": "24850421",
+    "credentialLink": "https://www.skills.google/public_profiles/432db7ff-d8ec-4ad3-98a3-addc0f940c54/badges/24850421",
+    "img": "/images/google skills.png",
+    "skills": ["AI Agents"]
+  },
+  {
     "name": "Work smarter with AI",
     "issuer": "Microsoft",
     "date": "Jun 2026",
