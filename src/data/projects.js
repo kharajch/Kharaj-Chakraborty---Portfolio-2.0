@@ -1,9 +1,18 @@
 export const projectsData = [
   {
+    name: "kharajch--PsychriatryXDashboard",
+    lang: ["Stitch", "Antigravity CLI", "Gemini CLI", "NextJS", "CSS", "TypeScript", "Node.js", "MongoDB", "RXDB", "Framer Motion", "GSAP", "Three.js", "Gemini 3.5 Flash"],
+    repo: "https://github.com/kharajch/kharajch---PsychiatryXDashboard",
+    live: "/not-available",
+    img: "/images/projects/PsychiatryXDashboard.png",
+    details:
+      "kharajch---IdeaXCoder is a sophisticated agentic AI coding interface designed to transform abstract project ideas into structured technical specifications. Built with a modern Next.js frontend and a powerful FastAPI/LangGraph backend, it orchestrates complex workflows involving research, architectural planning, and human-in-the-loop refinement.",
+  },
+  {
     name: "kharajch--IdeaXCoder",
     lang: ["Stitch", "Antigravity", "NextJS", "CSS", "LangChain", "Langgraph", "FastAPI", "JavaScript", "Framer Motion", "GSAP", "Three.js", "Opus 4.6", "Gemini 3.1 Pro", "Gemini 3 Flash", "Nvidia NIM"],
     repo: "https://github.com/kharajch/kharajch---IdeaXCoder",
-    live: "https://kharajch-ideaxcoder.vercel.app/",
+    live: "/https://kharajch-ideaxcoder.vercel.app/",
     img: "/images/projects/IdeaXCoder.png",
     details:
       "kharajch---IdeaXCoder is a sophisticated agentic AI coding interface designed to transform abstract project ideas into structured technical specifications. Built with a modern Next.js frontend and a powerful FastAPI/LangGraph backend, it orchestrates complex workflows involving research, architectural planning, and human-in-the-loop refinement.",
