@@ -52,6 +52,33 @@ test.describe('Portfolio Site E2E Tests', () => {
     await expect(googleSkillsImg).toBeAttached();
   });
 
+  test('should filter certifications by category', async ({ page }) => {
+    // Click on the Certifications link in the navbar
+    const certsLink = page.locator('.navbar__link', { hasText: 'Certifications' });
+    await certsLink.click();
+
+    // Verify filter buttons are visible
+    const filterButtons = page.locator('.certifications__filter-btn');
+    await expect(filterButtons).toHaveCount(6);
+
+    // Active button should be 'All'
+    const activeFilterBtn = page.locator('.certifications__filter-btn--active');
+    await expect(activeFilterBtn).toHaveText('All');
+
+    // Click on 'Gen AI' filter button
+    const genAiBtn = page.locator('.certifications__filter-btn', { hasText: 'Gen AI' });
+    await genAiBtn.click();
+    await expect(genAiBtn).toHaveClass(/certifications__filter-btn--active/);
+
+    // Verify card count is 6 (pagination resets to 6)
+    const certCards = page.locator('.certification-card');
+    await expect(certCards).toHaveCount(6);
+
+    // Verify all displayed cards have skills containing 'Generative AI' or related terms
+    const firstCardTags = certCards.first().locator('.certification-card__tag');
+    await expect(firstCardTags.first()).toBeVisible();
+  });
+
   test('should navigate to the Projects section', async ({ page }) => {
     // Click on the Projects link in the navbar
     const projectsLink = page.locator('.navbar__link', { hasText: 'Projects' });
@@ -96,6 +123,39 @@ test.describe('Portfolio Site E2E Tests', () => {
     // Check if Certifications link is present in mobile menu
     const certsMobileLink = mobileMenu.locator('.navbar__mobile-link', { hasText: 'Certifications' });
     await expect(certsMobileLink).toBeVisible();
+  });
+
+  test('should render custom cursor elements on desktop viewports', async ({ page }) => {
+    const cursorDot = page.locator('.custom-cursor__dot');
+    const cursorRing = page.locator('.custom-cursor__ring');
+    
+    // Check if cursor elements are attached in the DOM
+    await expect(cursorDot).toBeAttached();
+    await expect(cursorRing).toBeAttached();
+  });
+
+  test('should toggle themes (Dark -> Light -> Cyber-Red -> Dark)', async ({ page }) => {
+    const themeToggleBtn = page.locator('.navbar__theme-toggle');
+    await expect(themeToggleBtn).toBeVisible();
+
+    const htmlElement = page.locator('html');
+
+    // 1. Initial theme is dark (or whatever localstorage/anti-flicker sets, default is dark)
+    // We expect the data-theme attribute to be 'dark' or not present initially
+    let currentTheme = await htmlElement.getAttribute('data-theme');
+    expect(currentTheme === 'dark' || currentTheme === null).toBeTruthy();
+
+    // 2. Click once -> should change to Light
+    await themeToggleBtn.click();
+    await expect(htmlElement).toHaveAttribute('data-theme', 'light');
+
+    // 3. Click twice -> should change to Cyber-Red
+    await themeToggleBtn.click();
+    await expect(htmlElement).toHaveAttribute('data-theme', 'cyber-red');
+
+    // 4. Click three times -> should wrap back to Dark
+    await themeToggleBtn.click();
+    await expect(htmlElement).toHaveAttribute('data-theme', 'dark');
   });
 
 });

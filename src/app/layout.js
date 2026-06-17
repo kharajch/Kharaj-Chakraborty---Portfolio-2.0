@@ -1,5 +1,6 @@
 import { Inter, Space_Grotesk } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
+import CustomCursor from "@/components/CustomCursor/CustomCursor";
 import "./globals.css";
 
 const inter = Inter({
@@ -54,8 +55,23 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`}>
+    <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`} suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  var savedTheme = localStorage.getItem('portfolio-theme') || 'dark';
+                  document.documentElement.setAttribute('data-theme', savedTheme);
+                } catch (e) {}
+              })();
+            `,
+          }}
+        />
+      </head>
       <body>
+        <CustomCursor />
         {children}
         <Analytics />
       </body>

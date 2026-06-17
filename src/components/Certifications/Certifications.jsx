@@ -1,13 +1,76 @@
 "use client";
 
-import { useRef, useState } from "react";
-import { motion, useInView } from "framer-motion";
+import { useRef, useState, useMemo } from "react";
+import { motion, useInView, AnimatePresence } from "framer-motion";
 import { useSpring, animated } from "@react-spring/web";
 import { FaArrowUpRightFromSquare, FaCertificate } from "react-icons/fa6";
 import Image from "next/image";
 import { certificationsData } from "@/data/certifications";
 import PDFThumbnail from "./PDFThumbnail";
 import "./Certifications.css";
+
+const CATEGORIES = [
+  { id: "all", label: "All" },
+  { id: "ai", label: "AI" },
+  { id: "genai", label: "Gen AI" },
+  { id: "ml", label: "Machine Learning" },
+  { id: "responsible", label: "Responsible AI" },
+  { id: "prompt", label: "Prompt Engineering" },
+];
+
+const matchesCategory = (cert, categoryId) => {
+  if (categoryId === "all") return true;
+
+  const name = cert.name.toLowerCase();
+  const skills = cert.skills.map((s) => s.toLowerCase());
+
+  const hasSkillOrName = (keywords) => {
+    return keywords.some(
+      (kw) => name.includes(kw) || skills.some((s) => s.includes(kw))
+    );
+  };
+
+  switch (categoryId) {
+    case "ai":
+      return (
+        hasSkillOrName([
+          "artificial intelligence",
+          "ai agents",
+          "ai productivity",
+          "accessible ai",
+          "google gemini",
+          "large language models",
+          "llm",
+          "notebooklm",
+          "speech-capable generative ai",
+          "ai accessibility",
+          "ai basics",
+        ]) || skills.some((s) => s === "artificial intelligence (ai)")
+      );
+    case "genai":
+      return hasSkillOrName([
+        "generative ai",
+        "gen ai",
+        "genai",
+        "image generation",
+        "copilot",
+      ]);
+    case "ml":
+      return hasSkillOrName(["machine learning", "mlops"]);
+    case "responsible":
+      return hasSkillOrName(["responsible ai"]);
+    case "prompt":
+      return hasSkillOrName([
+        "prompt engineering",
+        "prompt design",
+        "prompts",
+        "prompting",
+        "vertex ai",
+      ]);
+    default:
+      return false;
+  }
+};
 
 function CertificationCard({ cert, index }) {
   const [springs, api] = useSpring(() => ({
@@ -25,8 +88,6 @@ function CertificationCard({ cert, index }) {
     if (name.includes("simplilearn")) return "/images/simplilearn.png";
     return "/images/google skills.png"; // Default fallback
   };
-
-  const displayImg = isPDF ? null : cert.img;
 
   const handleMouseMove = (e) => {
     const rect = e.currentTarget.getBoundingClientRect();
@@ -52,10 +113,11 @@ function CertificationCard({ cert, index }) {
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-50px" }}
-      transition={{ delay: index * 0.15, duration: 0.6, ease: [0.2, 0, 0, 1] }}
+      layout
+      initial={{ opacity: 0, scale: 0.9 }}
+      animate={{ opacity: 1, scale: 1 }}
+      exit={{ opacity: 0, scale: 0.9 }}
+      transition={{ duration: 0.4, ease: [0.2, 0, 0, 1] }}
     >
       <animated.div
         className="certification-card"
@@ -123,7 +185,19 @@ export default function Certifications() {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
 
+  const [activeCategory, setActiveCategory] = useState("all");
   const [visibleCount, setVisibleCount] = useState(6);
+
+  const filteredCerts = useMemo(() => {
+    return certificationsData.filter((cert) =>
+      matchesCategory(cert, activeCategory)
+    );
+  }, [activeCategory]);
+
+  const handleCategoryChange = (categoryId) => {
+    setActiveCategory(categoryId);
+    setVisibleCount(6); // Reset pagination for the new category
+  };
 
   const handleLoadMore = () => {
     setVisibleCount((prev) => prev + 6);
@@ -146,13 +220,30 @@ export default function Certifications() {
           </p>
         </motion.div>
 
-        <div className="certifications__grid">
-          {certificationsData.slice(0, visibleCount).map((cert, index) => (
-            <CertificationCard key={cert.name} cert={cert} index={index} />
+        {/* Filter Buttons */}
+        <div className="certifications__filters">
+          {CATEGORIES.map((category) => (
+            <button
+              key={category.id}
+              className={`certifications__filter-btn ${
+                activeCategory === category.id ? "certifications__filter-btn--active" : ""
+              }`}
+              onClick={() => handleCategoryChange(category.id)}
+            >
+              {category.label}
+            </button>
           ))}
         </div>
 
-        {visibleCount < certificationsData.length && (
+        <motion.div layout className="certifications__grid">
+          <AnimatePresence mode="popLayout">
+            {filteredCerts.slice(0, visibleCount).map((cert, index) => (
+              <CertificationCard key={cert.name} cert={cert} index={index} />
+            ))}
+          </AnimatePresence>
+        </motion.div>
+
+        {visibleCount < filteredCerts.length && (
           <div className="certifications__load-more-container">
             <button className="certifications__load-more-btn" onClick={handleLoadMore}>
               Load More
@@ -163,3 +254,4 @@ export default function Certifications() {
     </section>
   );
 }
+

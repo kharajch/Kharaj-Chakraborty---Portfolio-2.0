@@ -5,6 +5,7 @@
   /* Core Colors */
   --color-bg: #0a0a0a;
   --color-bg-secondary: #111111;
+  --color-navbar-bg: rgba(10, 10, 10, 0.75);
   --color-surface: #131313;
   --color-surface-container: #201f1f;
   --color-surface-container-high: #2a2a2a;
@@ -344,4 +345,70 @@ a {
     --text-4xl: 1.75rem;
     --text-5xl: 1.75rem;
   }
+}
+
+/* ---------- Theme Overrides ---------- */
+
+/* Light Theme Variables */
+[data-theme='light'] {
+  --color-bg: #f5f5f5;
+  --color-bg-secondary: #ffffff;
+  --color-surface: #eaeaea;
+  --color-surface-container: #e0e0e0;
+  --color-surface-container-high: #d5d5d5;
+  --color-surface-container-highest: #c5c5c5;
+  --color-surface-container-low: #f0f0f0;
+  --color-surface-container-lowest: #fafafa;
+  --color-text-primary: #101010;
+  --color-text-secondary: #4a4a4a;
+  --color-text-muted: #777777;
+  --color-text-body: #222222;
+  --color-border: rgba(0, 0, 0, 0.08);
+  --color-border-hover: rgba(0, 0, 0, 0.15);
+  --color-outline: #5b403f;
+  
+  --color-accent-glow: rgba(230, 57, 70, 0.15);
+  --color-navbar-bg: rgba(245, 245, 245, 0.75);
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Cyber-Red Theme Variables */
+[data-theme='cyber-red'] {
+  --color-bg: #150305;
+  --color-bg-secondary: #240508;
+  --color-surface: #36080c;
+  --color-surface-container: #480a10;
+  --color-surface-container-high: #5c0d14;
+  --color-surface-container-highest: #721019;
+  --color-surface-container-low: #1c0407;
+  --color-surface-container-lowest: #0e0203;
+  --color-text-primary: #ffccd0;
+  --color-text-secondary: #ff9da6;
+  --color-text-muted: #d47e85;
+  --color-text-body: #ffdcd2;
+  --color-accent: #ff2d3d;
+  --color-accent-hover: #ff5e6b;
+  --color-accent-glow: rgba(255, 45, 61, 0.45);
+  --color-accent-light: #ffccd0;
+  --color-accent-dark: #47000b;
+  --color-accent-container: #5d1a20;
+  --color-border: rgba(255, 45, 61, 0.15);
+  --color-border-hover: rgba(255, 45, 61, 0.3);
+  --color-outline: #ffd4d7;
+  --color-outline-variant: rgba(147, 45, 46, 0.3);
+  --shadow-card: 0 4px 24px rgba(255, 45, 61, 0.1);
+  --shadow-glow-sm: 0 0 20px rgba(255, 45, 61, 0.25);
+  --shadow-glow-md: 0 0 40px rgba(255, 45, 61, 0.3);
+  --shadow-glow-lg: 0 0 80px rgba(255, 45, 61, 0.35);
+  --color-navbar-bg: rgba(21, 3, 5, 0.8);
+}
+
+/* Global color smooth transition when theme changes */
+body,
+body *,
+body ::before,
+body ::after {
+  transition-property: background-color, color, border-color, box-shadow;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { motion, AnimatePresence } from "framer-motion";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
+import { FiSun, FiMoon, FiZap } from "react-icons/fi";
 import "./Navbar.css";
 
 const navLinks = [
@@ -18,12 +19,18 @@ const navLinks = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [theme, setTheme] = useState("dark");
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
     };
     window.addEventListener("scroll", handleScroll);
+
+    // Get initial theme from DOM attribute set by anti-flicker script
+    const currentTheme = document.documentElement.getAttribute("data-theme") || "dark";
+    setTheme(currentTheme);
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -37,6 +44,17 @@ export default function Navbar() {
       document.body.style.overflow = "";
     };
   }, [mobileOpen]);
+
+  const toggleTheme = () => {
+    let nextTheme = "dark";
+    if (theme === "dark") nextTheme = "light";
+    else if (theme === "light") nextTheme = "cyber-red";
+    else if (theme === "cyber-red") nextTheme = "dark";
+
+    setTheme(nextTheme);
+    document.documentElement.setAttribute("data-theme", nextTheme);
+    localStorage.setItem("portfolio-theme", nextTheme);
+  };
 
   return (
     <motion.nav
@@ -57,37 +75,49 @@ export default function Navbar() {
           <span className="navbar__logo-dot">.</span>
         </Link>
 
-        <ul className="navbar__links">
-          {navLinks.map((link, i) => (
-            <motion.li
-              key={link.name}
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 * i, duration: 0.5 }}
-            >
-              <Link
-                to={link.to}
-                smooth={true}
-                duration={800}
-                offset={-80}
-                spy={true}
-                activeClass="navbar__link--active"
-                className="navbar__link"
+        <div className="navbar__right">
+          <ul className="navbar__links">
+            {navLinks.map((link, i) => (
+              <motion.li
+                key={link.name}
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.1 * i, duration: 0.5 }}
               >
-                {link.name}
-              </Link>
-            </motion.li>
-          ))}
-        </ul>
+                <Link
+                  to={link.to}
+                  smooth={true}
+                  duration={800}
+                  offset={-80}
+                  spy={true}
+                  activeClass="navbar__link--active"
+                  className="navbar__link"
+                >
+                  {link.name}
+                </Link>
+              </motion.li>
+            ))}
+          </ul>
 
-        <button
-          className="navbar__mobile-toggle"
-          onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label="Toggle mobile menu"
-          id="mobile-menu-toggle"
-        >
-          {mobileOpen ? <HiX /> : <HiMenuAlt3 />}
-        </button>
+          <button
+            className="navbar__theme-toggle"
+            onClick={toggleTheme}
+            aria-label={`Switch theme (current: ${theme})`}
+          >
+            {theme === "dark" && <FiMoon />}
+            {theme === "light" && <FiSun />}
+            {theme === "cyber-red" && <FiZap />}
+          </button>
+
+          <button
+            className="navbar__mobile-toggle"
+            onClick={() => setMobileOpen(!mobileOpen)}
+            aria-label="Toggle mobile menu"
+            id="mobile-menu-toggle"
+          >
+            {mobileOpen ? <HiX /> : <HiMenuAlt3 />}
+          </button>
+        </div>
       </div>
 
       <AnimatePresence>
