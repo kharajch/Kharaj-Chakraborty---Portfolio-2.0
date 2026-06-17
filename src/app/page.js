@@ -6,6 +6,7 @@ import About from "@/components/About/About";
 import Skills from "@/components/Skills/Skills";
 import Certifications from "@/components/Certifications/Certifications";
 import Projects from "@/components/Projects/Projects";
+import Blog from "@/components/Blog/Blog";
 import Contact from "@/components/Contact/Contact";
 import Footer from "@/components/Footer/Footer";
 import ScrollReveal from "@/components/ScrollReveal/ScrollReveal";
@@ -30,6 +31,10 @@ export default function Home() {
       
       <ScrollReveal direction="up" distance={60} duration={0.8}>
         <Projects />
+      </ScrollReveal>
+      
+      <ScrollReveal direction="up" distance={60} duration={0.8}>
+        <Blog />
       </ScrollReveal>
       
       <ScrollReveal direction="up" distance={60} duration={0.8}>

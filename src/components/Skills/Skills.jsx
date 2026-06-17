@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { motion, useInView, AnimatePresence } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { Flipper, Flipped } from "react-flip-toolkit";
 import {
   SiC,
@@ -108,16 +108,25 @@ const categoryIcons = {
   "IDEs": FaTerminal,
   "Tools": FaWrench,
   "AI Assistants": FaRobot,
+  "AI Tools": FaRobot,
   "Agentic AI Tools": FaWandMagicSparkles,
+};
+
+const FILTER_GROUPS = {
+  "Languages": ["Programming Languages"],
+  "Frameworks": ["Frontend Development & Design", "Frameworks & Libraries", "Backend & AI Frameworks"],
+  "AI & Agents": ["AI Assistants", "AI Tools", "Agentic AI Tools"],
+  "Databases": ["Databases"],
+  "Tools & Cloud": ["Hosting & Deployment", "IDEs", "Tools"]
 };
 
 export default function Skills() {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
-  const [activeCategory, setActiveCategory] = useState(null);
+  const [activeFilter, setActiveFilter] = useState(null);
 
-  const displayedSkills = activeCategory
-    ? skillsData.filter((s) => s.category === activeCategory)
+  const displayedSkills = activeFilter
+    ? skillsData.filter((s) => FILTER_GROUPS[activeFilter].includes(s.category))
     : skillsData;
 
   return (
@@ -137,7 +146,7 @@ export default function Skills() {
           </p>
         </motion.div>
 
-        {/* Category Filter */}
+        {/* Category Filters */}
         <motion.div
           className="skills__filters"
           initial={{ opacity: 0, y: 20 }}
@@ -145,28 +154,28 @@ export default function Skills() {
           transition={{ delay: 0.2, duration: 0.6 }}
         >
           <button
-            className={`skills__filter-btn ${!activeCategory ? "skills__filter-btn--active" : ""}`}
-            onClick={() => setActiveCategory(null)}
+            className={`skills__filter-btn ${!activeFilter ? "skills__filter-btn--active" : ""}`}
+            onClick={() => setActiveFilter(null)}
           >
             All
           </button>
-          {skillsData.map((cat) => (
+          {Object.keys(FILTER_GROUPS).map((group) => (
             <button
-              key={cat.category}
-              className={`skills__filter-btn ${activeCategory === cat.category ? "skills__filter-btn--active" : ""}`}
+              key={group}
+              className={`skills__filter-btn ${activeFilter === group ? "skills__filter-btn--active" : ""}`}
               onClick={() =>
-                setActiveCategory(
-                  activeCategory === cat.category ? null : cat.category
+                setActiveFilter(
+                  activeFilter === group ? null : group
                 )
               }
             >
-              {cat.category.split(" ")[0]}
+              {group}
             </button>
           ))}
         </motion.div>
 
         {/* Skills Grid */}
-        <Flipper flipKey={activeCategory || "all"}>
+        <Flipper flipKey={activeFilter || "all"}>
           <div className="skills__grid">
             {displayedSkills.map((category, catIndex) => {
               const CatIcon = categoryIcons[category.category] || FaCode;
@@ -176,7 +185,7 @@ export default function Skills() {
                     className="skills__category-card"
                     initial={{ opacity: 0, y: 30 }}
                     animate={isInView ? { opacity: 1, y: 0 } : {}}
-                    transition={{ delay: 0.1 * catIndex, duration: 0.5 }}
+                    transition={{ delay: 0.05 * catIndex, duration: 0.4 }}
                   >
                     <div className="skills__category-header">
                       <CatIcon className="skills__category-icon" />
@@ -199,8 +208,8 @@ export default function Skills() {
                                 : {}
                             }
                             transition={{
-                              delay: 0.1 * catIndex + 0.05 * skillIndex,
-                              duration: 0.4,
+                              delay: 0.05 * catIndex + 0.02 * skillIndex,
+                              duration: 0.3,
                             }}
                             whileHover={{
                               scale: 1.05,

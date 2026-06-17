@@ -1,14 +1,15 @@
 "use client";
 
-import { useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import { useRef, useState } from "react";
+import { motion, useInView, AnimatePresence } from "framer-motion";
 import { useSpring, animated } from "@react-spring/web";
-import { FaGithub, FaArrowUpRightFromSquare } from "react-icons/fa6";
+import { FaGithub, FaArrowUpRightFromSquare, FaCircleInfo } from "react-icons/fa6";
 import Image from "next/image";
 import { projectsData } from "@/data/projects";
+import ProjectModal from "./ProjectModal";
 import "./Projects.css";
 
-function ProjectCard({ project, index }) {
+function ProjectCard({ project, index, onOpenDetails }) {
   const [springs, api] = useSpring(() => ({
     transform: "perspective(600px) rotateX(0deg) rotateY(0deg) scale(1)",
     boxShadow: "0 4px 24px rgba(0,0,0,0.4)",
@@ -60,6 +61,13 @@ function ProjectCard({ project, index }) {
             className="project-card__image"
           />
           <div className="project-card__image-overlay">
+            <button
+              onClick={() => onOpenDetails(project)}
+              className="project-card__overlay-link project-card__overlay-link--details"
+            >
+              <FaCircleInfo />
+              <span>Details</span>
+            </button>
             <a
               href={project.repo}
               target="_blank"
@@ -67,9 +75,9 @@ function ProjectCard({ project, index }) {
               className="project-card__overlay-link"
             >
               <FaGithub />
-              <span>View Code</span>
+              <span>Code</span>
             </a>
-            {project.live && (
+            {project.live && project.live !== "/not-available" && (
               <a
                 href={project.live}
                 target="_blank"
@@ -77,7 +85,7 @@ function ProjectCard({ project, index }) {
                 className="project-card__overlay-link project-card__overlay-link--live"
               >
                 <FaArrowUpRightFromSquare />
-                <span>Live Site</span>
+                <span>Live</span>
               </a>
             )}
           </div>
@@ -88,14 +96,26 @@ function ProjectCard({ project, index }) {
           <p className="project-card__description">{project.details}</p>
 
           <div className="project-card__tags">
-            {project.lang.map((lang) => (
+            {project.lang.slice(0, 5).map((lang) => (
               <span key={lang} className="project-card__tag">
                 {lang}
               </span>
             ))}
+            {project.lang.length > 5 && (
+              <span className="project-card__tag project-card__tag--more">
+                +{project.lang.length - 5} more
+              </span>
+            )}
           </div>
 
           <div className="project-card__actions">
+            <button
+              onClick={() => onOpenDetails(project)}
+              className="project-card__link project-card__link--details"
+            >
+              <FaCircleInfo />
+              <span>Details</span>
+            </button>
             <a
               href={project.repo}
               target="_blank"
@@ -105,7 +125,7 @@ function ProjectCard({ project, index }) {
               <FaGithub />
               <span>GitHub</span>
             </a>
-            {project.live && (
+            {project.live && project.live !== "/not-available" && (
               <a
                 href={project.live}
                 target="_blank"
@@ -126,6 +146,15 @@ function ProjectCard({ project, index }) {
 export default function Projects() {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  const handleOpenDetails = (project) => {
+    setSelectedProject(project);
+  };
+
+  const handleCloseDetails = () => {
+    setSelectedProject(null);
+  };
 
   return (
     <section className="projects section" id="projects" ref={sectionRef}>
@@ -147,10 +176,25 @@ export default function Projects() {
 
         <div className="projects__grid">
           {projectsData.map((project, index) => (
-            <ProjectCard key={project.name} project={project} index={index} />
+            <ProjectCard
+              key={project.name}
+              project={project}
+              index={index}
+              onOpenDetails={handleOpenDetails}
+            />
           ))}
         </div>
       </div>
+
+      {/* Detailed Project Showcase Modal */}
+      <AnimatePresence>
+        {selectedProject && (
+          <ProjectModal
+            project={selectedProject}
+            onClose={handleCloseDetails}
+          />
+        )}
+      </AnimatePresence>
     </section>
   );
 }

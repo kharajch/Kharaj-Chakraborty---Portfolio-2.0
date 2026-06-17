@@ -1,7 +1,18 @@
 # Repository Guidelines
 
 ## Project Structure & Module Organization
-This repository is a Next.js App Router portfolio site. Application entrypoints live in `src/app/`, with `layout.js`, `page.js`, and global styles in `globals.css`. Reusable UI is organized by feature in `src/components/<Feature>/`, where each component typically sits beside its CSS file. Key features include Hero, About, Skills, Certifications, Projects, and Contact. Static content for projects, certifications, skills, and social links lives in `src/data/`. Planning documents and the canonical skills list live in `planning/`. Runtime-served assets belong in `public/`.
+This repository is a Next.js App Router portfolio site. Application entrypoints live in `src/app/`, with `layout.js`, `page.js`, and global styles in `globals.css`. Reusable UI is organized by feature in `src/components/<Feature>/`, where each component typically sits beside its CSS file. 
+
+Key features include:
+* **Hero**: Dynamic top section with profile elements and 3D overlays.
+* **About**: Timeline biography and an expandable accordion-style vertical Journey Timeline mapped from `src/data/timeline.js`.
+* **Skills**: Animated skill cards with custom 5-group consolidated filtering logic.
+* **Certifications**: Professional credentials showcase with 3D tilt effects.
+* **Projects**: Featured projects grid mapped from `src/data/projects.js`, incorporating a detailed two-column Showcase Modal overlay (`ProjectModal.jsx`).
+* **Blog**: Dynamic article cards grid mapped from `src/data/blog.js` with dedicated reading reader overlays (`BlogModal.jsx`).
+* **Contact**: EmailJS-integrated contact form featuring interactive inline validation (error shake alerts, validation text, and checkmark SVGs).
+
+Static data modules live in `src/data/`. Planning documents and task trackers are maintained in `planning/`. Runtime assets (including blog banners under `images/blog/`) live in `public/`.
 
 ## Build, Test, and Development Commands
 - `npm install` installs dependencies.
@@ -11,10 +22,21 @@ This repository is a Next.js App Router portfolio site. Application entrypoints 
 - `npm test` runs the Playwright E2E test suite.
 
 ## Coding Style & Naming Conventions
-Use modern React function components and keep component files in JSX. Follow the existing style: double quotes, semicolons, and 2-space indentation in JS/CSS files. Use PascalCase for component folders and component names (`ThreeScene.jsx`), camelCase for variables/functions, and lower-case data filenames (`projects.js`, `skills.js`). Prefer the configured `@/*` import alias from `jsconfig.json` for code under `src/`.
+Use modern React function components and keep component files in JSX. Follow the existing style: double quotes, semicolons, and 2-space indentation in JS/CSS files. Use PascalCase for component folders and component names (`ThreeScene.jsx`), camelCase for variables/functions, and lower-case data filenames (`projects.js`, `timeline.js`, `blog.js`, `skills.js`). Prefer the configured `@/*` import alias from `jsconfig.json` for code under `src/`.
 
 ## Testing Guidelines
-The project uses **Playwright** for End-to-End (E2E) testing. Tests are located in the `tests/` directory (e.g., `portfolio.spec.js`). Before running tests, ensure browsers are installed via `npx playwright install chromium`. The test suite covers page loading, section navigation, contact form visibility, and mobile responsiveness.
+The project uses **Playwright** for End-to-End (E2E) testing. Tests are located in the `tests/` directory (e.g., [portfolio.spec.js](file:///K:/Codes/Web%20Devlopment/My%20Projects/Kharaj-Chakraborty---Portfolio-2.0/tests/portfolio.spec.js)). Before running tests, ensure browsers are installed via `npx playwright install chromium`. 
+
+The test suite covers:
+- Root page loading and navbar presence.
+- Certifications lazy-loading pagination and category filters.
+- Project Showcase details modal opening, content matching, and ESC/backdrop dismissals.
+- Interactive Contact form validation (email checks, length warnings, and dynamic border transitions).
+- Skills consolidated category filter updates.
+- About Journey Timeline accordion expand/collapse toggles.
+- Blog navigation and article reading modal launches.
+- Theme engine shifts (Dark -> Light -> Cyber-Red).
+- Mobile responsiveness configurations.
 
 ## Commit & Pull Request Guidelines
 Recent history mixes plain imperative commits with conventional prefixes (`feat:`). Prefer short, imperative commit subjects and keep them scoped to one change.

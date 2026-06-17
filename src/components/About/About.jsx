@@ -1,10 +1,10 @@
 "use client";
 
-import { useRef } from "react";
-import { motion, useInView } from "framer-motion";
-import { FaCode, FaGraduationCap, FaRocket, FaLaptopCode } from "react-icons/fa6";
+import { useRef, useState } from "react";
+import { motion, AnimatePresence, useInView } from "framer-motion";
+import { FaCode, FaGraduationCap, FaRocket, FaLaptopCode, FaChevronDown } from "react-icons/fa6";
+import { timelineData } from "@/data/timeline";
 import "./About.css";
-
 
 const highlights = [
   { icon: FaCode, label: "10+", desc: "Projects Built", color: "#e63946" },
@@ -13,13 +13,20 @@ const highlights = [
   { icon: FaRocket, label: "2+", desc: "Years Coding", color: "#e63946" },
 ];
 
+const timelineIcons = {
+  FaGraduationCap: FaGraduationCap,
+  FaLaptopCode: FaLaptopCode,
+  FaCode: FaCode,
+};
+
 export default function About() {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
+  const [expandedItem, setExpandedItem] = useState(null);
 
-  // Note: GSAP animation on .about__stat-card was removed to fix a conflict
-  // with Framer Motion. Both were setting opacity: 0, causing cards to vanish.
-  // Framer Motion's itemVariants now handles the stat card animations alone.
+  const toggleItem = (id) => {
+    setExpandedItem(expandedItem === id ? null : id);
+  };
 
   const containerVariants = {
     hidden: {},
@@ -123,7 +130,7 @@ export default function About() {
             variants={containerVariants}
             className="about__stats"
           >
-            {highlights.map((item, i) => (
+            {highlights.map((item) => (
               <motion.div
                 key={item.desc}
                 variants={itemVariants}
@@ -140,6 +147,82 @@ export default function About() {
               </motion.div>
             ))}
           </motion.div>
+
+          {/* Timeline Section */}
+          <motion.div variants={itemVariants} className="about__timeline-section">
+            <h3 className="about__timeline-heading">
+              My <span className="accent-text">Journey</span>
+            </h3>
+            
+            <div className="about__timeline">
+              <div className="about__timeline-line" />
+              
+              {timelineData.map((item, index) => {
+                const Icon = timelineIcons[item.icon] || FaCode;
+                const isExpanded = expandedItem === item.id;
+                
+                return (
+                  <div
+                    key={item.id}
+                    className={`about__timeline-item ${isExpanded ? "about__timeline-item--expanded" : ""}`}
+                  >
+                    {/* Timeline Node dot */}
+                    <div className="about__timeline-node" style={{ border: `2px solid ${item.color}`, color: item.color }}>
+                      <Icon />
+                    </div>
+                    
+                    {/* Timeline Card */}
+                    <div className="about__timeline-card" onClick={() => toggleItem(item.id)}>
+                      <div className="about__timeline-card-header">
+                        <div className="about__timeline-logo-wrapper" style={{ borderColor: item.color }}>
+                          <span className="about__timeline-logo-text" style={{ color: item.color }}>{item.logoText}</span>
+                        </div>
+                        <div className="about__timeline-meta">
+                          <span className="about__timeline-duration">{item.duration}</span>
+                          <h4 className="about__timeline-title">{item.title}</h4>
+                          <span className="about__timeline-org">{item.organization}</span>
+                        </div>
+                        <button 
+                          className="about__timeline-expand-btn"
+                          aria-expanded={isExpanded}
+                          aria-label="Toggle details"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            toggleItem(item.id);
+                          }}
+                        >
+                          <FaChevronDown className={`about__timeline-expand-icon ${isExpanded ? "about__timeline-expand-icon--active" : ""}`} />
+                        </button>
+                      </div>
+                      
+                      <p className="about__timeline-short-desc">{item.shortDesc}</p>
+                      
+                      <AnimatePresence>
+                        {isExpanded && (
+                          <motion.div
+                            className="about__timeline-details"
+                            initial={{ height: 0, opacity: 0 }}
+                            animate={{ height: "auto", opacity: 1 }}
+                            exit={{ height: 0, opacity: 0 }}
+                            transition={{ duration: 0.3, ease: "easeInOut" }}
+                          >
+                            <ul className="about__timeline-details-list">
+                              {item.details.map((detail, idx) => (
+                                <li key={idx} className="about__timeline-detail-item">
+                                  {detail}
+                                </li>
+                              ))}
+                            </ul>
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </motion.div>
+
         </motion.div>
       </div>
     </section>
