@@ -4,7 +4,7 @@ export const timelineData = [
     type: "experience",
     title: "Full Stack AI Developer",
     organization: "Open Source & Freelance",
-    duration: "2024 - Present",
+    duration: "2025 - Present",
     logoText: "AI",
     icon: "FaLaptopCode",
     color: "#e63946",
@@ -21,46 +21,44 @@ export const timelineData = [
     type: "education",
     title: "B.Sc. in Computer Science",
     organization: "APC Roy Government College",
-    duration: "2023 - 2026",
+    duration: "2025 - 2026",
     logoText: "CS",
     icon: "FaGraduationCap",
     color: "#6fd8cc",
-    shortDesc: "Pursuing degree focusing on core computational theory, software design, and AI models.",
+    shortDesc: "Pursuing degree focusing on core computational theory, software design, and language fundamentals.",
     details: [
       "Rigorous coursework in Data Structures, Algorithm Design, Database Systems, and Theory of Computation.",
-      "Maintaining top academic performance while actively researching agentic software applications.",
-      "Participating in college coding forums and organizing hands-on React/Node.js tech seminars."
+      "Maintaining top academic performance while actively researching agentic software applications."
     ]
   },
   {
     id: "timeline-3",
-    type: "experience",
-    title: "Freelance Frontend Developer",
-    organization: "Self-Employed",
-    duration: "2022 - 2024",
-    logoText: "WD",
-    icon: "FaCode",
-    color: "#ffb3b1",
-    shortDesc: "Crafted high-fidelity corporate and personal websites with modern React stacks.",
-    details: [
-      "Built over 15 responsive landing pages and web applications for national and international clients.",
-      "Optimized load times and SEO scores by up to 40% using Next.js static generation.",
-      "Collaborated closely with designers using Figma layouts to translate mockups into semantic code."
-    ]
-  },
-  {
-    id: "timeline-4",
     type: "education",
     title: "Higher Secondary (12th Grade)",
     organization: "Mathabhanga High School",
-    duration: "2021 - 2023",
+    duration: "2024 - 2025",
     logoText: "HS",
     icon: "FaGraduationCap",
     color: "#e63946",
     shortDesc: "Completed pre-college schooling with primary concentration in science and mathematics.",
     details: [
-      "Major subjects: Mathematics, Physics, Chemistry, and Computer Science.",
-      "Developed foundational desktop applications in C/C++ as part of academic labs."
+      "Major subjects: Mathematics, Physics, Chemistry, and Biology.",
+      "Borads results : 472 out Of 500 (94.40 %) "
+    ]
+  },
+  {
+    id: "timeline-4",
+    type: "education",
+    title: "Secondary (10th Grade)",
+    organization: "Mathabhanga High School",
+    duration: "2022 - 2023",
+    logoText: "HS",
+    icon: "FaGraduationCap",
+    color: "#e63946",
+    shortDesc: "Completed secondary schooling with a strong emphasis on foundational science and mathematics.",
+    details: [
+      "Major subjects: Mathematics, Physical Science, Biological Science, Geography and History.",
+      "Borads results : 663 out Of 700 (94.71 %) "
     ]
   }
 ];
