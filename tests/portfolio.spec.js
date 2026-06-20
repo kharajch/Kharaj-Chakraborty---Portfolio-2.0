@@ -59,14 +59,14 @@ test.describe('Portfolio Site E2E Tests', () => {
 
     // Verify filter buttons are visible
     const filterButtons = page.locator('.certifications__filter-btn');
-    await expect(filterButtons).toHaveCount(6);
+    await expect(filterButtons).toHaveCount(5);
 
     // Active button should be 'All'
     const activeFilterBtn = page.locator('.certifications__filter-btn--active');
     await expect(activeFilterBtn).toHaveText('All');
 
-    // Click on 'Gen AI' filter button
-    const genAiBtn = page.locator('.certifications__filter-btn', { hasText: 'Gen AI' });
+    // Click on 'AI & Gen AI' filter button
+    const genAiBtn = page.locator('.certifications__filter-btn', { hasText: 'AI & Gen AI' });
     await genAiBtn.click();
     await expect(genAiBtn).toHaveClass(/certifications__filter-btn--active/);
 

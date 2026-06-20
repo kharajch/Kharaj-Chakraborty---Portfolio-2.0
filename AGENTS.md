@@ -7,7 +7,7 @@ Key features include:
 * **Hero**: Dynamic top section with profile elements and 3D overlays.
 * **About**: Timeline biography and an expandable accordion-style vertical Journey Timeline mapped from `src/data/timeline.js`.
 * **Skills**: Animated skill cards with custom 5-group consolidated filtering logic.
-* **Certifications**: Professional credentials showcase with 3D tilt effects.
+* **Certifications**: Professional credentials showcase with 3D tilt effects, sorted by impactfulness and categorized under 5 filters (All, AI & Gen AI, Prompt Engineering, Git & GitHub, Data Science & ML).
 * **Projects**: Featured projects grid mapped from `src/data/projects.js`, incorporating a detailed two-column Showcase Modal overlay (`ProjectModal.jsx`).
 * **Blog**: Dynamic article cards grid mapped from `src/data/blog.js` with dedicated reading reader overlays (`BlogModal.jsx`).
 * **Contact**: EmailJS-integrated contact form featuring interactive inline validation (error shake alerts, validation text, and checkmark SVGs).

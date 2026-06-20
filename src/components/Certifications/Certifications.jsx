@@ -11,11 +11,10 @@ import "./Certifications.css";
 
 const CATEGORIES = [
   { id: "all", label: "All" },
-  { id: "ai", label: "AI" },
-  { id: "genai", label: "Gen AI" },
-  { id: "ml", label: "Machine Learning" },
-  { id: "responsible", label: "Responsible AI" },
+  { id: "ai", label: "AI & Gen AI" },
   { id: "prompt", label: "Prompt Engineering" },
+  { id: "git", label: "Git & GitHub" },
+  { id: "datascience", label: "Data Science & ML" },
 ];
 
 const matchesCategory = (cert, categoryId) => {
@@ -35,6 +34,9 @@ const matchesCategory = (cert, categoryId) => {
       return (
         hasSkillOrName([
           "artificial intelligence",
+          "generative ai",
+          "gen ai",
+          "genai",
           "ai agents",
           "ai productivity",
           "accessible ai",
@@ -45,20 +47,11 @@ const matchesCategory = (cert, categoryId) => {
           "speech-capable generative ai",
           "ai accessibility",
           "ai basics",
+          "image generation",
+          "copilot",
+          "responsible ai"
         ]) || skills.some((s) => s === "artificial intelligence (ai)")
       );
-    case "genai":
-      return hasSkillOrName([
-        "generative ai",
-        "gen ai",
-        "genai",
-        "image generation",
-        "copilot",
-      ]);
-    case "ml":
-      return hasSkillOrName(["machine learning", "mlops"]);
-    case "responsible":
-      return hasSkillOrName(["responsible ai"]);
     case "prompt":
       return hasSkillOrName([
         "prompt engineering",
@@ -66,6 +59,28 @@ const matchesCategory = (cert, categoryId) => {
         "prompts",
         "prompting",
         "vertex ai",
+      ]);
+    case "git":
+      return hasSkillOrName([
+        "git",
+        "github",
+        "innersource",
+        "version control",
+        "devops",
+        "pull requests",
+        "merge conflicts",
+        "git hooks"
+      ]);
+    case "datascience":
+      return hasSkillOrName([
+        "data science",
+        "machine learning",
+        "deep learning",
+        "natural language processing",
+        "nlp",
+        "scikit-learn",
+        "text mining",
+        "mlops"
       ]);
     default:
       return false;

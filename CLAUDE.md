@@ -37,7 +37,7 @@ Components are modular and located in `src/components/`:
 - **Hero**: Top section with title and 3D overlay effects
 - **About**: Contains biography text and an interactive **Journey Timeline** (collapsible experience cards mapped from `src/data/timeline.js`)
 - **Skills**: Animated skill cards. Uses consolidated **FILTER_GROUPS** grouping logic (5 categories) to filter cards smoothly using `react-flip-toolkit`
-- **Certifications**: Professional credentials showcase with 3D tilt effects
+- **Certifications**: Professional credentials showcase with 3D tilt effects, sorted by impactfulness and categorized under 5 filters (All, AI & Gen AI, Prompt Engineering, Git & GitHub, Data Science & ML)
 - **Projects**: Data-driven project grid. Click cards to open the **Project Showcase Modal** (`ProjectModal.jsx`) which displays screenshots, categorized tech stack arrays, feature checklists, and repository links
 - **Blog**: Article card grid mapped from `src/data/blog.js`, featuring custom banner assets, metadata lines, and detailed reading overlays (`BlogModal.jsx`)
 - **Contact**: EmailJS-integrated contact form featuring interactive validation (onBlur validations, email regex checking, error borders, loading spinners, form shakes on invalid submits, and self-drawing checkmark SVGs on successful sends)
