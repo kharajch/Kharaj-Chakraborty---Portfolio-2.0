@@ -20,7 +20,7 @@ Hi there! I'm **Kharaj Chakraborty**, a passionate Full Stack AI Application Eng
 - **Dynamic Contact Form Validation**: Features interactive inline validation (RFC 5322 email regex checks, length limits) with field success/error outlines, submit button loading spinner state triggers, input shake cues on invalid submissions, and self-drawing SVG checkmark animations on successful messages.
 - **Consolidated Skills Filtering**: Merges 11 micro-categories into 5 primary filters (Languages, Frameworks, AI & Agents, Databases, Tools & Cloud) to prevent button wrap clutter and remove duplicate "AI" tags.
 - **Immersive 3D Graphics**: Utilizing `three.js`, `@react-three/fiber`, and `@react-three/drei` for engaging backgrounds and interactive elements. Includes a **graceful fallback mechanism** that hides 3D elements on devices with limited WebGL support, ensuring accessibility.
-- **Smooth Animations**: Powered by `framer-motion` and `gsap` for silky-smooth page transitions and element reveals.
+- **Smooth Animations & Themes**: Powered by `framer-motion` and `gsap` for silky-smooth page transitions and element reveals. Features high-contrast dark, light, and cyber-red theme modes with optimized overlays.
 - **End-to-End Testing**: Integrated **Playwright** suite verifying modal controls, inline form validation states, mobile layouts, and theme engine toggles.
 - **Performance Optimized**: Leverages `next/font` for zero layout shift and optimized image scaling with the `sizes` attribute.
 - **Professional Certifications**: Showcase verified credentials with interactive 3D cards. Supports both image-based badges and PDF certificate previews, with links redirecting to official verification pages.

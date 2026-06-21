@@ -20,6 +20,15 @@
   pointer-events: none;
 }
 
+[data-theme='light'] .hero__gradient-overlay {
+  background: linear-gradient(
+    135deg,
+    rgba(245, 245, 245, 0.95) 0%,
+    rgba(245, 245, 245, 0.6) 50%,
+    rgba(245, 245, 245, 0.85) 100%
+  );
+}
+
 .hero__radial-glow {
   position: absolute;
   top: 50%;
@@ -35,6 +44,14 @@
   transform: translateY(-50%);
   z-index: 1;
   pointer-events: none;
+}
+
+[data-theme='light'] .hero__radial-glow {
+  background: radial-gradient(
+    circle,
+    rgba(230, 57, 70, 0.04) 0%,
+    transparent 70%
+  );
 }
 
 .hero__container {

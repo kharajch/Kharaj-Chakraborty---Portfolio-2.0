@@ -122,6 +122,10 @@
   border-left: 1px solid var(--color-border);
 }
 
+[data-theme='light'] .navbar__mobile-menu {
+  background: rgba(245, 245, 245, 0.95);
+}
+
 .navbar__mobile-links {
   list-style: none;
   display: flex;

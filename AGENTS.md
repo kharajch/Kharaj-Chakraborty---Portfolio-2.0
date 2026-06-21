@@ -4,7 +4,7 @@
 This repository is a Next.js App Router portfolio site. Application entrypoints live in `src/app/`, with `layout.js`, `page.js`, and global styles in `globals.css`. Reusable UI is organized by feature in `src/components/<Feature>/`, where each component typically sits beside its CSS file. 
 
 Key features include:
-* **Hero**: Dynamic top section with profile elements and 3D overlays.
+* **Hero**: Dynamic top section with profile elements, 3D overlays, and custom light theme overlays (`[data-theme='light']`) for optimized text contrast.
 * **About**: Timeline biography and an expandable accordion-style vertical Journey Timeline mapped from `src/data/timeline.js`.
 * **Skills**: Animated skill cards with custom 5-group consolidated filtering logic.
 * **Certifications**: Professional credentials showcase with 3D tilt effects, sorted by impactfulness and categorized under 5 filters (All, AI & Gen AI, Prompt Engineering, Git & GitHub, Data Science & ML).
