@@ -12,7 +12,9 @@ import "./Certifications.css";
 const CATEGORIES = [
   { id: "all", label: "All" },
   { id: "ai", label: "AI & Gen AI" },
+  { id: "ai-agents", label: "AI Agents & Copilots" },
   { id: "prompt", label: "Prompt Engineering" },
+  { id: "responsible-ai", label: "Responsible AI" },
   { id: "git", label: "Git & GitHub" },
   { id: "datascience", label: "Data Science & ML" },
 ];
@@ -52,6 +54,13 @@ const matchesCategory = (cert, categoryId) => {
           "responsible ai"
         ]) || skills.some((s) => s === "artificial intelligence (ai)")
       );
+    case "ai-agents":
+      return hasSkillOrName([
+        "ai agent",
+        "ai agents",
+        "copilot",
+        "agent mode"
+      ]);
     case "prompt":
       return hasSkillOrName([
         "prompt engineering",
@@ -59,6 +68,11 @@ const matchesCategory = (cert, categoryId) => {
         "prompts",
         "prompting",
         "vertex ai",
+      ]);
+    case "responsible-ai":
+      return hasSkillOrName([
+        "responsible ai",
+        "responsibly"
       ]);
     case "git":
       return hasSkillOrName([
@@ -253,7 +267,7 @@ export default function Certifications() {
         <motion.div layout className="certifications__grid">
           <AnimatePresence mode="popLayout">
             {filteredCerts.slice(0, visibleCount).map((cert, index) => (
-              <CertificationCard key={cert.name} cert={cert} index={index} />
+              <CertificationCard key={`${cert.name}-${cert.issuer}-${index}`} cert={cert} index={index} />
             ))}
           </AnimatePresence>
         </motion.div>

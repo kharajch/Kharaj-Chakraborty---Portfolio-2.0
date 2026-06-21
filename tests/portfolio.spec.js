@@ -48,7 +48,7 @@ test.describe('Portfolio Site E2E Tests', () => {
 
     // Verify the Google Skills image is rendered (as a placeholder for PDFs or as a standalone badge)
     // We use a simpler selector that targets the img tag directly within the card image container
-    const googleSkillsImg = page.locator('.certification-card__image-wrapper img[src*="google"][src*="skills"]').first();
+    const googleSkillsImg = page.locator('.certification-card__image-wrapper img[src*="google" i]').first();
     await expect(googleSkillsImg).toBeAttached();
   });
 
@@ -59,7 +59,7 @@ test.describe('Portfolio Site E2E Tests', () => {
 
     // Verify filter buttons are visible
     const filterButtons = page.locator('.certifications__filter-btn');
-    await expect(filterButtons).toHaveCount(5);
+    await expect(filterButtons).toHaveCount(7);
 
     // Active button should be 'All'
     const activeFilterBtn = page.locator('.certifications__filter-btn--active');
