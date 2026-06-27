@@ -17,9 +17,9 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL),
-  title: "Kharaj Chakraborty | AI Powered Full Stack Enthusiast",
+  title: "Kharaj Chakraborty | AI Full-Stack Enthusiast",
   description:
-    "Hi there! I'm Kharaj Chakraborty, a passionate AI Powered Full Stack Enthusiast and a Computer Science student at APC Roy Government College. I love building scalable web applications and exploring the depths of Computer Science & Artificial Intelligence.",
+    "Hi there! I'm Kharaj Chakraborty, a passionate AI Full-Stack Enthusiast and a Computer Science student at APC Roy Government College. I love building scalable web applications and exploring the depths of Computer Science & Artificial Intelligence.",
   keywords: [
     "Kharaj Chakraborty",
     "kharajch",
@@ -27,7 +27,7 @@ export const metadata = {
     "Kharaj Chakraborty (@kharajch)",
     "Kharaj Chakraborty---Portfolio",
     "Kharaj Chakraborty (@kharajch)---Portfolio",
-    "AI Powered Full Stack Enthusiast",
+    "AI Full-Stack Enthusiast",
     "AI Powered Full Stack Developer",
     "AI Powered Full Stack Engineer",
     "Web Developer",
@@ -43,9 +43,9 @@ export const metadata = {
     icon: "/images/favicon.ico",
   },
   openGraph: {
-    title: "Kharaj Chakraborty | Full Stack AI Application Engineer",
+    title: "Kharaj Chakraborty | AI Full-Stack Enthusiast",
     description:
-      "Passionate Full Stack AI Application Engineer & Computer Science student building scalable web applications.",
+      "Passionate AI Full-Stack Enthusiast & Computer Science student building scalable web applications.",
     type: "website",
   },
   verification: {

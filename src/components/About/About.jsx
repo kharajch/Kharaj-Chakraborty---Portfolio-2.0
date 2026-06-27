@@ -67,7 +67,7 @@ export default function About() {
             <motion.div variants={itemVariants} className="about__text-block">
               <p className="about__description">
                 Hi there! I&apos;m <strong>Kharaj Chakraborty</strong>, a passionate
-                AI Powered Full Stack Enthusiast and a Computer Science student at
+                AI Full-Stack Enthusiast and a Computer Science student at
                 <span className="accent-text"> APC Roy Government College</span>.
               </p>
               <p className="about__description">
@@ -114,7 +114,7 @@ export default function About() {
                     <span className="code-variable">developer</span> = {`{`}
                     {"\n"}
                     {"  "}name: <span className="code-string">&quot;Kharaj Chakraborty&quot;</span>,{"\n"}
-                    {"  "}role: <span className="code-string">&quot;AI Powered Full Stack Enthusiast&quot;</span>,{"\n"}
+                    {"  "}role: <span className="code-string">&quot;AI Full-Stack Enthusiast&quot;</span>,{"\n"}
                     {"  "}college: <span className="code-string">&quot;APC Roy Govt. College&quot;</span>,{"\n"}
                     {"  "}skills: [<span className="code-string">&quot;React&quot;</span>, <span className="code-string">&quot;Next.js&quot;</span>, <span className="code-string">&quot;Node.js&quot;</span>],{"\n"}
                     {"  "}passion: <span className="code-string">&quot;Building the web&quot;</span>,{"\n"}
