@@ -115,7 +115,7 @@ export default function Hero() {
 
             <p className="hero__tagline">
               Computer Science Student &amp;{" "}
-              <span className="accent-text">AI Powered Full Stack Enthusiast</span>
+              <span className="accent-text">AI Full-Stack Enthusiast</span>
             </p>
 
             <p className="hero__bio">

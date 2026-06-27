@@ -30,7 +30,7 @@ export default function Footer() {
               <span className="footer__logo-dot">.</span>
             </Link>
             <p className="footer__tagline">
-              Full Stack AI Application Engineer &amp; CS Student
+              AI Full-Stack Enthusiast &amp; CS Student
             </p>
           </div>
 
