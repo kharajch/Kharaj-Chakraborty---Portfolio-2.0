@@ -1,5 +1,17 @@
 export const certificationsData = [
   {
+    "name": "Google AI Essentials Specialization",
+    "issuer": "Google",
+    "date": "Jun 2026",
+    "credentialId": "W5759QXSBCX9",
+    "credentialLink": "https://www.coursera.org/account/accomplishments/specialization/W5759QXSBCX9",
+    "img": "/certificates/AI/Professional/Google AI Essentials --- By Google (Coursera).pdf",
+    "skills": [
+      "Artificial Intelligence (AI)",
+      "Generative AI"
+    ]
+  },
+  {
     "name": "Google Prompting Essentials Specialization",
     "issuer": "Google",
     "date": "Jun 2026",
@@ -12,15 +24,30 @@ export const certificationsData = [
     ]
   },
   {
-    "name": "Google AI Essentials Specialization",
+    "name": "Automate DevOps processes by using GitHub Apps",
+    "issuer": "Microsoft Learn",
+    "date": "Jun 2026",
+    "credentialId": "Y4ENND9R",
+    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/Y4ENND9R?sharingId=924A01665F331AE9",
+    "img": "/certificates/Git & Github/Automate DevOps processes by using GitHub --- By Microsoft.pdf",
+    "skills": [
+      "GitHub",
+      "DevOps",
+      "Automation"
+    ]
+  },
+  {
+    "name": "Configure Gemini Code Assist for Organizations",
     "issuer": "Google",
     "date": "Jun 2026",
-    "credentialId": "W5759QXSBCX9",
-    "credentialLink": "https://www.coursera.org/account/accomplishments/specialization/W5759QXSBCX9",
-    "img": "/certificates/AI/Professional/Google AI Essentials --- By Google (Coursera).pdf",
+    "credentialId": "25102619",
+    "credentialLink": "https://www.skills.google/public_profiles/432db7ff-d8ec-4ad3-98a3-addc0f940c54/badges/25102619",
+    "img": "/images/google skills.png",
     "skills": [
-      "Artificial Intelligence (AI)",
-      "Generative AI"
+      "Gemini Code Assist",
+      "Google Gemini",
+      "DevOps",
+      "AI Productivity"
     ]
   },
   {
@@ -50,6 +77,42 @@ export const certificationsData = [
     ]
   },
   {
+    "name": "Deep Learning For Beginners",
+    "issuer": "Simplilearn",
+    "date": "May 2026",
+    "credentialId": "r6oh8FkoS3b",
+    "credentialLink": "https://simpli-web.app.link/e/r6oh8FkoS3b",
+    "img": "/certificates/Data Science/Deep Learning/Deep Learning For Beginners --- By Simplilearn.pdf",
+    "skills": [
+      "Deep Learning",
+      "Artificial Intelligence (AI)"
+    ]
+  },
+  {
+    "name": "Introduction to Artificial Intelligence",
+    "issuer": "Simplilearn",
+    "date": "May 2026",
+    "credentialId": "10289036",
+    "credentialLink": "https://simpli-web.app.link/e/nKCNB6LNz3b",
+    "img": "/certificates/AI/AI Basics/Introduction to Artificial Intelligence --- By Simplilearn.pdf",
+    "skills": [
+      "Artificial Intelligence (AI)",
+      "Machine Learning"
+    ]
+  },
+  {
+    "name": "Introduction to Data Science",
+    "issuer": "Simplilearn",
+    "date": "May 2026",
+    "credentialId": "9HTn72PX73b",
+    "credentialLink": "https://simpli-web.app.link/e/9HTn72PX73b",
+    "img": "/certificates/Data Science/Introduction to Data Science --- By Simplilearn.pdf",
+    "skills": [
+      "Data Science",
+      "Analytics"
+    ]
+  },
+  {
     "name": "Machine Learning Operations (MLOps) for Generative AI",
     "issuer": "Google",
     "date": "May 2026",
@@ -61,16 +124,51 @@ export const certificationsData = [
     ]
   },
   {
-    "name": "Automate DevOps processes by using GitHub Apps",
-    "issuer": "Microsoft Learn",
-    "date": "Jun 2026",
-    "credentialId": "Y4ENND9R",
-    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/Y4ENND9R?sharingId=924A01665F331AE9",
-    "img": "/certificates/Git & Github/Automate DevOps processes by using GitHub --- By Microsoft.pdf",
+    "name": "Machine Learning using Python",
+    "issuer": "Simplilearn",
+    "date": "May 2026",
+    "credentialId": "ykUNjBS6C3b",
+    "credentialLink": "https://simpli-web.app.link/e/ykUNjBS6C3b",
+    "img": "/certificates/Data Science/Machine Learning/Machine Learning using Python --- By Simplilearn.pdf",
     "skills": [
-      "GitHub",
-      "DevOps",
-      "Automation"
+      "Machine Learning",
+      "Python"
+    ]
+  },
+  {
+    "name": "Natural Language Processing (NLP) and Text Mining Tutorial for Beginners",
+    "issuer": "Simplilearn",
+    "date": "May 2026",
+    "credentialId": "MQj4SpGX73b",
+    "credentialLink": "https://simpli-web.app.link/e/MQj4SpGX73b",
+    "img": "/certificates/Data Science/NLP/Natural Language Processing (NLP) and Text Mining Tutorial for Beginners --- By Simplilearn.pdf",
+    "skills": [
+      "Natural Language Processing (NLP)",
+      "Text Mining"
+    ]
+  },
+  {
+    "name": "Scikit-Learn for Beginners",
+    "issuer": "Simplilearn",
+    "date": "May 2026",
+    "credentialId": "U9M8LCKX73b",
+    "credentialLink": "https://simpli-web.app.link/e/U9M8LCKX73b",
+    "img": "/certificates/Data Science/Machine Learning/Scikit-Learn for Beginners --- By Simplilearn.pdf",
+    "skills": [
+      "Scikit-Learn",
+      "Machine Learning"
+    ]
+  },
+  {
+    "name": "AI Foundations",
+    "issuer": "OpenAI",
+    "date": "Jul 2026",
+    "credentialId": "plboyt323t",
+    "credentialLink": "https://academy.openai.com/public/certificate/plboyt323t",
+    "img": "/certificates/AI/AI Basics/AI Foundations --- By OpenAI.pdf",
+    "skills": [
+      "Artificial Intelligence (AI)",
+      "Generative AI"
     ]
   },
   {
@@ -85,6 +183,80 @@ export const certificationsData = [
     ]
   },
   {
+    "name": "Automate GitHub by using GitHub Script",
+    "issuer": "Microsoft Learn",
+    "date": "Jun 2026",
+    "credentialId": "2TD76JZV",
+    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/2TD76JZV?sharingId=924A01665F331AE9",
+    "img": "/certificates/Git & Github/Automate GitHub by using GitHub Script --- By Microsoft.pdf",
+    "skills": [
+      "GitHub",
+      "Automation",
+      "GitHub Script"
+    ]
+  },
+  {
+    "name": "ChatGPT for Search Engine Optimization",
+    "issuer": "Simplilearn",
+    "date": "Jun 2026",
+    "credentialId": "10376643",
+    "credentialLink": "https://simpli-web.app.link/e/af2U9DEBb4b",
+    "img": "/certificates/AI/Generative AI/Gen AI in SDLC/ChatGPT for Search Engine Optimization --- By Simplilearn.pdf",
+    "skills": [
+      "ChatGPT",
+      "SEO",
+      "Generative AI"
+    ]
+  },
+  {
+    "name": "Communicate effectively on GitHub using Markdown",
+    "issuer": "Microsoft Learn",
+    "date": "Jun 2026",
+    "credentialId": "D39EP9WJ",
+    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/D39EP9WJ?sharingId=924A01665F331AE9",
+    "img": "/certificates/Git & Github/Communicate effectively on GitHub using Markdown --- By Microsoft.pdf",
+    "skills": [
+      "GitHub",
+      "Markdown",
+      "Communication"
+    ]
+  },
+  {
+    "name": "Create Your First Gemini Enterprise Application",
+    "issuer": "Google",
+    "date": "Jun 2026",
+    "credentialId": "24851813",
+    "credentialLink": "https://www.skills.google/public_profiles/432db7ff-d8ec-4ad3-98a3-addc0f940c54/badges/24851813",
+    "img": "/certificates/AI/AI Agents/Create Your First Gemini Enterprise Application --- By Google.png",
+    "skills": [
+      "AI Agents"
+    ]
+  },
+  {
+    "name": "Design Prompts for Everyday Work Tasks",
+    "issuer": "Google",
+    "date": "Jun 2026",
+    "credentialId": "9EX1HTP9GE9I",
+    "credentialLink": "https://www.coursera.org/account/accomplishments/records/9EX1HTP9GE9I",
+    "img": "/certificates/Prompt Engineering/Design Prompts for Everyday Work Tasks --- Google (Coursra).pdf",
+    "skills": [
+      "Prompt Engineering",
+      "Generative AI"
+    ]
+  },
+  {
+    "name": "Discover the Art of Prompting",
+    "issuer": "Google",
+    "date": "Jun 2026",
+    "credentialId": "N60649V07RI9",
+    "credentialLink": "https://www.coursera.org/account/accomplishments/records/N60649V07RI9",
+    "img": "/certificates/Prompt Engineering/Discover the Art of Prompting --- By Google (Coursera).pdf",
+    "skills": [
+      "Prompt Engineering",
+      "Generative AI"
+    ]
+  },
+  {
     "name": "Enterprise Agents and Use Cases",
     "issuer": "Google",
     "date": "Jun 2026",
@@ -93,6 +265,31 @@ export const certificationsData = [
     "img": "/certificates/AI/AI Agents/Enterprise Agents and Use Cases --- By Google.png",
     "skills": [
       "AI Agents"
+    ]
+  },
+  {
+    "name": "Explore Git hooks",
+    "issuer": "Microsoft Learn",
+    "date": "Jun 2026",
+    "credentialId": "H276JHB8",
+    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/H276JHB8?sharingId=924A01665F331AE9",
+    "img": "/certificates/Git & Github/Explore Git hooks --- By Microsoft.pdf",
+    "skills": [
+      "Git",
+      "Git Hooks",
+      "Automation"
+    ]
+  },
+  {
+    "name": "Gemini For End To End SDLC",
+    "issuer": "Google",
+    "date": "Jun 2026",
+    "credentialId": "",
+    "credentialLink": "https://www.skills.google/public_profiles/432db7ff-d8ec-4ad3-98a3-addc0f940c54/badges",
+    "img": "/certificates/AI/Generative AI/Gemini For End To End SDLC --- By Google.png",
+    "skills": [
+      "Generative AI",
+      "Google Gemini"
     ]
   },
   {
@@ -115,113 +312,6 @@ export const certificationsData = [
     "img": "/images/google skills.png",
     "skills": [
       "AI Agents",
-      "Generative AI"
-    ]
-  },
-  {
-    "name": "Introduction to AI Agents",
-    "issuer": "Google",
-    "date": "Jun 2026",
-    "credentialId": "24850421",
-    "credentialLink": "https://www.skills.google/public_profiles/432db7ff-d8ec-4ad3-98a3-addc0f940c54/badges/24850421",
-    "img": "/certificates/AI/AI Agents/Introduction to AI Agents --- By Google.png",
-    "skills": [
-      "AI Agents"
-    ]
-  },
-  {
-    "name": "Prompt Design in Agent Platform",
-    "issuer": "Google",
-    "date": "Jun 2026",
-    "credentialId": "24774513",
-    "credentialLink": "https://www.skills.google/public_profiles/432db7ff-d8ec-4ad3-98a3-addc0f940c54/badges/24774513?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share",
-    "img": "/certificates/Prompt Engineering/Prompt Design in Agent Platform --- By Google.png",
-    "skills": [
-      "Vertex AI",
-      "Prompt Engineering"
-    ]
-  },
-  {
-    "name": "Configure Gemini Code Assist for Organizations",
-    "issuer": "Google",
-    "date": "Jun 2026",
-    "credentialId": "25102619",
-    "credentialLink": "https://www.skills.google/public_profiles/432db7ff-d8ec-4ad3-98a3-addc0f940c54/badges/25102619",
-    "img": "/images/google skills.png",
-    "skills": [
-      "Gemini Code Assist",
-      "Google Gemini",
-      "DevOps",
-      "AI Productivity"
-    ]
-  },
-  {
-    "name": "Discover the Art of Prompting",
-    "issuer": "Google",
-    "date": "Jun 2026",
-    "credentialId": "N60649V07RI9",
-    "credentialLink": "https://www.coursera.org/account/accomplishments/records/N60649V07RI9",
-    "img": "/certificates/Prompt Engineering/Discover the Art of Prompting --- By Google (Coursera).pdf",
-    "skills": [
-      "Prompt Engineering",
-      "Generative AI"
-    ]
-  },
-  {
-    "name": "Resolve GitHub issues using GitHub Copilot Agent",
-    "issuer": "Microsoft Learn",
-    "date": "Jun 2026",
-    "credentialId": "FEM3N67X",
-    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/FEM3N67X?sharingId=924A01665F331AE9",
-    "img": "/certificates/Git & Github/Resolve GitHub issues using GitHub Copilot Agent (Path) --- By Microsoft.pdf",
-    "skills": [
-      "GitHub",
-      "GitHub Copilot Agent",
-      "Artificial Intelligence (AI)"
-    ]
-  },
-  {
-    "name": "Resolve GitHub issues using GitHub Copilot Agent",
-    "issuer": "Microsoft",
-    "date": "Jun 2026",
-    "credentialId": "",
-    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch",
-    "img": "/certificates/Git & Github/Resolve GitHub issues using GitHub Copilot Agent --- By Microsoft.pdf",
-    "skills": [
-      "GitHub",
-      "Version Control"
-    ]
-  },
-  {
-    "name": "Introduction to Generative AI And Agents",
-    "issuer": "Microsoft",
-    "date": "Jun 2026",
-    "credentialId": "",
-    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch",
-    "img": "/certificates/AI/Generative AI/Introduction to Generative AI And Agents --- By Microsoft Learn.pdf",
-    "skills": [
-      "Generative AI"
-    ]
-  },
-  {
-    "name": "Building applications with GitHub Copilot agent mode",
-    "issuer": "Microsoft",
-    "date": "May 2026",
-    "credentialId": "U7F8HN63",
-    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/U7F8HN63?sharingId=924A01665F331AE9",
-    "img": "/certificates/AI/Copilot/Building Applications With Github Copilot Agent Mode --- By Microsoft.pdf",
-    "skills": [
-      "GitHub Copilot"
-    ]
-  },
-  {
-    "name": "Introduction to Generative AI",
-    "issuer": "Google",
-    "date": "Jun 2026",
-    "credentialId": "",
-    "credentialLink": "https://www.skills.google/public_profiles/432db7ff-d8ec-4ad3-98a3-addc0f940c54/badges",
-    "img": "/certificates/AI/Generative AI/Introduction to Generative AI --- By Google.png",
-    "skills": [
       "Generative AI"
     ]
   },
@@ -316,6 +406,64 @@ export const certificationsData = [
     ]
   },
   {
+    "name": "Introduction to Generative AI",
+    "issuer": "Google",
+    "date": "Jun 2026",
+    "credentialId": "",
+    "credentialLink": "https://www.skills.google/public_profiles/432db7ff-d8ec-4ad3-98a3-addc0f940c54/badges",
+    "img": "/certificates/AI/Generative AI/Introduction to Generative AI --- By Google.png",
+    "skills": [
+      "Generative AI"
+    ]
+  },
+  {
+    "name": "Introduction to Generative AI And Agents",
+    "issuer": "Microsoft",
+    "date": "Jun 2026",
+    "credentialId": "",
+    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch",
+    "img": "/certificates/AI/Generative AI/Introduction to Generative AI And Agents --- By Microsoft Learn.pdf",
+    "skills": [
+      "Generative AI"
+    ]
+  },
+  {
+    "name": "Introduction to Git",
+    "issuer": "Microsoft Learn",
+    "date": "Jun 2026",
+    "credentialId": "Y4E88VJR",
+    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/Y4E88VJR?sharingId=924A01665F331AE9",
+    "img": "/certificates/Git & Github/Introduction to Git --- By Microsoft.pdf",
+    "skills": [
+      "Git",
+      "Version Control"
+    ]
+  },
+  {
+    "name": "Introduction to GitHub",
+    "issuer": "Microsoft Learn",
+    "date": "Jun 2026",
+    "credentialId": "9AYB5PRU",
+    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/9AYB5PRU?sharingId=924A01665F331AE9",
+    "img": "/certificates/Git & Github/Introduction to Git --- By Microsoft.pdf",
+    "skills": [
+      "GitHub",
+      "Version Control"
+    ]
+  },
+  {
+    "name": "Introduction to GitHub",
+    "issuer": "Microsoft",
+    "date": "Jun 2026",
+    "credentialId": "",
+    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch",
+    "img": "/certificates/Git & Github/Introduction to GitHub --- By Microsoft.pdf",
+    "skills": [
+      "GitHub",
+      "Version Control"
+    ]
+  },
+  {
     "name": "Introduction to Prompt Engineering with GitHub Copilot",
     "issuer": "Microsoft",
     "date": "Jun 2026",
@@ -327,109 +475,16 @@ export const certificationsData = [
     ]
   },
   {
-    "name": "Deep Learning For Beginners",
-    "issuer": "Simplilearn",
-    "date": "May 2026",
-    "credentialId": "r6oh8FkoS3b",
-    "credentialLink": "https://simpli-web.app.link/e/r6oh8FkoS3b",
-    "img": "/certificates/Data Science/Deep Learning/Deep Learning For Beginners --- By Simplilearn.pdf",
-    "skills": [
-      "Deep Learning",
-      "Artificial Intelligence (AI)"
-    ]
-  },
-  {
-    "name": "Develop a speech-capable generative AI application",
-    "issuer": "Microsoft",
-    "date": "May 2026",
-    "credentialId": "WMAFHEUN",
-    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/WMAFHEUN?sharingId=924A01665F331AE9",
-    "img": "/certificates/AI/Generative AI/Develop A Speech-capable Generative AI Application --- By Microsoft.pdf",
-    "skills": [
-      "Generative AI"
-    ]
-  },
-  {
-    "name": "Explore Generative AI",
-    "issuer": "Microsoft",
-    "date": "May 2026",
-    "credentialId": "8VYRKVYW",
-    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/8VYRKVYW?sharingId=924A01665F331AE9",
-    "img": "/certificates/AI/Generative AI/Explore Generative AI --- By Microsoft.pdf",
-    "skills": [
-      "Generative AI"
-    ]
-  },
-  {
-    "name": "Introduction to Responsible AI",
-    "issuer": "Google",
-    "date": "Jun 2026",
-    "credentialId": "",
-    "credentialLink": "https://www.skills.google/public_profiles/432db7ff-d8ec-4ad3-98a3-addc0f940c54/badges",
-    "img": "/certificates/AI/Responsible AI/Introduction to Responsible AI --- By Google.png",
-    "skills": [
-      "Responsible AI"
-    ]
-  },
-  {
-    "name": "Responsible AI Applying AI Principles with Google Cloud",
-    "issuer": "Google",
-    "date": "Jun 2026",
-    "credentialId": "",
-    "credentialLink": "https://www.skills.google/public_profiles/432db7ff-d8ec-4ad3-98a3-addc0f940c54/badges",
-    "img": "/certificates/AI/Responsible AI/Responsible AI Applying AI Principles with Google Cloud --- By Google.png",
-    "skills": [
-      "Responsible AI"
-    ]
-  },
-  {
-    "name": "Automate GitHub by using GitHub Script",
+    "name": "Maintain a secure repository by using GitHub best practices",
     "issuer": "Microsoft Learn",
     "date": "Jun 2026",
-    "credentialId": "2TD76JZV",
-    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/2TD76JZV?sharingId=924A01665F331AE9",
-    "img": "/certificates/Git & Github/Automate GitHub by using GitHub Script --- By Microsoft.pdf",
+    "credentialId": "4C6G4S7K",
+    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/4C6G4S7K?sharingId=924A01665F331AE9",
+    "img": "/certificates/Git & Github/Maintain a secure repository by using GitHub best practices --- By Microsoft.pdf",
     "skills": [
       "GitHub",
-      "Automation",
-      "GitHub Script"
-    ]
-  },
-  {
-    "name": "GitHub responsible AI",
-    "issuer": "Microsoft",
-    "date": "Jun 2026",
-    "credentialId": "H2RCXJV8",
-    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/H2RCXJV8?sharingId=924A01665F331AE9",
-    "img": "/certificates/AI/Responsible AI/GitHub responsible AI --- By Microsoft.pdf",
-    "skills": [
-      "Responsible AI"
-    ]
-  },
-  {
-    "name": "Communicate effectively on GitHub using Markdown",
-    "issuer": "Microsoft Learn",
-    "date": "Jun 2026",
-    "credentialId": "D39EP9WJ",
-    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/D39EP9WJ?sharingId=924A01665F331AE9",
-    "img": "/certificates/Git & Github/Communicate effectively on GitHub using Markdown --- By Microsoft.pdf",
-    "skills": [
-      "GitHub",
-      "Markdown",
-      "Communication"
-    ]
-  },
-  {
-    "name": "Explore Git hooks",
-    "issuer": "Microsoft Learn",
-    "date": "Jun 2026",
-    "credentialId": "H276JHB8",
-    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/H276JHB8?sharingId=924A01665F331AE9",
-    "img": "/certificates/Git & Github/Explore Git hooks --- By Microsoft.pdf",
-    "skills": [
-      "Git",
-      "Git Hooks",
-      "Automation"
+      "Repository Security",
+      "Best Practices"
     ]
   },
   {
@@ -497,6 +552,55 @@ export const certificationsData = [
     ]
   },
   {
+    "name": "Project Planning using Generative AI",
+    "issuer": "Simplilearn",
+    "date": "Jun 2026",
+    "credentialId": "10381054",
+    "credentialLink": "https://simpli-web.app.link/e/mkg7QcLBb4b",
+    "img": "/certificates/AI/Generative AI/Gen AI in SDLC/Project Planning using Generative AI --- By Simplilearn.pdf",
+    "skills": [
+      "Project Planning",
+      "Generative AI"
+    ]
+  },
+  {
+    "name": "Prompt Design in Agent Platform",
+    "issuer": "Google",
+    "date": "Jun 2026",
+    "credentialId": "24774513",
+    "credentialLink": "https://www.skills.google/public_profiles/432db7ff-d8ec-4ad3-98a3-addc0f940c54/badges/24774513?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share",
+    "img": "/certificates/Prompt Engineering/Prompt Design in Agent Platform --- By Google.png",
+    "skills": [
+      "Vertex AI",
+      "Prompt Engineering"
+    ]
+  },
+  {
+    "name": "Resolve GitHub issues using GitHub Copilot Agent",
+    "issuer": "Microsoft Learn",
+    "date": "Jun 2026",
+    "credentialId": "FEM3N67X",
+    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/FEM3N67X?sharingId=924A01665F331AE9",
+    "img": "/certificates/Git & Github/Resolve GitHub issues using GitHub Copilot Agent (Path) --- By Microsoft.pdf",
+    "skills": [
+      "GitHub",
+      "GitHub Copilot Agent",
+      "Artificial Intelligence (AI)"
+    ]
+  },
+  {
+    "name": "Resolve GitHub issues using GitHub Copilot Agent",
+    "issuer": "Microsoft",
+    "date": "Jun 2026",
+    "credentialId": "",
+    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch",
+    "img": "/certificates/Git & Github/Resolve GitHub issues using GitHub Copilot Agent --- By Microsoft.pdf",
+    "skills": [
+      "GitHub",
+      "Version Control"
+    ]
+  },
+  {
     "name": "Search and organize repository history by using GitHub",
     "issuer": "Microsoft Learn",
     "date": "Jun 2026",
@@ -522,6 +626,18 @@ export const certificationsData = [
     ]
   },
   {
+    "name": "Start Writing Prompts like a Pro",
+    "issuer": "Google",
+    "date": "Jun 2026",
+    "credentialId": "PGXABS2X8MZ2",
+    "credentialLink": "https://www.coursera.org/account/accomplishments/records/PGXABS2X8MZ2",
+    "img": "/certificates/Prompt Engineering/Start Writing Prompts like a Pro --- By Google (Coursera).pdf",
+    "skills": [
+      "Prompt Engineering",
+      "Generative AI"
+    ]
+  },
+  {
     "name": "Upload your project by using GitHub best practices",
     "issuer": "Microsoft Learn",
     "date": "Jun 2026",
@@ -535,169 +651,140 @@ export const certificationsData = [
     ]
   },
   {
-    "name": "Introduction to Git",
-    "issuer": "Microsoft Learn",
-    "date": "Jun 2026",
-    "credentialId": "Y4E88VJR",
-    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/Y4E88VJR?sharingId=924A01665F331AE9",
-    "img": "/certificates/Git & Github/Introduction to Git --- By Microsoft.pdf",
-    "skills": [
-      "Git",
-      "Version Control"
-    ]
-  },
-  {
-    "name": "Introduction to GitHub",
-    "issuer": "Microsoft Learn",
-    "date": "Jun 2026",
-    "credentialId": "9AYB5PRU",
-    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/9AYB5PRU?sharingId=924A01665F331AE9",
-    "img": "/certificates/Git & Github/Introduction to Git --- By Microsoft.pdf",
-    "skills": [
-      "GitHub",
-      "Version Control"
-    ]
-  },
-  {
-    "name": "Introduction to GitHub",
-    "issuer": "Microsoft",
-    "date": "Jun 2026",
-    "credentialId": "",
-    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch",
-    "img": "/certificates/Git & Github/Introduction to GitHub --- By Microsoft.pdf",
-    "skills": [
-      "GitHub",
-      "Version Control"
-    ]
-  },
-  {
-    "name": "Maintain a secure repository by using GitHub best practices",
-    "issuer": "Microsoft Learn",
-    "date": "Jun 2026",
-    "credentialId": "4C6G4S7K",
-    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/4C6G4S7K?sharingId=924A01665F331AE9",
-    "img": "/certificates/Git & Github/Maintain a secure repository by using GitHub best practices --- By Microsoft.pdf",
-    "skills": [
-      "GitHub",
-      "Repository Security",
-      "Best Practices"
-    ]
-  },
-  {
-    "name": "Responsible AI With Github Copilot",
+    "name": "Boost your productivity with Microsoft Copilot",
     "issuer": "Microsoft",
     "date": "May 2026",
-    "credentialId": "H2YWLFQ8",
-    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/H2YWLFQ8?sharingId=924A01665F331AE9",
-    "img": "/certificates/AI/Responsible AI/Responsible AI With Github Copilot --- By Microsoft.pdf",
+    "credentialId": "U7FHGMQ3",
+    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/U7FHGMQ3?sharingId=924A01665F331AE9",
+    "img": "/certificates/AI/Copilot/Boost Your Productivity With Microsoft Copilot --- By Microsoft.pdf",
     "skills": [
-      "Responsible AI"
+      "Microsoft Copilot"
     ]
   },
   {
-    "name": "Machine Learning using Python",
-    "issuer": "Simplilearn",
+    "name": "Building applications with GitHub Copilot agent mode",
+    "issuer": "Microsoft",
     "date": "May 2026",
-    "credentialId": "ykUNjBS6C3b",
-    "credentialLink": "https://simpli-web.app.link/e/ykUNjBS6C3b",
-    "img": "/certificates/Data Science/Machine Learning/Machine Learning using Python --- By Simplilearn.pdf",
+    "credentialId": "U7F8HN63",
+    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/U7F8HN63?sharingId=924A01665F331AE9",
+    "img": "/certificates/AI/Copilot/Building Applications With Github Copilot Agent Mode --- By Microsoft.pdf",
     "skills": [
-      "Machine Learning",
-      "Python"
+      "GitHub Copilot"
     ]
   },
   {
-    "name": "Scikit-Learn for Beginners",
-    "issuer": "Simplilearn",
+    "name": "Develop a speech-capable generative AI application",
+    "issuer": "Microsoft",
     "date": "May 2026",
-    "credentialId": "U9M8LCKX73b",
-    "credentialLink": "https://simpli-web.app.link/e/U9M8LCKX73b",
-    "img": "/certificates/Data Science/Machine Learning/Scikit-Learn for Beginners --- By Simplilearn.pdf",
+    "credentialId": "WMAFHEUN",
+    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/WMAFHEUN?sharingId=924A01665F331AE9",
+    "img": "/certificates/AI/Generative AI/Develop A Speech-capable Generative AI Application --- By Microsoft.pdf",
     "skills": [
-      "Scikit-Learn",
-      "Machine Learning"
-    ]
-  },
-  {
-    "name": "Create Your First Gemini Enterprise Application",
-    "issuer": "Google",
-    "date": "Jun 2026",
-    "credentialId": "24851813",
-    "credentialLink": "https://www.skills.google/public_profiles/432db7ff-d8ec-4ad3-98a3-addc0f940c54/badges/24851813",
-    "img": "/certificates/AI/AI Agents/Create Your First Gemini Enterprise Application --- By Google.png",
-    "skills": [
-      "AI Agents"
-    ]
-  },
-  {
-    "name": "Introduction to AI",
-    "issuer": "Google",
-    "date": "Jun 2026",
-    "credentialId": "YEF1XB864WIP",
-    "credentialLink": "https://www.coursera.org/account/accomplishments/records/YEF1XB864WIP",
-    "img": "/certificates/AI/AI Agents/Introduction to AI Agents --- By Google.png",
-    "skills": [
-      "Generative AI",
-      "Artificial Intelligence (AI)"
-    ]
-  },
-  {
-    "name": "Design Prompts for Everyday Work Tasks",
-    "issuer": "Google",
-    "date": "Jun 2026",
-    "credentialId": "9EX1HTP9GE9I",
-    "credentialLink": "https://www.coursera.org/account/accomplishments/records/9EX1HTP9GE9I",
-    "img": "/certificates/Prompt Engineering/Design Prompts for Everyday Work Tasks --- Google (Coursra).pdf",
-    "skills": [
-      "Prompt Engineering",
       "Generative AI"
     ]
   },
   {
-    "name": "Start Writing Prompts like a Pro",
-    "issuer": "Google",
-    "date": "Jun 2026",
-    "credentialId": "PGXABS2X8MZ2",
-    "credentialLink": "https://www.coursera.org/account/accomplishments/records/PGXABS2X8MZ2",
-    "img": "/certificates/Prompt Engineering/Start Writing Prompts like a Pro --- By Google (Coursera).pdf",
-    "skills": [
-      "Prompt Engineering",
-      "Generative AI"
-    ]
-  },
-  {
-    "name": "Embrace responsible AI principles and practices",
+    "name": "Explore Generative AI",
     "issuer": "Microsoft",
-    "date": "Jun 2026",
-    "credentialId": "BUGE5AUD",
-    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/BUGE5AUD?sharingId=924A01665F331AE9",
-    "img": "/certificates/AI/Responsible AI/Embrace responsible AI principles and practices --- By Microsoft.pdf",
+    "date": "May 2026",
+    "credentialId": "8VYRKVYW",
+    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/8VYRKVYW?sharingId=924A01665F331AE9",
+    "img": "/certificates/AI/Generative AI/Explore Generative AI --- By Microsoft.pdf",
     "skills": [
-      "Responsible AI"
-    ]
-  },
-  {
-    "name": "Use AI Responsibly",
-    "issuer": "Google",
-    "date": "Jun 2026",
-    "credentialId": "SYGZSDWZKPU5",
-    "credentialLink": "https://www.coursera.org/account/accomplishments/records/SYGZSDWZKPU5",
-    "img": "/certificates/AI/Responsible AI/Use AI Responsibly --- By Google (Coursera).pdf",
-    "skills": [
-      "Responsible AI",
       "Generative AI"
     ]
   },
   {
-    "name": "Introduction to Google Workspace with Gemini",
+    "name": "Gemini for end-to-end SDLC",
     "issuer": "Google",
-    "date": "Jun 2026",
-    "credentialId": "24781152",
-    "credentialLink": "https://www.skills.google/public_profiles/432db7ff-d8ec-4ad3-98a3-addc0f940c54/badges/24781152?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share",
-    "img": "/certificates/AI/Generative AI/Introduction to Google Workspace with Gemini --- By Google.png",
+    "date": "May 2026",
+    "credentialId": "24549712",
+    "credentialLink": "https://www.skills.google/public_profiles/432db7ff-d8ec-4ad3-98a3-addc0f940c54/badges/24549712",
+    "img": "/images/google skills.png",
     "skills": [
-      "Generative AI",
+      "Software Development Life Cycle (SDLC)",
       "Google Gemini"
+    ]
+  },
+  {
+    "name": "GenAI for Code Migration & Optimization in JavaScript",
+    "issuer": "Simplilearn",
+    "date": "May 2026",
+    "credentialId": "10291073",
+    "credentialLink": "https://simpli-web.app.link/e/1CH5vnwEA3b",
+    "img": "/certificates/AI/Generative AI/Gen AI in SDLC/GenAI for Code Migration & Optimization in JavaScript --- By Simplilearn.pdf",
+    "skills": [
+      "Code Refactoring",
+      "Generative AI"
+    ]
+  },
+  {
+    "name": "GitHub Copilot for Software Testing in JavaScript",
+    "issuer": "Simplilearn",
+    "date": "May 2026",
+    "credentialId": "10290324",
+    "credentialLink": "https://simpli-web.app.link/e/UCNP0TVoA3b",
+    "img": "/certificates/AI/Generative AI/Gen AI in SDLC/GitHub Copilot for Software Testing in JavaScript --- By Simplilearn.pdf",
+    "skills": [
+      "Testing",
+      "Test Automation"
+    ]
+  },
+  {
+    "name": "Introduction to Generative AI",
+    "issuer": "Simplilearn",
+    "date": "May 2026",
+    "credentialId": "10264026",
+    "credentialLink": "https://simpli-web.app.link/e/ikQ3f8ZXo3b",
+    "img": "/certificates/AI/Generative AI/Introduction to Generative AI --- By Google Cloud.pdf",
+    "skills": [
+      "Generative AI"
+    ]
+  },
+  {
+    "name": "Introduction To Image Generation",
+    "issuer": "Google",
+    "date": "May 2026",
+    "credentialId": "24403712",
+    "credentialLink": "https://www.skills.google/public_profiles/432db7ff-d8ec-4ad3-98a3-addc0f940c54/badges/24403712",
+    "img": "/certificates/AI/Generative AI/Introduction to image generation --- By Google.png",
+    "skills": [
+      "Image Generation",
+      "Generative AI"
+    ]
+  },
+  {
+    "name": "Introduction to Large Language Models",
+    "issuer": "Google",
+    "date": "May 2026",
+    "credentialId": "24436895",
+    "credentialLink": "https://www.skills.google/public_profiles/432db7ff-d8ec-4ad3-98a3-addc0f940c54/badges/24436895",
+    "img": "/certificates/AI/Generative AI/Introduction to Large Language Models --- By Google.png",
+    "skills": [
+      "Large Language Models (LLM)"
+    ]
+  },
+  {
+    "name": "Introduction to Prompt Engineering",
+    "issuer": "Simplilearn",
+    "date": "May 2026",
+    "credentialId": "10263487",
+    "credentialLink": "https://simpli-web.app.link/e/2viKy5MNo3b",
+    "img": "/certificates/Prompt Engineering/Introduction To Prompt Engineering --- By Simplilearn.pdf",
+    "skills": [
+      "Prompt Engineering"
+    ]
+  },
+  {
+    "name": "Introduction to Prompt Engineering with GitHub Copilot",
+    "issuer": "Simplilearn",
+    "date": "May 2026",
+    "credentialId": "10263896",
+    "credentialLink": "https://simpli-web.app.link/e/90Hs62PVo3b",
+    "img": "/certificates/Prompt Engineering/Introduction To Prompt Engineering --- By Simplilearn.pdf",
+    "skills": [
+      "GitHub Copilot",
+      "Prompt Engineering"
     ]
   },
   {
@@ -709,6 +796,41 @@ export const certificationsData = [
     "img": "/certificates/AI/Generative AI/Create Engaging Video with Google Vids --- By Google.png",
     "skills": [
       "Generative AI"
+    ]
+  },
+  {
+    "name": "Design a dream destination using Microsoft Copilot",
+    "issuer": "Microsoft",
+    "date": "Jun 2026",
+    "credentialId": "K9LQ5CLB",
+    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/K9LQ5CLB?sharingId=924A01665F331AE9",
+    "img": "/certificates/AI/AI Basics/Design a dream destination using Microsoft Copilot --- By Microsoft.pdf",
+    "skills": [
+      "Microsoft Copilot",
+      "Generative AI"
+    ]
+  },
+  {
+    "name": "Design a dream destination with AI",
+    "issuer": "Microsoft",
+    "date": "Jun 2026",
+    "credentialId": "VSBAKTKM",
+    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/VSBAKTKM?sharingId=924A01665F331AE9",
+    "img": "/certificates/AI/AI Basics/Design a dream destination with AI --- By Microsoft.pdf",
+    "skills": [
+      "Generative AI",
+      "AI Productivity"
+    ]
+  },
+  {
+    "name": "Embrace responsible AI principles and practices",
+    "issuer": "Microsoft",
+    "date": "Jun 2026",
+    "credentialId": "BUGE5AUD",
+    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/BUGE5AUD?sharingId=924A01665F331AE9",
+    "img": "/certificates/AI/Responsible AI/Embrace responsible AI principles and practices --- By Microsoft.pdf",
+    "skills": [
+      "Responsible AI"
     ]
   },
   {
@@ -784,15 +906,83 @@ export const certificationsData = [
     ]
   },
   {
-    "name": "Gemini For End To End SDLC",
+    "name": "Get Started With AI",
+    "issuer": "Microsoft",
+    "date": "Jun 2026",
+    "credentialId": "H827JZ63",
+    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/H827JZ63?sharingId=924A01665F331AE9",
+    "img": "/certificates/AI/AI Basics/Get Started With AI --- By Microsoft.pdf",
+    "skills": [
+      "Artificial Intelligence (AI)",
+      "Generative AI"
+    ]
+  },
+  {
+    "name": "GitHub responsible AI",
+    "issuer": "Microsoft",
+    "date": "Jun 2026",
+    "credentialId": "H2RCXJV8",
+    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/H2RCXJV8?sharingId=924A01665F331AE9",
+    "img": "/certificates/AI/Responsible AI/GitHub responsible AI --- By Microsoft.pdf",
+    "skills": [
+      "Responsible AI"
+    ]
+  },
+  {
+    "name": "Introduction to AI",
+    "issuer": "Google",
+    "date": "Jun 2026",
+    "credentialId": "YEF1XB864WIP",
+    "credentialLink": "https://www.coursera.org/account/accomplishments/records/YEF1XB864WIP",
+    "img": "/certificates/AI/AI Agents/Introduction to AI Agents --- By Google.png",
+    "skills": [
+      "Generative AI",
+      "Artificial Intelligence (AI)"
+    ]
+  },
+  {
+    "name": "Introduction to AI Agents",
+    "issuer": "Google",
+    "date": "Jun 2026",
+    "credentialId": "24850421",
+    "credentialLink": "https://www.skills.google/public_profiles/432db7ff-d8ec-4ad3-98a3-addc0f940c54/badges/24850421",
+    "img": "/certificates/AI/AI Agents/Introduction to AI Agents --- By Google.png",
+    "skills": [
+      "AI Agents"
+    ]
+  },
+  {
+    "name": "Introduction To AI Concepts",
+    "issuer": "Microsoft",
+    "date": "Jun 2026",
+    "credentialId": "",
+    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch",
+    "img": "/certificates/AI/Generative AI/Introduction To AI Concepts --- By Microsoft Learn.pdf",
+    "skills": [
+      "Generative AI"
+    ]
+  },
+  {
+    "name": "Introduction to Google Workspace with Gemini",
+    "issuer": "Google",
+    "date": "Jun 2026",
+    "credentialId": "24781152",
+    "credentialLink": "https://www.skills.google/public_profiles/432db7ff-d8ec-4ad3-98a3-addc0f940c54/badges/24781152?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share",
+    "img": "/certificates/AI/Generative AI/Introduction to Google Workspace with Gemini --- By Google.png",
+    "skills": [
+      "Generative AI",
+      "Google Gemini"
+    ]
+  },
+  {
+    "name": "Introduction to Responsible AI",
     "issuer": "Google",
     "date": "Jun 2026",
     "credentialId": "",
     "credentialLink": "https://www.skills.google/public_profiles/432db7ff-d8ec-4ad3-98a3-addc0f940c54/badges",
-    "img": "/certificates/AI/Generative AI/Gemini For End To End SDLC --- By Google.png",
+    "img": "/certificates/AI/Responsible AI/Introduction to Responsible AI --- By Google.png",
     "skills": [
-      "Generative AI",
-      "Google Gemini"
+      "Responsible AI"
     ]
   },
   {
@@ -804,6 +994,17 @@ export const certificationsData = [
     "img": "/certificates/AI/Generative AI/Maximize Productivity With AI Tools --- By Google (Coursera).pdf",
     "skills": [
       "Generative AI"
+    ]
+  },
+  {
+    "name": "Responsible AI Applying AI Principles with Google Cloud",
+    "issuer": "Google",
+    "date": "Jun 2026",
+    "credentialId": "",
+    "credentialLink": "https://www.skills.google/public_profiles/432db7ff-d8ec-4ad3-98a3-addc0f940c54/badges",
+    "img": "/certificates/AI/Responsible AI/Responsible AI Applying AI Principles with Google Cloud --- By Google.png",
+    "skills": [
+      "Responsible AI"
     ]
   },
   {
@@ -852,120 +1053,15 @@ export const certificationsData = [
     ]
   },
   {
-    "name": "Natural Language Processing (NLP) and Text Mining Tutorial for Beginners",
-    "issuer": "Simplilearn",
-    "date": "May 2026",
-    "credentialId": "MQj4SpGX73b",
-    "credentialLink": "https://simpli-web.app.link/e/MQj4SpGX73b",
-    "img": "/certificates/Data Science/NLP/Natural Language Processing (NLP) and Text Mining Tutorial for Beginners --- By Simplilearn.pdf",
-    "skills": [
-      "Natural Language Processing (NLP)",
-      "Text Mining"
-    ]
-  },
-  {
-    "name": "Introduction To Image Generation",
+    "name": "Use AI Responsibly",
     "issuer": "Google",
-    "date": "May 2026",
-    "credentialId": "24403712",
-    "credentialLink": "https://www.skills.google/public_profiles/432db7ff-d8ec-4ad3-98a3-addc0f940c54/badges/24403712",
-    "img": "/certificates/AI/Generative AI/Introduction to image generation --- By Google.png",
-    "skills": [
-      "Image Generation",
-      "Generative AI"
-    ]
-  },
-  {
-    "name": "Introduction to Large Language Models",
-    "issuer": "Google",
-    "date": "May 2026",
-    "credentialId": "24436895",
-    "credentialLink": "https://www.skills.google/public_profiles/432db7ff-d8ec-4ad3-98a3-addc0f940c54/badges/24436895",
-    "img": "/certificates/AI/Generative AI/Introduction to Large Language Models --- By Google.png",
-    "skills": [
-      "Large Language Models (LLM)"
-    ]
-  },
-  {
-    "name": "Introduction to Data Science",
-    "issuer": "Simplilearn",
-    "date": "May 2026",
-    "credentialId": "9HTn72PX73b",
-    "credentialLink": "https://simpli-web.app.link/e/9HTn72PX73b",
-    "img": "/certificates/Data Science/Introduction to Data Science --- By Simplilearn.pdf",
-    "skills": [
-      "Data Science",
-      "Analytics"
-    ]
-  },
-  {
-    "name": "Create accessible AI experiences",
-    "issuer": "Microsoft",
-    "date": "May 2026",
-    "credentialId": "U7FHURF3",
-    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/U7FHURF3?sharingId=924A01665F331AE9",
-    "img": "/certificates/AI/AI Accessibility/Create Accessible AI Experiences --- By Microsoft.pdf",
-    "skills": [
-      "Accessible AI"
-    ]
-  },
-  {
-    "name": "Gemini for end-to-end SDLC",
-    "issuer": "Google",
-    "date": "May 2026",
-    "credentialId": "24549712",
-    "credentialLink": "https://www.skills.google/public_profiles/432db7ff-d8ec-4ad3-98a3-addc0f940c54/badges/24549712",
-    "img": "/images/google skills.png",
-    "skills": [
-      "Software Development Life Cycle (SDLC)",
-      "Google Gemini"
-    ]
-  },
-  {
-    "name": "GitHub Copilot for Software Testing in JavaScript",
-    "issuer": "Simplilearn",
-    "date": "May 2026",
-    "credentialId": "10290324",
-    "credentialLink": "https://simpli-web.app.link/e/UCNP0TVoA3b",
-    "img": "/certificates/AI/Generative AI/Gen AI in SDLC/GitHub Copilot for Software Testing in JavaScript --- By Simplilearn.pdf",
-    "skills": [
-      "Testing",
-      "Test Automation"
-    ]
-  },
-  {
-    "name": "Introduction To AI Concepts",
-    "issuer": "Microsoft",
     "date": "Jun 2026",
-    "credentialId": "",
-    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch",
-    "img": "/certificates/AI/Generative AI/Introduction To AI Concepts --- By Microsoft Learn.pdf",
+    "credentialId": "SYGZSDWZKPU5",
+    "credentialLink": "https://www.coursera.org/account/accomplishments/records/SYGZSDWZKPU5",
+    "img": "/certificates/AI/Responsible AI/Use AI Responsibly --- By Google (Coursera).pdf",
     "skills": [
+      "Responsible AI",
       "Generative AI"
-    ]
-  },
-  {
-    "name": "Design a dream destination using Microsoft Copilot",
-    "issuer": "Microsoft",
-    "date": "Jun 2026",
-    "credentialId": "K9LQ5CLB",
-    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/K9LQ5CLB?sharingId=924A01665F331AE9",
-    "img": "/certificates/AI/AI Basics/Design a dream destination using Microsoft Copilot --- By Microsoft.pdf",
-    "skills": [
-      "Microsoft Copilot",
-      "Generative AI"
-    ]
-  },
-  {
-    "name": "Design a dream destination with AI",
-    "issuer": "Microsoft",
-    "date": "Jun 2026",
-    "credentialId": "VSBAKTKM",
-    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/VSBAKTKM?sharingId=924A01665F331AE9",
-    "img": "/certificates/AI/AI Basics/Design a dream destination with AI --- By Microsoft.pdf",
-    "skills": [
-      "Generative AI",
-      "AI Productivity"
     ]
   },
   {
@@ -1004,60 +1100,14 @@ export const certificationsData = [
     ]
   },
   {
-    "name": "Get Started With AI",
-    "issuer": "Microsoft",
-    "date": "Jun 2026",
-    "credentialId": "H827JZ63",
-    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/H827JZ63?sharingId=924A01665F331AE9",
-    "img": "/certificates/AI/AI Basics/Get Started With AI --- By Microsoft.pdf",
-    "skills": [
-      "Artificial Intelligence (AI)",
-      "Generative AI"
-    ]
-  },
-  {
-    "name": "Introduction to AI concepts",
+    "name": "Create accessible AI experiences",
     "issuer": "Microsoft",
     "date": "May 2026",
-    "credentialId": "8VYRKVYW",
-    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/8VYRKVYW?sharingId=924A01665F331AE9",
-    "img": "/certificates/AI/AI Basics/Introduction To AI --- By Google (Coursera).pdf",
+    "credentialId": "U7FHURF3",
+    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/U7FHURF3?sharingId=924A01665F331AE9",
+    "img": "/certificates/AI/AI Accessibility/Create Accessible AI Experiences --- By Microsoft.pdf",
     "skills": [
-      "Generative AI"
-    ]
-  },
-  {
-    "name": "Introduction to Prompt Engineering",
-    "issuer": "Simplilearn",
-    "date": "May 2026",
-    "credentialId": "10263487",
-    "credentialLink": "https://simpli-web.app.link/e/2viKy5MNo3b",
-    "img": "/certificates/Prompt Engineering/Introduction To Prompt Engineering --- By Simplilearn.pdf",
-    "skills": [
-      "Prompt Engineering"
-    ]
-  },
-  {
-    "name": "Introduction to Prompt Engineering with GitHub Copilot",
-    "issuer": "Simplilearn",
-    "date": "May 2026",
-    "credentialId": "10263896",
-    "credentialLink": "https://simpli-web.app.link/e/90Hs62PVo3b",
-    "img": "/certificates/Prompt Engineering/Introduction To Prompt Engineering --- By Simplilearn.pdf",
-    "skills": [
-      "GitHub Copilot",
-      "Prompt Engineering"
-    ]
-  },
-  {
-    "name": "Boost your productivity with Microsoft Copilot",
-    "issuer": "Microsoft",
-    "date": "May 2026",
-    "credentialId": "U7FHGMQ3",
-    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/U7FHGMQ3?sharingId=924A01665F331AE9",
-    "img": "/certificates/AI/Copilot/Boost Your Productivity With Microsoft Copilot --- By Microsoft.pdf",
-    "skills": [
-      "Microsoft Copilot"
+      "Accessible AI"
     ]
   },
   {
@@ -1072,6 +1122,28 @@ export const certificationsData = [
     ]
   },
   {
+    "name": "Introduction to AI concepts",
+    "issuer": "Microsoft",
+    "date": "May 2026",
+    "credentialId": "8VYRKVYW",
+    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/8VYRKVYW?sharingId=924A01665F331AE9",
+    "img": "/certificates/AI/AI Basics/Introduction To AI --- By Google (Coursera).pdf",
+    "skills": [
+      "Generative AI"
+    ]
+  },
+  {
+    "name": "Responsible AI With Github Copilot",
+    "issuer": "Microsoft",
+    "date": "May 2026",
+    "credentialId": "H2YWLFQ8",
+    "credentialLink": "https://learn.microsoft.com/api/achievements/share/en-in/kharajch/H2YWLFQ8?sharingId=924A01665F331AE9",
+    "img": "/certificates/AI/Responsible AI/Responsible AI With Github Copilot --- By Microsoft.pdf",
+    "skills": [
+      "Responsible AI"
+    ]
+  },
+  {
     "name": "Use AI For Everyday Tasks",
     "issuer": "Microsoft",
     "date": "May 2026",
@@ -1080,66 +1152,6 @@ export const certificationsData = [
     "img": "/certificates/AI/AI Basics/Use AI For Everyday Tasks --- By Microsoft.pdf",
     "skills": [
       "Artificial Intelligence (AI)"
-    ]
-  },
-  {
-    "name": "ChatGPT for Search Engine Optimization",
-    "issuer": "Simplilearn",
-    "date": "Jun 2026",
-    "credentialId": "10376643",
-    "credentialLink": "https://simpli-web.app.link/e/af2U9DEBb4b",
-    "img": "/certificates/AI/Generative AI/Gen AI in SDLC/ChatGPT for Search Engine Optimization --- By Simplilearn.pdf",
-    "skills": [
-      "ChatGPT",
-      "SEO",
-      "Generative AI"
-    ]
-  },
-  {
-    "name": "Project Planning using Generative AI",
-    "issuer": "Simplilearn",
-    "date": "Jun 2026",
-    "credentialId": "10381054",
-    "credentialLink": "https://simpli-web.app.link/e/mkg7QcLBb4b",
-    "img": "/certificates/AI/Generative AI/Gen AI in SDLC/Project Planning using Generative AI --- By Simplilearn.pdf",
-    "skills": [
-      "Project Planning",
-      "Generative AI"
-    ]
-  },
-  {
-    "name": "Introduction to Generative AI",
-    "issuer": "Simplilearn",
-    "date": "May 2026",
-    "credentialId": "10264026",
-    "credentialLink": "https://simpli-web.app.link/e/ikQ3f8ZXo3b",
-    "img": "/certificates/AI/Generative AI/Introduction to Generative AI --- By Google Cloud.pdf",
-    "skills": [
-      "Generative AI"
-    ]
-  },
-  {
-    "name": "GenAI for Code Migration & Optimization in JavaScript",
-    "issuer": "Simplilearn",
-    "date": "May 2026",
-    "credentialId": "10291073",
-    "credentialLink": "https://simpli-web.app.link/e/1CH5vnwEA3b",
-    "img": "/certificates/AI/Generative AI/Gen AI in SDLC/GenAI for Code Migration & Optimization in JavaScript --- By Simplilearn.pdf",
-    "skills": [
-      "Code Refactoring",
-      "Generative AI"
-    ]
-  },
-  {
-    "name": "Introduction to Artificial Intelligence",
-    "issuer": "Simplilearn",
-    "date": "May 2026",
-    "credentialId": "10289036",
-    "credentialLink": "https://simpli-web.app.link/e/nKCNB6LNz3b",
-    "img": "/certificates/AI/AI Basics/Introduction to Artificial Intelligence --- By Simplilearn.pdf",
-    "skills": [
-      "Artificial Intelligence (AI)",
-      "Machine Learning"
     ]
   }
 ];
