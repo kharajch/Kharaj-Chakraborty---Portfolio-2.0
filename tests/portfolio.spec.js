@@ -231,37 +231,6 @@ test.describe('Portfolio Site E2E Tests', () => {
     await expect(cards).toHaveCount(11);
   });
 
-  test('should navigate to the Blog section and verify article modals', async ({ page }) => {
-    // Click on the Blog link in the navbar
-    const blogLink = page.locator('.navbar__link', { hasText: 'Blog' });
-    await blogLink.click();
-
-    // Verify the Blog section is visible
-    const blogSection = page.locator('#blog');
-    await expect(blogSection).toBeInViewport();
-
-    // Verify 3 blog cards exist
-    const cards = page.locator('.blog-card');
-    await expect(cards).toHaveCount(3);
-
-    // Click on the first blog card to open the reading modal
-    await cards.first().click();
-
-    // Verify modal elements are visible
-    const modalBackdrop = page.locator('.blog-modal-backdrop');
-    const modalWindow = page.locator('.blog-modal-window');
-    await expect(modalBackdrop).toBeVisible();
-    await expect(modalWindow).toBeVisible();
-
-    // Verify modal header has the correct title
-    const modalTitle = modalWindow.locator('.blog-modal__title');
-    await expect(modalTitle).toContainText('The Rise of Agentic AI in Modern Web Development');
-
-    // Close using ESC key
-    await page.keyboard.press('Escape');
-    await expect(modalBackdrop).not.toBeAttached();
-  });
-
   test('should show mobile menu on smaller screens', async ({ page }) => {
     // Set viewport to mobile size
     await page.setViewportSize({ width: 375, height: 667 });

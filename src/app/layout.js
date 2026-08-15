@@ -17,9 +17,9 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL),
-  title: "Kharaj Chakraborty | AI Full-Stack Enthusiast",
+  title: "Kharaj Chakraborty | B.Sc. Computer Science | AI/ML & Data Science",
   description:
-    "Hi there! I'm Kharaj Chakraborty, a passionate AI Full-Stack Enthusiast and a Computer Science student at APC Roy Government College. I love building scalable web applications and exploring the depths of Computer Science & Artificial Intelligence.",
+    "Hi there! I'm Kharaj Chakraborty, a Computer Science student at APC Roy Government College specializing in AI/ML & Data Science, Deep Learning, Computer Vision, GenAI Applications & RAG Pipelines.",
   keywords: [
     "Kharaj Chakraborty",
     "kharajch",
@@ -27,10 +27,11 @@ export const metadata = {
     "Kharaj Chakraborty (@kharajch)",
     "Kharaj Chakraborty---Portfolio",
     "Kharaj Chakraborty (@kharajch)---Portfolio",
-    "AI Full-Stack Enthusiast",
-    "AI Powered Full Stack Developer",
-    "AI Powered Full Stack Engineer",
-    "Web Developer",
+    "B.Sc. Computer Science",
+    "AI/ML & Data Science",
+    "Deep Learning",
+    "Computer Vision",
+    "GenAI Applications & RAG Pipelines",
     "AI Developer",
     "Portfolio",
     "Next.js",
@@ -43,9 +44,9 @@ export const metadata = {
     icon: "/images/favicon.ico",
   },
   openGraph: {
-    title: "Kharaj Chakraborty | AI Full-Stack Enthusiast",
+    title: "Kharaj Chakraborty | B.Sc. Computer Science | AI/ML & Data Science",
     description:
-      "Passionate AI Full-Stack Enthusiast & Computer Science student building scalable web applications.",
+      "Computer Science student specializing in AI/ML, Data Science, Deep Learning, Computer Vision, GenAI Applications & RAG Pipelines.",
     type: "website",
   },
   verification: {

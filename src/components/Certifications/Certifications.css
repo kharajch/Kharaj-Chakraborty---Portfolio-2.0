@@ -212,7 +212,38 @@
 }
 
 @media (max-width: 768px) {
+  .certifications {
+    padding: 60px 0;
+  }
+
+  .certifications__filters {
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .certifications__filter-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+    min-height: 38px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .certifications__grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .certification-card__image-overlay {
+    opacity: 1;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.3) 100%);
+  }
+
+  .certification-card__overlay-link {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
   }
 }

@@ -94,9 +94,9 @@ export const projectsData = [
     live: "https://kharajch.vercel.app/",
     img: "/images/projects/Portfolio2.png",
     details:
-      "A modern, highly interactive, and responsive developer portfolio built to showcase engineering skills, professional certifications, and web development projects.",
+      "A modern, highly interactive, and responsive developer portfolio built to showcase engineering skills, professional certifications, and software projects.",
     longDescription:
-      "Portfolio 2.0 showcases my frontend capabilities. Featuring a custom WebGL particle canvas background, fluid scroll-linked animations, and tilt interactions on cards. The site is optimized using Next.js App Router for top SEO performance (dynamic sitemaps/robots.txt), features a custom dark/light/cyber-red theme engine, and has a functional Contact section powered by EmailJS.",
+      "Portfolio 2.0 showcases my technical capabilities. Featuring a custom WebGL particle canvas background, fluid scroll-linked animations, and tilt interactions on cards. The site is optimized using Next.js App Router for top SEO performance (dynamic sitemaps/robots.txt), features a custom dark/light/cyber-red theme engine, and has a functional Contact section powered by EmailJS.",
     features: [
       "Interactive 3D particle systems and orbital nodes built with Three.js / React Three Fiber.",
       "Multi-theme support (Dark, Light, and Cyber-Red) with persistent storage and system matching.",
@@ -116,7 +116,7 @@ export const projectsData = [
     live: "https://kharajch-legacy.vercel.app/",
     img: "/images/projects/Portfolio1.png",
     details:
-      "A classic personal portfolio website built with Next.js, React, and AnimistaCSS to showcase core web development capabilities.",
+      "A classic personal portfolio website built with Next.js, React, and AnimistaCSS to showcase core software capabilities.",
     longDescription:
       "Portfolio 1.0 represents my initial foray into advanced Next.js projects. It offers a clean, structural layout containing an about section, project cards, and a direct contact form. Styling is handled with custom modular CSS files augmented by AnimistaCSS presets for hover states and initial page animations.",
     features: [

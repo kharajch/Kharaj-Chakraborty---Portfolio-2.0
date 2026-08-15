@@ -1,6 +1,6 @@
 # Kharaj Chakraborty's Portfolio 2.0 ✨
 
-Welcome to the repository for my personal portfolio! This is a modern, highly interactive, and responsive portfolio built to showcase my web development skills, projects, and professional background.
+Welcome to the repository for my personal portfolio! This is a modern, highly interactive, and responsive portfolio built to showcase my projects, skills, and professional background.
 
 ![Next.js](https://img.shields.io/badge/Next.js-16.2.2-black?style=for-the-badge&logo=next.js)
 ![React](https://img.shields.io/badge/React-19.2.4-blue?style=for-the-badge&logo=react)
@@ -10,13 +10,12 @@ Welcome to the repository for my personal portfolio! This is a modern, highly in
 
 ## 📌 Introduction
 
-Hi there! I'm **Kharaj Chakraborty**, a passionate AI Full-Stack Enthusiast and a Computer Science student at APC Roy Government College. I love building scalable web applications and exploring the depths of Computer Science & Artificial Intelligence. This portfolio is designed to be a digital representation of my skills, featuring immersive 3D experiences, smooth animations, and clean code.
+Hi there! I'm **Kharaj Chakraborty**, a Computer Science student at APC Roy Government College specializing in **AI/ML & Data Science | Deep Learning | Computer Vision | GenAI Applications & RAG Pipelines**. This portfolio is designed to be a digital representation of my skills, featuring immersive 3D experiences, smooth animations, and clean code.
 
 ## 🚀 Key Features
 
 - **Project Showcase Modal**: Click on any featured project card to open an immersive, split-column details overlay containing high-quality screenshots, categorized tech stack badges (Frontend, Backend, AI & Tools), detailed specifications, and repository/live actions.
 - **Interactive Journey Timeline**: An accordion-style vertical journey timeline located in the About section. Details professional experience and educational background, featuring custom logo initials, date indicators, and smooth height expansion transitions.
-- **Insights Blog Section**: Dedicated reading area containing tech articles on Web Architecture, AI Agents, and Scroll Animations, complete with custom high-fidelity banner graphics and reader modals.
 - **Dynamic Contact Form Validation**: Features interactive inline validation (RFC 5322 email regex checks, length limits) with field success/error outlines, submit button loading spinner state triggers, input shake cues on invalid submissions, and self-drawing SVG checkmark animations on successful messages.
 - **Consolidated Skills Filtering**: Merges 11 micro-categories into 5 primary filters (Languages, Frameworks, AI & Agents, Databases, Tools & Cloud) to prevent button wrap clutter and remove duplicate "AI" tags.
 - **Immersive 3D Graphics**: Utilizing `three.js`, `@react-three/fiber`, and `@react-three/drei` for engaging backgrounds and interactive elements. Includes a **graceful fallback mechanism** that hides 3D elements on devices with limited WebGL support, ensuring accessibility.

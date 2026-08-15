@@ -9,10 +9,9 @@ Key features include:
 * **Skills**: Animated skill cards with custom 5-group consolidated filtering logic.
 * **Certifications**: Professional credentials showcase with 3D tilt effects, sorted by impactfulness and categorized under 5 filters (All, AI & Gen AI, Prompt Engineering, Git & GitHub, Data Science & ML).
 * **Projects**: Featured projects grid mapped from `src/data/projects.js`, incorporating a detailed two-column Showcase Modal overlay (`ProjectModal.jsx`).
-* **Blog**: Dynamic article cards grid mapped from `src/data/blog.js` with dedicated reading reader overlays (`BlogModal.jsx`).
 * **Contact**: EmailJS-integrated contact form featuring interactive inline validation (error shake alerts, validation text, and checkmark SVGs).
 
-Static data modules live in `src/data/`. Planning documents and task trackers are maintained in `planning/`. Runtime assets (including blog banners under `images/blog/`) live in `public/`.
+Static data modules live in `src/data/`. Planning documents and task trackers are maintained in `planning/`.
 
 ## Build, Test, and Development Commands
 - `npm install` installs dependencies.
@@ -22,7 +21,7 @@ Static data modules live in `src/data/`. Planning documents and task trackers ar
 - `npm test` runs the Playwright E2E test suite.
 
 ## Coding Style & Naming Conventions
-Use modern React function components and keep component files in JSX. Follow the existing style: double quotes, semicolons, and 2-space indentation in JS/CSS files. Use PascalCase for component folders and component names (`ThreeScene.jsx`), camelCase for variables/functions, and lower-case data filenames (`projects.js`, `timeline.js`, `blog.js`, `skills.js`). Prefer the configured `@/*` import alias from `jsconfig.json` for code under `src/`.
+Use modern React function components and keep component files in JSX. Follow the existing style: double quotes, semicolons, and 2-space indentation in JS/CSS files. Use PascalCase for component folders and component names (`ThreeScene.jsx`), camelCase for variables/functions, and lower-case data filenames (`projects.js`, `timeline.js`, `skills.js`). Prefer the configured `@/*` import alias from `jsconfig.json` for code under `src/`.
 
 ## Testing Guidelines
 The project uses **Playwright** for End-to-End (E2E) testing. Tests are located in the `tests/` directory (e.g., [portfolio.spec.js](file:///K:/Codes/Web%20Devlopment/My%20Projects/Kharaj-Chakraborty---Portfolio-2.0/tests/portfolio.spec.js)). Before running tests, ensure browsers are installed via `npx playwright install chromium`. 
@@ -34,7 +33,6 @@ The test suite covers:
 - Interactive Contact form validation (email checks, length warnings, and dynamic border transitions).
 - Skills consolidated category filter updates.
 - About Journey Timeline accordion expand/collapse toggles.
-- Blog navigation and article reading modal launches.
 - Theme engine shifts (Dark -> Light -> Cyber-Red).
 - Mobile responsiveness configurations.
 

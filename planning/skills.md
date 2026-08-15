@@ -1,8 +1,8 @@
 # 💫 About Me
 
-Hi there! I'm Kharaj Chakraborty, a passionate AI Full-Stack Enthusiast and a Computer Science student at APC Roy Government College.
+Hi there! I'm Kharaj Chakraborty, a Computer Science student at APC Roy Government College specializing in AI/ML & Data Science | Deep Learning | Computer Vision | GenAI Applications & RAG Pipelines.
 
-I love building scalable web applications and exploring the depths of Computer Science & Artificial Intelligence.
+I love exploring the depths of Computer Science, Artificial Intelligence, and Data Science.
 
 ### Visit My Portfolio - [https://kharajch.vercel.app](https://kharajch.vercel.app "Kharaj Chakraborty---Portfolio")
 

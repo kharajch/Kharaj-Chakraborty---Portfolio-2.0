@@ -1,9 +1,9 @@
 export const blogData = [
   {
     id: "blog-1",
-    title: "The Rise of Agentic AI in Modern Web Development",
+    title: "The Rise of Agentic AI in Modern Intelligent Systems",
     date: "June 15, 2026",
-    category: "AI & Web",
+    category: "AI & Systems",
     readTime: "5 min read",
     img: "/images/blog/agentic_ai.jpg",
     summary: "Explore how autonomous AI agents are transitioning from simple code helpers to full partners in software orchestration and architecture planning.",

@@ -66,30 +66,27 @@ export default function About() {
           <div className="about__content">
             <motion.div variants={itemVariants} className="about__text-block">
               <p className="about__description">
-                Hi there! I&apos;m <strong>Kharaj Chakraborty</strong>, a passionate
-                AI Full-Stack Enthusiast and a Computer Science student at
+                Hi there! I&apos;m <strong>Kharaj Chakraborty</strong>, a
+                Computer Science student at
                 <span className="accent-text"> APC Roy Government College</span>.
               </p>
               <p className="about__description">
-                I love building scalable web applications and exploring the
-                depths of Computer Science & Artificial Intelligence. From crafting pixel-perfect UIs to
-                architecting robust backend systems, I enjoy every aspect of the
-                development process.
+                I love exploring the depths of Computer Science, AI/ML &amp; Data Science, Deep Learning, Computer Vision, and GenAI Applications &amp; RAG Pipelines. From model training to architecting intelligent systems, I enjoy every aspect of engineering solution pipelines.
               </p>
               <p className="about__description">
                 When I&apos;m not coding, you&apos;ll find me exploring new technologies,
                 contributing to open-source projects, and continuously learning
-                to stay at the forefront of web development.
+                to stay at the forefront of AI and Data Science.
               </p>
 
               <div className="about__tags">
                 {[
-                  "Full Stack",
-                  "React",
-                  "Next.js",
-                  "Node.js",
-                  "MongoDB",
                   "Python",
+                  "AI/ML",
+                  "Deep Learning",
+                  "Computer Vision",
+                  "GenAI",
+                  "RAG",
                 ].map((tag) => (
                   <span key={tag} className="about__tag">
                     {tag}
@@ -111,13 +108,13 @@ export default function About() {
                 <pre className="about__code-content">
                   <code>
                     <span className="code-keyword">const</span>{" "}
-                    <span className="code-variable">developer</span> = {`{`}
+                    <span className="code-variable">engineer</span> = {`{`}
                     {"\n"}
                     {"  "}name: <span className="code-string">&quot;Kharaj Chakraborty&quot;</span>,{"\n"}
-                    {"  "}role: <span className="code-string">&quot;AI Full-Stack Enthusiast&quot;</span>,{"\n"}
-                    {"  "}college: <span className="code-string">&quot;APC Roy Govt. College&quot;</span>,{"\n"}
-                    {"  "}skills: [<span className="code-string">&quot;React&quot;</span>, <span className="code-string">&quot;Next.js&quot;</span>, <span className="code-string">&quot;Node.js&quot;</span>],{"\n"}
-                    {"  "}passion: <span className="code-string">&quot;Building the web&quot;</span>,{"\n"}
+                    {"  "}role: <span className="code-string">&quot;AI/ML &amp; Data Science&quot;</span>,{"\n"}
+                    {"  "}degree: <span className="code-string">&quot;B.Sc. Computer Science&quot;</span>,{"\n"}
+                    {"  "}skills: [<span className="code-string">&quot;Python&quot;</span>, <span className="code-string">&quot;PyTorch&quot;</span>, <span className="code-string">&quot;GenAI/RAG&quot;</span>],{"\n"}
+                    {"  "}passion: <span className="code-string">&quot;Intelligent Systems &amp; Deep Learning&quot;</span>,{"\n"}
                     {"  "}<span className="code-keyword">isAvailable</span>: <span className="code-boolean">true</span>{"\n"}
                     {`}`};
                   </code>

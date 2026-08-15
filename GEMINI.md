@@ -26,7 +26,7 @@ This is a Next.js 16 portfolio application built with React 19 and featuring imm
 
 #### App Router Structure
 - `src/app/layout.js` - Root layout with site metadata (SEO, OpenGraph, Google Search Console verification). Uses `next/font` for optimized typography. Integrates `@vercel/analytics` for performance monitoring.
-- `src/app/page.js` - Main page component that orchestrates all sections (Navbar, Hero, About, Skills, Certifications, Projects, Blog, Contact, Footer)
+- `src/app/page.js` - Main page component that orchestrates all sections (Navbar, Hero, About, Skills, Certifications, Projects, Contact, Footer)
 - `src/app/not-found.js` - Custom 404 page with GSAP/Framer Motion animations
 - `src/app/robots.js` - Dynamic robots.txt generation using `NEXT_PUBLIC_BASE_URL`
 - `src/app/sitemap.js` - Dynamic sitemap generation using `NEXT_PUBLIC_BASE_URL`
@@ -39,7 +39,6 @@ Components are modular and located in `src/components/`:
 - **Skills**: Animated skill cards with react-tilt hover effects. Features a consolidated **FILTER_GROUPS** grouping logic (5 primary categories) rendering animated category shifts via `react-flip-toolkit`
 - **Certifications**: Professional credentials showcase with 3D tilt effects, sorted by impactfulness and categorized under 5 filters (All, AI & Gen AI, Prompt Engineering, Git & GitHub, Data Science & ML)
 - **Projects**: Data-driven project grid mapping from `src/data/projects.js`. Features a split-column **Project Showcase Modal** (`ProjectModal.jsx`) which displays screenshots, categorized tech stack arrays, feature checklists, and repository links
-- **Blog**: Display cards mapping articles from `src/data/blog.js`, featuring custom banner assets, metadata lines, and detailed reading overlays (`BlogModal.jsx`)
 - **Contact**: EmailJS-integrated contact form featuring interactive validation (onBlur validations, email regex checking, error borders, loading spinners, form shakes on invalid submits, and self-drawing checkmark SVGs on successful sends)
 - **Navbar**: Responsive navigation with mobile menu (featuring light theme container background overrides), theme switcher, and scroll detection.
 - **Footer**: Site footer with social links
@@ -55,7 +54,6 @@ Components are modular and located in `src/components/`:
 Static data is separated in `src/data/`:
 - `projects.js` - Array of featured projects, containing long descriptions, feature strings, and categorized tech stacks
 - `timeline.js` - Array of timeline nodes (experience/education) with date ranges and detail bullet arrays
-- `blog.js` - Array of blog articles containing paragraph summaries and body content
 - `certifications.js` - Array of professional certification objects. Uses PDF paths for previews and `credentialLink` for verification redirects. Supports branding assets like `google skills.png`.
 - `skills.js` - Array of skill categories and icons. Keep in sync with `planning/skills.md`.
 - `socials.js` - Social media links and icons
