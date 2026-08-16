@@ -1,7 +1,7 @@
 # Repository Guidelines
 
 ## Project Structure & Module Organization
-This repository is a Next.js App Router portfolio site. Application entrypoints live in `src/app/`, with `layout.js`, `page.js`, and global styles in `globals.css`. Reusable UI is organized by feature in `src/components/<Feature>/`, where each component typically sits beside its CSS file. 
+This repository is a Next.js App Router portfolio site. Application entrypoints live in `src/app/`, with `layout.js`, `page.js` (utilizing Next.js dynamic imports for below-the-fold components), and global styles in `globals.css`. Reusable UI is organized by feature in `src/components/<Feature>/`, where each component typically sits beside its CSS file. 
 
 Key features include:
 * **Hero**: Dynamic top section with profile elements, 3D overlays, and custom light theme overlays (`[data-theme='light']`) for optimized text contrast.
@@ -12,6 +12,7 @@ Key features include:
 * **Contact**: EmailJS-integrated contact form featuring interactive inline validation (error shake alerts, validation text, and checkmark SVGs).
 
 Static data modules live in `src/data/`. Planning documents and task trackers are maintained in `planning/`.
+
 
 ## Build, Test, and Development Commands
 - `npm install` installs dependencies.

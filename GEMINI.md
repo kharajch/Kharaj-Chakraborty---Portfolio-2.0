@@ -26,7 +26,7 @@ This is a Next.js 16 portfolio application built with React 19 and featuring imm
 
 #### App Router Structure
 - `src/app/layout.js` - Root layout with site metadata (SEO, OpenGraph, Google Search Console verification). Uses `next/font` for optimized typography. Integrates `@vercel/analytics` for performance monitoring.
-- `src/app/page.js` - Main page component that orchestrates all sections (Navbar, Hero, About, Skills, Certifications, Projects, Contact, Footer)
+- `src/app/page.js` - Main page component that orchestrates all sections (Navbar, Hero, About, Skills, Certifications, Projects, Contact, Footer). Uses Next.js `dynamic()` imports for below-the-fold components (`Certifications`, `Projects`, `Contact`, `Footer`) to optimize initial JS bundle size.
 - `src/app/not-found.js` - Custom 404 page with GSAP/Framer Motion animations
 - `src/app/robots.js` - Dynamic robots.txt generation using `NEXT_PUBLIC_BASE_URL`
 - `src/app/sitemap.js` - Dynamic sitemap generation using `NEXT_PUBLIC_BASE_URL`
@@ -42,6 +42,7 @@ Components are modular and located in `src/components/`:
 - **Contact**: EmailJS-integrated contact form featuring interactive validation (onBlur validations, email regex checking, error borders, loading spinners, form shakes on invalid submits, and self-drawing checkmark SVGs on successful sends)
 - **Navbar**: Responsive navigation with mobile menu (featuring light theme container background overrides), theme switcher, and scroll detection.
 - **Footer**: Site footer with social links
+
 
 #### Animation System
 - GSAP with ScrollTrigger for scroll-based animations

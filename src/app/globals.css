@@ -405,10 +405,22 @@ a {
 
 /* Global color smooth transition when theme changes */
 body,
-body *,
-body ::before,
-body ::after {
+.navbar,
+.section,
+.glass,
+.hero,
+.about,
+.skills,
+.certifications,
+.projects,
+.contact,
+.footer,
+.project-modal-window,
+.certification-card,
+.project-card,
+.skills__category-card {
   transition-property: background-color, color, border-color, box-shadow;
   transition-duration: 0.3s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+

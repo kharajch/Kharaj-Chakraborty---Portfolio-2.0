@@ -1,14 +1,16 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import Navbar from "@/components/Navbar/Navbar";
 import Hero from "@/components/Hero/Hero";
 import About from "@/components/About/About";
 import Skills from "@/components/Skills/Skills";
-import Certifications from "@/components/Certifications/Certifications";
-import Projects from "@/components/Projects/Projects";
-import Contact from "@/components/Contact/Contact";
-import Footer from "@/components/Footer/Footer";
 import ScrollReveal from "@/components/ScrollReveal/ScrollReveal";
+
+const Certifications = dynamic(() => import("@/components/Certifications/Certifications"));
+const Projects = dynamic(() => import("@/components/Projects/Projects"));
+const Contact = dynamic(() => import("@/components/Contact/Contact"));
+const Footer = dynamic(() => import("@/components/Footer/Footer"));
 
 export default function Home() {
   return (
@@ -40,3 +42,4 @@ export default function Home() {
     </main>
   );
 }
+
