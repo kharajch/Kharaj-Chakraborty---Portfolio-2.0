@@ -1,27 +1,10 @@
 export const timelineData = [
   {
     id: "timeline-1",
-    type: "experience",
-    title: "Full Stack AI Developer",
-    organization: "Open Source & Freelance",
-    duration: "2025 - Present",
-    logoText: "AI",
-    icon: "FaLaptopCode",
-    color: "#e63946",
-    shortDesc: "Designing and building advanced AI-powered web applications and agentic workflows.",
-    details: [
-      "Developed psychiatric clinical dashboards using Next.js with offline-first RxDB replication syncing to MongoDB.",
-      "Built IdeaXCoder using LangGraph and FastAPI, converting abstract prompts into system specs with multi-agent orchestration.",
-      "Integrated various local (Ollama) and cloud APIs (Gemini 3.5 Flash, Opus) for Retrieval-Augmented Generation (RAG).",
-      "Created modern user interfaces with custom cursors, responsive components, and CSS-based dark/light theme engines."
-    ]
-  },
-  {
-    id: "timeline-2",
     type: "education",
     title: "B.Sc. in Computer Science",
     organization: "APC Roy Government College",
-    duration: "2025 - 2026",
+    duration: "2025 - PRESENT",
     logoText: "CS",
     icon: "FaGraduationCap",
     color: "#6fd8cc",
@@ -32,7 +15,7 @@ export const timelineData = [
     ]
   },
   {
-    id: "timeline-3",
+    id: "timeline-2",
     type: "education",
     title: "Higher Secondary (12th Grade)",
     organization: "Mathabhanga High School",
@@ -47,7 +30,7 @@ export const timelineData = [
     ]
   },
   {
-    id: "timeline-4",
+    id: "timeline-3",
     type: "education",
     title: "Secondary (10th Grade)",
     organization: "Mathabhanga High School",

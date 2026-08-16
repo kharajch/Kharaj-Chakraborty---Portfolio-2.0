@@ -260,7 +260,7 @@ test.describe('Portfolio Site E2E Tests', () => {
 
     // Verify timeline items are present
     const timelineItems = page.locator('.about__timeline-item');
-    await expect(timelineItems).toHaveCount(4);
+    await expect(timelineItems).toHaveCount(3);
 
     // Verify timeline details are hidden initially
     const detailsList = page.locator('.about__timeline-details');
